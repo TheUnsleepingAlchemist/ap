@@ -1,0 +1,8 @@
+ako:ako
+test:test
+jan:klon
+admin:admin
+adam:amidala
+kasia:lord
+jango:fet
+kwark:mazda

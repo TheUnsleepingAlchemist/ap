@@ -1,0 +1,17 @@
+1. Funkcje plikowe do nauki:
+
+fopen()    fgets()  fgetc() fputs() fread()  fwrite() file()
+feof() fseek() fclose() rewind()  filesize() flock()
+
+2. Atrybuty otwarca pliku.
+
+3. Zadania:
+3.1 Utwórz plik dane.txt i zapisz w nim dowolny tekst.
+3.2 Odczytaj całą zawartość pliku dane.txt i wyświetl na ekranie.
+3.3 Odczytaj kazdą linię pliku hasla.txt do tablicy tablica_hasel[]
+3.4 Znajdz w pliku wskazane słowo w formularzu przez użytkownika
+3.5 Sprawdz wielkość pliku dane.txt
+3.6 Załóż blokadę dzieloną na plik dane.txt i sprawdź czy nie ma możliwości
+    operacji na tym pliku
+3.7 Napisz aplikację w której będzie możliwość utworzenia nowego pliku
+    o padanej nazwie oraz wpisania do niego dowolnej informacji.

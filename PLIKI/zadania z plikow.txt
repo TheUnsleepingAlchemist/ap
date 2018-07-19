@@ -1,0 +1,17 @@
+﻿
+
+
+Zapisz do pliku dowolny jeden znak 
+(skorzystaj z formularza), 
+następnie stwórz nowy program który
+odczyta plik i sprawdi czy zapisany znak to 'T'
+Jeżeli jest to 'T' wyświetl komunikat "TAK"
+Jeżeli nie to wyświetl kom. "INNY ZNAK".
+
+
+
+
+Za pomocą pętli for wygeneruj liczby od 1 do 10 
+i zapisz je do pliku.
+Odczytaj plik i wyświetl jego zawartość.
+

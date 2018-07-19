@@ -1,0 +1,14 @@
+11:05,29th November	3	-opony 	4	-olej 
+11:06,29th November	5	-opony 	5	-olej 
+13:03,10th December	3	-opony 	100	-olej 
+10:18,16th December	33	-opony 	44	-olej 
+09:33,21st October	2	-opony 	3	-olej 
+22:54,3rd November	22	-opony 	33	-olej 
+09:13,4th November	222	-opony 	333	-olej 
+09:48,4th November	222	-opony 	333	-olej 
+08:13,9th November	23	-opony 	2	-olej 
+08:37,9th November	4	-opony 	t	-olej 
+20:55,14th December		-opony 		-olej 
+20:56,14th December	2	-opony 	4	-olej 
+10:57,15th December	2	-opony 	4	-olej 
+09:58,20th December	333	-opony 	4	-olej 

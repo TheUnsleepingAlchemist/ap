@@ -1,0 +1,38 @@
+Zadanie 1 Wylosuj 5 liczb z zakresu od 1 do 10
+i zapisz do tablicy A
+Posortuj tablice rosnąco i wyświetl ja.
+
+rand(1,10);
+
+
+Zadanie 2 W tablicy asocjacyjnej przechowaj dane do logowania
+(login=>haslo) Napisz program panel logowania.
+Po prawidłowym logowaniu przekieruj użytkownika
+na stronę profil.php
+
+1. Formularz (login, haslo i przycisk)
+2. php
+  a Deklarujemy tablice asoc. login->haslo
+  b pobieramy dane z formularza
+  c Sprawdzamy dane z form z danymi z tab asoc
+  d Przekierowujemy na stronę lub wyświetlamy komunikat
+    header ('Location: profil.php')
+<!DOCTYPE html>
+<HTML>
+  <head>
+  </head>
+    <body>
+      <form>
+        ..................
+      </form>
+      <?php
+      ....................
+      ?>
+    </body>
+</HTML>
+
+
+Zadanie 3 W tablicy zapisz powierzchnię poszczególnych
+pomieszczeń mieszkania.
+Znajdz, które pomieszczenie jest największe oraz policz powierznię
+całego mieszkania.

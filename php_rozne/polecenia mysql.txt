@@ -1,0 +1,11 @@
+create database biblio;
+show databases;
+
+use biblio;
+show tables;
+
+create table zamowienia (zamowienieid int unsigned not null auto_increment primary key, klientid int unsigned not null, wartosc float(6,2), data date not null);
+
+describe zamowienia;
+ 
+

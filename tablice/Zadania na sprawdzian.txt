@@ -1,0 +1,16 @@
+﻿Zadanie 1
+Dana jest tablica asocjacyjna: 
+
+$owoce = array ("d"=>"mango", "a"=>"papaja", 
+"b"=>"banan", "c"=>"aronia");
+
+-Posortuj ją alfabetycznie według wartości i wyświetl na ekranie.
+-Posortuj ją alfabetycznie według klucza (indeksów) 
+   i wyświetl na ekranie.
+
+Zadanie 2
+Dana jest tablica 12 elementowa typu całkowitego 
+$A = array(1,-5,3,4,6,-7,11,23,-22,11,33,23);
+-Oblicz sumę tablicy, wykorzystaj pętlę for.
+-Oblicz sumę ujemnych wartości, wykorzystaj pętlę while.
+

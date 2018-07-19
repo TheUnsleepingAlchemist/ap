@@ -1,0 +1,42 @@
+BODY {
+		background-color:#FFDAB5;
+		width:85%;
+		text-align:center;
+		margin: 15pt 15pt 15pt 25pt;
+		
+		}
+		H2 {
+		color:#D56A00;
+		font: bold normal small-caps x-large normal "Arial", sans-serif;
+		}
+		H3 {
+		color:#D56A00;
+		font: bold normal small-caps large normal normal Arial, sans-serif;
+		}
+		H4 {
+		color:#FF8409;
+		font: normal normal normal medium normal normal Arial, sans-serif;
+		}
+
+		.body {text-align:left;}
+		p {text-align:left;}
+		.addin {border:thin dashed #004F00; background-color:#E6E6E6;}
+		div.test { border: thin double #747474; background-color: #F0F0F0;}
+		CODE {text-align:left;}
+		div.kod {
+			border: thin solid #914800;
+			background-color:#FFF0E1;
+		}
+		a:link {
+			color:#974B00;
+			font: bolder normal small-caps small normal Arial, Verdana, sans-serif;
+		}
+		A:hover, a:active {
+			color:#673300;
+			font: bolder normal small-caps small normal Arial, Verdana, sans-serif;
+			text-decoration: overline underline;
+		}
+		A:visited {
+			color:#8F4700;
+			font: bolder normal small-caps small normal Arial, Verdana, sans-serif;
+		}
