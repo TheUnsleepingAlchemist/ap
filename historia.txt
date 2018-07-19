@@ -1,0 +1,399 @@
+    1  mc
+    2  sudo apt install mc
+    3  mc
+    4  sudo passwd root
+    5  mc
+    6  exit
+    7  cd download
+    8  ls
+    9  cd pobrane
+   10  mc
+   11  chmod +x xampp-linux-x64-7.2.7-0-installer.run 
+   12  ls
+   13  sudo ./xampp-linux-x64-7.2.7-0-installer.run 
+   14  sudo apt-get install gimp
+   15  apt-get install inscape
+   16  sudo apt-get install inscape
+   17  sudo apt-get-repository ppa:inkscape.dev/stabile
+   18  sudo apt-get -repository ppa:inkscape.dev/stabile
+   19  sudo add-get -repository ppa:inkscape.dev/stabile
+   20  sudo add-get-repository ppa:inkscape.dev/stabile
+   21  sudo add-apt-repository ppa:inkscape.dev/stabile
+   22  sudo apt-get install inkscape
+   23  service lampp
+   24  lampp
+   25  service apache
+   26  sudo service apache
+   27  sudo service mysql
+   28  sudo service lampp
+   29  sudo service xamp
+   30  sudo /opt/lampp/share/xamp-control-panel/xamp-control-panel
+   31  sudo /opt/lampp/share/xampp-control-panel/xampp-control-panel
+   32  sudo apt-get install xampp
+   33  sudo apt-get install xamp
+   34  sudo /opt/lampp/lampp start
+   35  sudo ./manager-linux-x64.run
+   36  cd opt/lampp
+   37  cd /
+   38  cd opt/lampp
+   39  sudo ./manager-linux-x64.run
+   40  exit
+   41  ls
+   42  cd pulpit
+   43  cd Pulpit
+   44  ls
+   45  xamp_mgr
+   46  ./xamp_mgr
+   47  sudo ./manager-linux-x64.run
+   48  ./manager-linux-x64.run
+   49  cd ./opt
+   50  cd /opt
+   51  cd lampp
+   52  ./manager-linux-x64.run
+   53  su 
+   54  ./manager-linux-x64.run
+   55  ./xamp_mgr
+   56  cd home
+   57  cd /
+   58  cd home
+   59  ls
+   60  cd ako/Pulpit
+   61  ./xamp_mgr
+   62  exit
+   63  git
+   64  ls
+   65  git init
+   66  cd /home/ako
+   67  ls
+   68  git init
+   69  git init Pobrane
+   70  cd /
+   71  cd opt/lampp
+   72  git init ako
+   73  ls
+   74  cd ako
+   75  cd htdocs
+   76  ls
+   77  git init ako
+   78  git add  ako
+   79  cd ako
+   80  git add  *.*
+   81  git add readme
+   82  git add README
+   83  git commit -m 'Repozytorim aplikacji internetowych'
+   84  git config --global andrzej.kotwica@gmail.com
+   85  git config --global andrzej.kotwica "Andrzej Kotwica"
+   86  git commit -m 'Repozytorim aplikacji internetowych'
+   87  git clone git://github.com/andrzejkotwica/ap.git
+   88  git add  *.*
+   89  git add  *.php
+   90  git clone git://github.com/andrzejkotwica/ap.git
+   91  git commit
+   92  git commit git://github.com/andrzejkotwica/ap.git
+   93  git clone git://github.com/andrzejkotwica/Aniamacja_JS.git
+   94  git clone https://github.com/andrzejkotwica/Aniamacja_JS.git
+   95  git clone https://github.com/andrzejkotwica/Animacja_JS.git
+   96  ls
+   97  cd Animacja_JS
+   98  ls
+   99  git status
+  100  git diff
+  101  git commit
+  102  git status
+  103  git add
+  104  git add *.html
+  105  git status
+  106  git commit
+  107  git commit https://github.com/andrzejkotwica
+  108  git commit https://github.com/andrzejkotwica/ap.git
+  109  git status
+  110  exit
+  111  mc
+  112  exit
+  113  git
+  114  ls
+  115  git status
+  116  cd /opt/lampp/ako
+  117  cd /
+  118  cd /opt/lampp/ako
+  119  cd opt
+  120  ls
+  121  cd /lampp/htdocs/ako
+  122  cd /lampp
+  123  cd lampp
+  124  ls
+  125  cd htdocs
+  126  cd ako
+  127  ls
+  128  git status
+  129  git add *.*
+  130  git status
+  131  git 
+  132  git commit *.*
+  133  git config 
+  134  git 
+  135  git commit
+  136  git config --global andrzej.kotwica@gmail.com
+  137  git commit
+  138  git commit git://github.com/andrzejkotwica/ap.git
+  139  git commit https://github.com/andrzejkotwica/ap.git
+  140  git commit https://github.com/git/andrzejkotwica/ap.git
+  141  git commit https://github.com/andrzejkotwica/ap.git
+  142  git init https://github.com/andrzejkotwica/ap.git
+  143  git clone  https://github.com/andrzejkotwica/ap.git
+  144  git status
+  145  git add baza/*.*
+  146  git add Ciastka/
+  147  git add Funkcje/
+  148  git add obiekt/*.*
+  149  git add Obiektowe/*.*
+  150  git add php_rozne/*.*
+  151  git add PLIKI/*.*
+  152  git add tab/*.*
+  153  git add tablice/*.*
+  154  git add word_pliki/*.*
+  155  git add zadanie\ sklep/*.*
+  156  git add Obiektowe/*.*
+  157  git add 
+  158  git status
+  159  git add PLIKI/zadanie/*.*
+  160  git add PLIKI/Zadanie/*.*
+  161  git add PLIKI/zadanie2/*.*
+  162  git status
+  163  git add Animacja_JS/*.*
+  164  git status
+  165  git commit 
+  166  git commit  https://github.com/andrzejkotwica/ap.git
+  167  git commit  andrzej.kotwica@gmail.com
+  168  git config  andrzej.kotwica@gmail.com
+  169  git commit  https://github.com/andrzejkotwica/ap.git
+  170  git commit  
+  171  git config  andrzejkotwica
+  172  git config  --global andrzejkotwica
+  173  git config  --global andrzej.kotwica@gmail.com
+  174  git config  --global andrzejkotwica
+  175  git config  --global "andrzejkotwica"
+  176  git commit  
+  177  git diff
+  178  git commit  
+  179  git remote
+  180  git remote -v
+  181  git push
+  182  git push ap
+  183  git push ap.git
+  184  git push 
+  185  git remote add ap https://github.com/andrzejkotwica
+  186  git remote -v
+  187  git push ap
+  188  git push 
+  189  git remote -v
+  190  git push ap
+  191  git commit
+  192  git commit ap
+  193  ls
+  194  git status
+  195  git remoute show ap
+  196  git remote show ap
+  197  git remote add ap https://github.com/andrzejkotwica/ap.git
+  198  git remote add ap2 https://github.com/andrzejkotwica/ap.git
+  199  git remote show ap2
+  200  git commit ap2
+  201  git push ap2
+  202  git status
+  203  git remote -v
+  204  git remote show ap2
+  205  git init
+  206  exit
+  207  git status
+  208  git remote
+  209  git status
+  210  git init
+  211  ls
+  212  git add *.*
+  213  git status
+  214  git commit -m
+  215  git commit
+  216  git commit -m
+  217  git commit -p
+  218  git commit -p https://github.com/andrzejkotwica/ap.git
+  219  git config --global "andrzej.kotwica@gmail.com"
+  220  git config --global "andrzejkotwica"
+  221  git config --global user.name "andrzejkotwica"
+  222  git commit https://github.com/andrzejkotwica/ap.git
+  223  git commit -m
+  224  git commit -p
+  225  git add .
+  226  git status
+  227  git commit -m "moje repo"
+  228  git config --global user.email "andrzej.kotwica@gmail.com"
+  229  git config --global user.name andrzejkotwica
+  230  git 
+  231  git remote add ap https://github.com/andrzejkotwica/ap.git
+  232  git commit -m
+  233  git commit 
+  234  clear
+  235  git commit 
+  236  git commit -m
+  237  git status
+  238  git push
+  239  git push ap
+  240  git remote status
+  241  git status
+  242  git push -u ap master
+  243  git status
+  244  git log
+  245  git status
+  246  git commit -a
+  247  git status
+  248  git commit -m
+  249  git commit -mq
+  250  git status
+  251  git commit -m
+  252  git commit
+  253  cd ..
+  254  git commit
+  255  git remote add origin https://github.com/andrzejkotwica/ap.git
+  256  git push -u origin master
+  257  git remote add origin git@github.com:andrzejkotwica/ap.git
+  258  git remote add ako git@github.com:andrzejkotwica/ap.git
+  259  git push -u ako master
+  260  git pull --rebase
+  261  git pull --rebase ako master
+  262  git push
+  263  git push ako branch
+  264  git config --global 
+  265  git push -u ako master
+  266  git push -u
+  267  git push --set upstream ako master
+  268  git push 
+  269  git config --global push.default
+  270  git config --global push.default current
+  271  git push -u
+  272  git push -u ako master
+  273  git remote add ap2 https://github.com/andrzejkotwica/ap.git
+  274  git remote
+  275  git push -u ap2 master
+  276  git commit -am
+  277  git commit -m
+  278  git commit -a
+  279  git status
+  280  git rm Animacja_JS
+  281  git status
+  282  git commit -a
+  283  git commit 
+  284  git push -u ap2 master
+  285  git remote -v
+  286  git commit -m "aaaaa"
+  287  git status
+  288  git push -u ap2 master
+  289  git status
+  290  git pull ap2
+  291  git status
+  292  git commit -m "aaaaa"
+  293  git status
+  294  git pull ap2
+  295  git status
+  296  git diff --check
+  297  git commit -am
+  298  git commit -m
+  299  git commit 
+  300  git push -u ap2 master
+  301  git status
+  302  git commit 
+  303  git commit master
+  304  git commit ap2/master
+  305  git commit -m "aaaaa"
+  306  git pull ap2
+  307  git push -u ap2 master
+  308  git add .
+  309  git status
+  310  git commit -m "aaaaa"
+  311  git push
+  312  git pull
+  313  git status
+  314  git commit -m 
+  315  git add .
+  316  git commit -m 
+  317  git commit 
+  318  git status
+  319  git push
+  320  git status
+  321  exit
+  322  cd Pulpit
+  323  ls
+  324  cp xamp_mgr /home/ako
+  325  cd..
+  326  cd ..
+  327  ls
+  328  sudo ./xamp_mgr
+  329  git init
+  330  git add README.md
+  331  git commit -m "pierwsze wyslanie"
+  332  git remote add ap3 https://github.com/andrzejkotwica/ap.git
+  333  git push -u ap3 master
+  334  git push -u origin master
+  335  git push -u ap3 master
+  336  git remote show
+  337  git status
+  338  cd /
+  339  cd opt/lampp/htdocs/ako
+  340  git status
+  341  git remote show
+  342  git push -u ap2 master
+  343  git push -u origin master
+  344  mc
+  345  exit
+  346  ./ako
+  347  ln -s opt/lampp/htdocs/ako /home/ako
+  348  ./ako
+  349  ln -s opt/lampp/htdocs/ako 
+  350  ./ako
+  351  ln -s /opt/lampp/htdocs/ako /home/ako/ap 
+  352  cd ap
+  353  ls
+  354* 
+  355  git remote show
+  356  git remote remove ako
+  357  git remote remove ap
+  358  git remote remove origin
+  359  git remote show
+  360  git remote ap2
+  361  git remote ap2 master
+  362  git status
+  363  git pull
+  364  git status
+  365  git add .
+  366  git status
+  367  git pull
+  368  git push -u ap2 master
+  369  git pull
+  370  git remote ap2 master
+  371  git remote show
+  372  git pull
+  373  git status
+  374  git commit
+  375  git status
+  376  git push -u ap2 master
+  377  git status
+  378  git add .
+  379* git 
+  380  git push -u ap2 master
+  381  git status
+  382  git add .
+  383  git status
+  384  git push -u ap2 master
+  385  git status
+  386  git reset HEAD zamow.html
+  387  git status
+  388  git push -u ap2 master
+  389  git status
+  390  git config --list
+  391  git commit -m "ostatnio"
+  392  git add .
+  393  git status
+  394  git commit -m "ostatnio"
+  395  git status
+  396  git push -u ap2 master
+  397  cat
+  398  history
+  399  history > historia.txt
