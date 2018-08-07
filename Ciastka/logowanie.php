@@ -18,5 +18,4 @@ if (isset($_COOKIE['login']))
               </form>';
         setcookie('login', $_POST['login'], time()+30);
        }
-       echo "test GITa";
 ?>
