@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<META CHARSET="UTF-8">
+</HEAD>
+<BODY>
+  <nav>
+	<ul>
+	<li><a href="index.html">Strona główna</a></li>
+	<li><a href="contents.html">Spis treści</a></li>
+	</ul>
+</nav>
+<article>
+	<h1>Mój artykuł</h1>
+	<nav>
+		<ul>
+		<li><a href="#sec1">Rozdział 1</a></li>
+		<li><a href="#sec2">Rozdział 2</a></li>
+		</ul>
+	</nav>
+	<h2 id="sec1">Rozdział 1</h2>
+	<p>Treść rozdział 1...</p>
+	<h2 id="sec2">Rozdział 2</h2>
+	<p>Treść rozdział 2...</p>
+</article>
+
+  <article>
+	<h1>Mój pierwszy wpis na blogu</h1>
+	<p>Stało się. Postanowiłem założyć własnego bloga. Nie wiem, czy będę miał czas, aby regularnie go aktualizować, ale zrobię co w mojej mocy.</p>
+	<section>
+		<h2>Komentarze</h2>
+		<article>
+			<p>Życzę powodzenia.</p>
+		</article>
+		<article>
+			<p>Nareszcie. Bardzo się cieszę.</p>
+		</article>
+	</section>
+</article>
+
+  <FORM>
+    <INPUT TYPE="text" name="pole1" >
+    <INPUT TYPE="text" name="pole2" autofocus>
+      <fieldset disabled>
+	       <legend>Formularz</legend>
+	       <input type="text" name="pole">
+	       <input type="radio" name="opcja" value="1">
+	       <input type="radio" name="opcja" value="2">
+      </fieldset>
+    <progress>Proszę czekać</progress>
+    <meter value="0.5">0.5</meter>
+  </FORM>
+
+  <form action="form.php" method="post">
+  	<input type="submit" value="Wyślij na adres 1, w nowym oknie, pomiń walidację danych" formaction="button1.php" formmethod="get" formenctype="text/plain" formnovalidate formtarget="_blank">
+  	<input type="submit" value="Wyślij na adres 2" formaction="button2.php">
+  	<input type="submit" value="Wyślij na adres domyślny">
+  </form>
+
+<nav>
+  <menu type="toolbar">
+	<li>
+		<menu label="Plik">
+			<button type="button" onclick="fnew()">Nowy...</button>
+			<button type="button" onclick="fopen()">Otwórz...</button>
+			<button type="button" onclick="fsave()">Zapisz</button>
+			<button type="button" onclick="fsaveas()">Zapisz jako...</button>
+		</menu>
+	</li>
+	<li>
+		<menu label="Edycja">
+			<button type="button" onclick="ecopy()">Kopiuj</button>
+			<button type="button" onclick="ecut()">Wytnij</button>
+			<button type="button" onclick="epaste()">Wklej</button>
+		</menu>
+	</li>
+	<li>
+		<menu label="Pomoc">
+			<li><a href="help.html">Pomoc</a></li>
+			<li><a href="about.html">O programie</a></li>
+		</menu>
+	</li>
+</menu>
+</nav>
+
+<form action="?" name="formularz">
+	<label>Podaj owoc: <input type="text" name="owoc" contextmenu="owoce"></label>
+	<menu type="context" id="owoce">
+		<command label="jabłko" onclick="document.forms.formularz.elements.owoc.value = 'jabłko'">
+		<command label="gruszka" onclick="document.forms.formularz.elements.owoc.value = 'gruszka'">
+		<command label="banan" onclick="document.forms.formularz.elements.owoc.value = 'banan'">
+	</menu>
+</form>
+
+<hr>
+<!-- szablon strony -->
+
+
+		<div id="top">
+			<header id="NAGLOWEK">Nagłówek szablonu</header>
+			<nav id="MENU">Menu nawigacyjne</nav>
+			<aside id="INFORMACJE">Dodatkowe informacje</aside>
+			<article id="TRESC">Treść strony</article>
+			<footer id="STOPKA">Stopka serwisu</footer>
+		</div>
+<time datetime="1980-01-01 09:00">1 stycznia 1980, godz. 9.00</time>
+</BODY>
+</HTML>
