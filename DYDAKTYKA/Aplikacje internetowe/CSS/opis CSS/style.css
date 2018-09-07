@@ -1,0 +1,111 @@
+body															/* ===== Modyfikacja body  ===== */
+{																
+	margin: 0;												/* Usuniecie marginesów z całej strony ( białej obramówki ) */
+	font-family: 'Montserrat';						/* Ustawienie czcionki domyślnej na stronie na ' Montserrat ' */
+}
+
+a																/*  ===== Modyfikowanie odnośnika ===== */
+{
+	text-decoration: none;							/* Usunięcie podkreślenia */
+	color: white;											/* Ustawienie koloru tekstu odnośnika na : biały */
+}
+
+#nav														/* ===== Modyfikacja div'u paska nawigacji "nav" ===== */
+{
+	width: 100%;											/* Ustawienie szerokości paska na : 100% całej strony */
+	height: 5%;											/* Ustawienie wysokości paska na : 5% całej strony */
+	background-color: black;						/* Ustawienie koloru tła na : czarny */
+	float: left;												/* Przyleganie do lewej strony ( standard ) */
+}
+
+#nav ul														/* ===== Modyfikacja listu nienumerowanej w div'ie paska nawigacji "nav" ===== */
+{
+	list-style-type: none;								/* Usunięcie znaczników listy */
+	margin: 0;												/* Usunięcie marginesów zewnętrznych listy */
+	padding: 0;											/* Usunięcie marginesów wewnętrznych listy */
+}
+
+#nav li a													/* ===== Modyfikacja odnośnika w elemencie listy ===== */
+{
+	display: inline-block;								/* Wyświetlanie elementu listy w linii, oraz jako blok */
+	height: 100%;										/* Ustawienie wysokości odnośnika w elemencie listy na 100% całego div'a */
+	padding: 1%;										/* Ustawienie marginesów wewnętrznych odnośnika w elemencie listy na 1% całego div'a */
+	float: right;											/* Przyleganie do lewej strony ( standard ) */
+}
+
+#nav li a:hover											/* ===== Modyfikacja najechania myszką na odnośnik w elemencie listy ===== */
+{
+	background-color: grey;							/* Ustawienie koloru tła odnośnika w elemencie listy na : szare */
+}
+#naglowek												/* ===== Modyfikacja div'a nagłówka "naglowek" ===== */
+{
+	text-align: center;									/* Wyrównanie tekstu do środka */
+	font-size: 32px;										/* Ustawienie wielkości czcionki na : 32 pixele */
+	width: 100%;											/* Ustawienie szerokości div'a na : 100% całej strony */
+	height: 15%;											/* Ustawienie wysokości div'a na : 15% całej strony */
+	background-color: navy;						/* Ustawienie koloru tła na : granatowy */
+	color: white;											/* Ustawienie koloru czcionki na : biały */
+	float: left;												/* Przyleganie do lewej strony ( standard ) */
+}
+
+#menu 														/* ===== Modyfikacja div'a menu "menu" ===== */
+{
+	text-align: center;									/* Wyrównanie tekstu do środka */
+	font-size: 20px;										/* Ustawienie wielkości czcionki na : 20 px */
+	width: 15%;											/* Ustawienie szerokości div'a na : 15% szerokości strony */
+	height: 77%;											/* Ustawienie wysokości div'a na : 77% wysokości strony */
+	background-color: navy;						/* Ustawienie koloru tła na : granatowy */
+	float: left;												/* Przyleganie do lewej strony ( standard ) */
+}
+
+#menu ul													/* ===== Modyfikacja listy nienumerowanej w div'ie menu "menu" ===== */
+{
+	list-style-type: none;								/* Usunięcie znaczników listy */
+	margin: 0;												/* Usunięcie marginesów wewnętrznych */
+	padding: 0;											/* Usunięcie marginesów zewnętrznych */
+}
+
+#menu li a												/* ===== Modyfikacja odnośnika w elemencie listy w div'ie "menu" ===== */
+{
+	display: block;										/* Wyświetlanie jako blok */
+	text-align: center;									/* Wyrównanie tekstu do środka */
+	width: 100%;											/* Ustawienie szerokości na : 100% szerokości div'a menu */
+	padding-top: 15%;									/* Ustawienie marginesu wewnętrznego górnego na : 15% div'a menu */
+	padding-bottom: 15%;							/* Ustawienie marginesu wewnętrznego dolnego na : 15% div'a menu */
+}
+
+#menu li a:hover										/* ===== Modyfikacja odnośnika w elemencie listy po najechaniu ===== */
+{
+	background-color: grey;							/* Ustawienie koloru tła na : szary */
+}
+
+#tresc														/* ===== Modyfikacja div'a treść "tresc" ===== */
+{
+	background-color: blue;							/* Ustawienie koloru tła na : niebieski */
+	width: 85%;											/* Ustawienie szerokości div'a na : 85% szerokości strony */
+	height: 77%;											/* Ustawienie wysokości div'a na : 77% szerokości strony */
+	float: left;												/* Przyleganie do lewej strony ( standard ) */
+}
+
+#tresc p													/* ===== Modyfikacja tekstu w div'ie tresc  "tresc" ===== */
+{
+	padding: 1%;										/* Ustawienie marginesów wewnętrznych na : 1% całego div'a */
+	margin-left: 1%;									/* Ustawienie marginesu lewego zewnętrznego na : 1% całego div'a */
+	color: white;											/* Ustawienie koloru odnośnika na : biały */
+}
+
+#stopka													/* ===== Modyfikacja div'a stopka "stopka" ===== */
+{
+	font-style: italic;									/* Pochylenie tekstu */
+	width: 100%;											/* Ustawienie szerokości div'a na : 100% całej strony */
+	height: 3%;											/* Ustawienie wysokości div'a na : 3% całej strony */
+	background-color: navy;						/* Ustawienie koloru tła na : granatowy */
+	font-size: 10px;										/* Ustawienie rozmiaru czcionki na : 10px */
+	color: white;											/* Ustawienie koloru czcionki na : biały */
+	float: left;												/* Przyleganie do lewej strony ( standard ) */
+}
+
+#stopka p													/* ===== Modyfikacja tekstu w div'ie stopka "stopka" ===== */
+{
+	float: right;											/* Przyleganie do prawej strony */
+}

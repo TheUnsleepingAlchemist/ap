@@ -1,0 +1,25 @@
+<html>
+<head>
+<title> testowanie wszystkich pola tekstowego </title>
+<SCRIPT>
+		function klik(numer)
+		{PoleTekstowe.value=opcje[numer].value }
+</SCRIPT>
+</head>
+
+<body>
+<input type="text" value="" name="PoleTekstowe" >
+<p>
+zaznacz jedn¹ z opcji
+<br>
+<input type="radio" name="opcje" value="wzorowe" onclick=klik(0)> WZOROWE <br>
+<input type="radio" name="opcje" value="dobre" onclick=klik(1)> DOBRE <br>
+<input type="radio" name="opcje" value="poprawne" onclick=klik(2)> POPRAWNE <br>
+<input type="radio" name="opcje" value="nieodpowiednie" onclick=klik(3)> NIEODPOWIEDNIE <br>
+
+</body>
+</html>
+<!-- do funkcji przekazujemy numer klikniêtej opcji
+     pola opcji numerowane s¹ od zera
+     odpowiednie nazwa z tablicy opcji wpisywana jest do pola tekstowego
+-->

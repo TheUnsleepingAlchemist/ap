@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+
+        <script>
+                
+                function calc()
+                {
+                kilo=parseInt(document.form.km.value);
+                kilo2=document.getElementById("k").value;
+                
+                switch (document.form.odpowiedz.value)
+                {
+                case "a": wynik=70*kilo; break;
+                case "b": wynik=80*kilo; break;
+                
+                default: alert("Wybierz Opcje");
+                }
+                document.form.output.value=wynik;
+                
+                }
+                
+                </script>
+
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="remont.css">
+    
+    
+	<title>Remonty mieszkań</title>
+	
+	
+	
+</head>
+<body>
+
+	<div id="menu">
+			<table align="center">
+					<td valign="center" width="200"><img src="logo.jpg" /><br></td>
+					<td valign="top" width="200"><a href="index.html">O FIRMIE</a></td>
+					<td valign="top" width="200"><a href="adres.html">ADRES</a></td>
+					<td valign="top" width="200"><a href="policz.html">POLICZ</a></td>
+					<td valign="top" width="200"><a target="_blank" href="http://jakremontowac.pl">LINKI</td>
+				</table>
+		
+	</div>
+	<div id="glowny">
+        <h1>Kafelkowanei łazienki</h1>
+            <form name="form">
+                    <p> Powierzchnia w  m<sup>2</sup></br>
+                    <input type ="number" name="km" id="k" min="1" max="999999"></p>
+                    <input type="radio" name="odpowiedz"  value="a" /> Płytki 20 x 20 cm<br>
+                    <input type="radio" name="odpowiedz"  value="b"/>Płytki 25 x 12 cm<br>
+                    
+                        <button type="button" onClick="calc()" name="odpowiedz" size=1>Przelicz</button>
+                    
+                    </br></br>
+                    Koszt kafelkowania <input name="output"  type="button" style="width: 70px; height: 25px"> zł
+                    
+    </div>
+    
+		<div id="footer">
+			Mateusz Matyga 98070809832
+		</div>
+		
+	
+	</div>
+
+</body>
+</html>
+		
+		

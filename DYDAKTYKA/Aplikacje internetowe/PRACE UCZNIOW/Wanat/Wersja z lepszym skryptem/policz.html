@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Remonty mieszkań</title>
+<meta charset="utf-8">
+
+<head>
+
+<script>
+function Oblicz()
+{
+ 
+ wynik = parseInt(form.liczba.value);
+ var c=0;
+ 
+
+      if (document.form.odp[0].checked)
+      c= wynik*70; 
+ 
+      if (document.form.odp[1].checked)
+      c= wynik*80;
+ 
+ 
+	  
+
+	  
+ 
+
+
+
+document.getElementById("123").innerHTML = c+"zł";
+
+
+
+
+}
+</script>
+
+
+
+
+</head>
+
+
+ <link rel="Stylesheet" type="text/css" href="remont.css" />
+</head>
+<body>
+
+
+
+
+<div id="naglowek"> <div id="menu"> <h1> obrazek  </h1> </div> 
+<div id="menu" ><a href="Index.html"> o firmie  </a> </div> 
+<div id="menu" ><a href="adres.html"> adres  </a> </div> 
+<div id="menu"> <a href="policz.html"> policz  </a> </div> 
+<div id="menu"> <a href="http://jakremontowac.pl/"  target="_balnk"> linki </a> </div> 
+
+</div>
+
+
+
+<div name="hihi"  id="tresc">   
+
+
+<h1> Kafelkowanie Łazienki</h1>
+
+
+
+
+<form name="form">
+
+powierzchnia w m^2<input name="liczba" type="number" min="0"><br>
+
+
+
+<input type="radio" name="odp" value="a"/>  Płytki 20x20 cm <br>
+
+<input type="radio" name="odp" value="b"/> Płytki 25x12 cm<br> 
+
+
+
+
+
+<input value="oblicz" type="button" onclick="Oblicz()" />
+<div id="123" > </div>
+
+</form>
+
+
+
+ 
+ </div> 
+
+
+
+
+<div id="stopka">   Autor strony:000000000  </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
+

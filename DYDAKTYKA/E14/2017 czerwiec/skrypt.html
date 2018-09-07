@@ -1,0 +1,20 @@
+﻿<head>
+<script>
+function fun()
+{
+if (document.form.plytki[0].checked)
+	x=form.pole1.value*80;
+if (document.form.plytki[1].checked)
+   x=form.pole1.value*50; 
+document.getElementById("wartosc").innerHTML="Koszt kafelkowania = " +x + "zł";
+}
+</script>
+</head>
+<form name="form">
+<h1>Kafelkowanie łazienki</h1>
+powierzchnia:<input type=number name="pole1" min=0 max=100><br>
+<input type=radio name="plytki" value="1" id="c1">płytki 20x20<br>
+<input type=radio name="plytki" value="2" id="c2">płytki 15x15<br>
+<input value="Policz" name="policz" type="button" value="policz" onClick="fun()" />
+<p id=wartosc></p>
+</form>

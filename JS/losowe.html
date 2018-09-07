@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+function los()
+{ //liczba=2;
+liczba=Math.random()*10;
+liczba=Math.round(liczba);
+//alert("losowa liczba"+liczba);
+document.sumowanie.pole1.value=liczba;
+ }
+</script>
+</head>
+<body>
+<form name="sumowanie">
+<input type="text" name="pole1" value="">
+<input type="button" name="wykonaj" value="wylosuj" onclick="los()" />
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+#blok_glowny
+{
+    text-align:left;
+    float:left;
+    clear:both;
+    width:100%;
+    height:300px;
+}
+
+h1
+{
+	color:#33CC00;
+	text-align:center;
+	font-size:30px;
+}
+h2
+{
+    font-family: arial;
+    color:#003300;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+p
+{
+	font-size:20px;
+}
+
+#menu>ol>li>a
+{
+	color:white;
+}
+
+#menu>ol>li 
+{
+	width:150px;
+	color:white;
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	display:inline-block;
+	text-decoration:none;
+}
+
+ul>li
+{
+	width:150px;
+	color:black;
+	padding:0;
+	margin:0;
+	font-size:20px;
+	text-align:center;
+	
+}
+
+button>a
+{
+	color:white;
+	text-decoration:none;
+}
+
+button
+{
+    font-weight: 900;
+    text-align: center;
+    padding: 15px;
+    color:white;
+    background:green;
+    border:1px solid green;
+}
+
+#button
+{
+    font-weight: 900;
+    text-align: center;
+    padding: 15px;
+    color:white;
+    background:green;
+    border:1px solid green;
+}
+
+#menu
+{
+    font-size: :150%;
+    background-color:#33CC00;
+    text-align:center;
+    float:left;
+    clear:both;
+    width:100%;
+    height:220px;
+}
+
+#stopka
+{
+    background-color:#33FF33;
+    text-align:center;
+    clear:both;
+    width:100%;
+    height:5%;
+    font-size: 150%;
+}

@@ -1,0 +1,5 @@
+﻿1. Na stronie umieść dowolny obrazek o rozmiarze 10x100 w pozycji (100,150)
+2. Dodaj kilka linków do stron w sieci lub podstron 
+twojej strony www. Stwórz własną wersję formatowania 
+wstawionych odnośników, użyj pseudoklasy. (np. przy najechaniu myszą na odnośnik 
+zmienia się rozstaw liter lub pochla sie tekst, zmienia sie kolor itp.).

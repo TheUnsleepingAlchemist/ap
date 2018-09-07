@@ -1,0 +1,44 @@
+body {
+	background-image: url("../grafika/tlo.jpg");
+	font-family: Verdana;
+}
+
+img {
+	padding-top: 10%;
+}
+
+div#main {
+	width: 100%;
+	height: 100%;
+}
+
+div#naglowek {
+	clear: both;
+	width: 100%;
+	height: 20%;
+	border: solid 1px black;
+}
+
+div#menu {
+	float: left;
+	width: 19.5%;
+	height: 70%;
+	border: solid 1px black;
+}
+
+div#tresc {
+	text-align: center;
+	float: right;
+	width: 80%;
+	height: 70%;
+	border: solid 1px black;
+	font-size: 20px;
+}
+
+div#stopka {
+	text-align: right;
+	clear: both;
+	width: 100%;
+	height: 10%;
+	border: solid 1px black;
+}

@@ -1,0 +1,8 @@
+﻿imię i nazwisko
+płeć
+stanowsko w pracy (nie polem textowym)
+wykształcenie
+komentarz
+sakąd dowiedziałeś się o czasopiśmie
+reset danych
+przycisk wysyłania formularza na pocztę

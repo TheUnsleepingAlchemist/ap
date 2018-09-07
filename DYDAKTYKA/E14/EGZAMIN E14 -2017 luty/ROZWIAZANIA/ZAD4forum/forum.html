@@ -1,0 +1,47 @@
+﻿<html>
+<head>
+<meta charset="utf-8">
+<title>Forum Hobbistyczne</title>
+<link rel="stylesheet" href="hobby.css" />
+</head>
+<body>
+<div id="pojemnik">
+
+	<div id="baner">
+			<h1> Forum Hobbistyczne</h1>
+	</div>
+
+	<div id="lewy">
+		<h3> Formularz rejestracyjny do forum </h3> 
+		<p>Twoje dane</p>
+		<form action="rejestracja.php" method="POST">
+			Nik:<br><INPUT type="text" name="nik"><br>
+			Hobby:<br><INPUT type="text" name="hobby"><br>
+			Zawód:<br> <INPUT type="text" name="zawod"><br>
+			<INPUT type="radio" name="plec" value="K"> Kobieta <INPUT type="radio" name="plec" value="M"> Mężczyzna 
+			<HR>
+			<p>Dane logowania:</p>
+			Login:<br> <INPUT type="text" name="login"><br>
+			Hasło:<br> <INPUT type="password" name="haslo"><br>
+			<INPUT type="checkbox" checked="checked"> <a href="polityka.txt" target="okno">Zapoznałem się zpolityką bezpieczeństwa</a><br>
+			<INPUT type="submit" value="Rejestruj">
+			<INPUT type="reset" value="Wyczyść">
+		</form>	
+	</div>
+
+	<div id="prawy">
+		<h3> Tematy na forum </h3> 
+		<ul>
+			<li>Hodowla zwierząt</li>
+				<ul type="circle">
+					<li>Psy</li>
+					<li>Koty</li>
+				</ul>	
+			<li>Muzyka</li>
+			<li>Gry komputerowe</li>
+		</ul>
+	</div>
+
+</div>
+</body>
+</html>

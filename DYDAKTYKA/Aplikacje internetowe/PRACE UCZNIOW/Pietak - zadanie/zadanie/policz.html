@@ -1,0 +1,44 @@
+<html>
+<head>
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<link rel="Stylesheet" type="text/css" href="remont.css" />
+<meta charset="utf-8">
+<title> Remonty Mieszkań </title>
+<script>		
+	function przelicz()
+		{									
+		if (document.form.wybor[0].checked)
+										
+			wynik = form.numer.value * 70;
+
+		if (document.form.wybor[1].checked)
+
+			wynik= form.numer.value * 80;
+								
+		document.getElementById("wartosc").innerHTML ="Koszt łączny: " + wynik;
+		}
+</script>
+</head>
+<body>
+	<div id="menu">
+		<div class="menu">Obrazek</div>
+		<div class="menu"><a href="index.html">O FIRMIE</a></div>
+		<div class="menu"><a href="adres.html">ADRES</a></div>
+		<div class="menu"><a href="policz.html">POLICZ</a></div>
+		<div class="menu"><a href="http://jakremontowac.pl/">LINKI</a></div>
+	</div>
+	<div id="glowny">
+	<form name="form">
+		<h1> Kafelkowanie łazienki </h1>
+			<p> powierzchnia w m^2 </p><input type="number" name="numer"><br>
+			<input type="radio" name="wybor" value="A"> Płytki 20 x 20 cm<br>
+			<input type="radio" name="wybor" value="B"> Płytki 25 x 12 cm<br>
+			<input type="button" id="przycisk" value="Przelicz" onClick="przelicz()">
+			<p id="wartosc"></p>
+	</form>
+	</div>
+	<div id="stopka">
+		<p> Autor strony: 98051407730 </p>
+	</div>
+</body>
+</html>

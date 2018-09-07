@@ -1,0 +1,32 @@
+﻿body 
+{background: #127653;
+font-family:Arial;
+}
+h1 
+{color: yellow;
+
+}
+a:hover {
+letter-spacing: 10px;
+font-weight:bold;
+color:red;
+}
+#naglowek {
+background:red;
+width:100%;
+height:20%;}
+#naw {background:blue;
+border:2px solid navy;
+border-color:pink;
+width:40%;
+height:70%;
+float:left;}
+#wynik{background:green;
+width:59%;
+height:70%;
+float:left;}
+#stopka{background:yellow;
+width:100%;
+height:10%;
+float:left;
+}

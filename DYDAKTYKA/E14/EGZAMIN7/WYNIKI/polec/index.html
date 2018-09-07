@@ -1,0 +1,24 @@
+﻿<html>
+<head>
+<link rel="stylesheet" type="text/css" href="./style/styl.css" />
+<script src="skrypty/data.js" language=javascript type="text/javascript"></script>
+</head>
+<body onLoad="Dzisiaj()">
+<div id="strona">
+<div id="naglowek"><center><h3>Witamy na naszej stronie</h3></center></div>
+<div id="stopka"></div>
+<div id="menu">
+<center><br />Menu:</center><ul>
+<li><a href="firma.html" target="osiem">O firmie</a></li>
+<li>Opis roweru</li>
+</ul>
+<center><img src="grafika/rowermapa.jpg" usemap="#mapa_rower" width="200" height="120" /></center>
+<map name="mapa_rower">
+	<area shape="circle" coords="133, 33, 10" href="siodelko.html" title="siodelko" target="osiem">
+	<area shape="circle" coords="55, 10, 20" href="kierownica.html" title="kierownica" target="osiem">
+	<area shape="circle" coords="100, 50, 20" href="rama.html" title="rama" target="osiem">
+</map>
+</div>
+<div id="tresc"><iframe name="osiem" src="tekst.html" id="tresci"></iframe></div>
+</body>
+</html>

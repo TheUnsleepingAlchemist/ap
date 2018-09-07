@@ -1,0 +1,22 @@
+﻿<html>
+<body>
+<script>
+function losowanie()
+{
+i=parseInt(form.liczba.value);
+var liczba = Math.random()*10;
+liczba2=Math.round(liczba);
+		document.write (liczba2);
+if (i==liczba2)
+alert ("WYGRALES!!!!!!!!");
+else
+alert ("Graj dalej!!!!!!!!");		
+}		
+</script>
+<form name="form">
+Podaj liczbe z zakresu 1-10: 
+<input name="liczba" type="text" value="">
+<input type="button" name="przycisk" value="Sprawdz" onClick="losowanie()">
+</form>
+</body>
+</html>

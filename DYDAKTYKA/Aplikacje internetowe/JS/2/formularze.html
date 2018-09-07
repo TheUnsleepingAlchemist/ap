@@ -1,0 +1,18 @@
+<html><head></head><body>
+<script>
+function calc()
+{
+	a = parseInt(form.pole1.value);
+	b = parseInt(form.pole2.value);
+	wynik = (a+b);
+	document.form.output.value=wynik;
+}
+</script>
+<form name="form">
+<input value="" name="pole1" type="text"> + 
+<input value="" name="pole2" type="text"> = 
+<input value="wynik" name="output" type="text">
+<br>
+<input value="oblicz" name="calculate" type="button" value="calculate" onclick="calc()" />
+</form>
+</body></html>

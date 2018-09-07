@@ -1,0 +1,26 @@
+﻿<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style/styl.css" />
+<script type="text/javascript" src="skrypty/data.js"></script>
+</head>
+<body onLoad="Dzisiaj()">
+<div id="main">
+<div id="naglowek"></div>
+<div id="menu">
+<center><br />Menu:</center><ul>
+<li><a href="firma.html" target="tresci">O firmie</a></li>
+<li><a href="cennik.php" target="tresci">Cennik</a></li>
+</ul>
+<center>Opis roweru:</center>
+<center><img src="grafika/rowermapa.jpg" usemap="#mapa_rower" width="200" height="120" /></center>
+<map name="mapa_rower">
+	<area shape="circle" coords="135, 35, 10" href="siodelko.html" title="Siodełko" target="tresci">
+	<area shape="circle" coords="55, 10, 20" href="kierownica.html" title="Kierownica" target="tresci">
+	<area shape="circle" coords="100, 50, 20" href="rama.html" title="Rama" target="tresci">
+</map>
+</div>
+<div id="tresc"><iframe src="rower.html" id="frejm" name="tresci" width="100%" height="100%"></iframe></div>
+<div id="stopka"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<script>
+function sprawdzanie(){
+	var has1 = document.getElementById("form1").value;
+	var has = document.getElementById("form1");
+	var n = has.value.length;
+	var reg = /[0-9]/g;
+var ntab = has1.match(reg);
+    
+if (n<1)
+	alert("Nie wpisa³eœ has³a");
+	else{
+		if (n >= 8){
+			if(ntab!=null) alert("Mocne");
+			else alert ("Dobre");
+			
+					}
+				if (n < 8)
+					alert("S³abe");
+					
+	}
+	}
+
+
+</script>
+<body>
+
+  <input id= "form1" type="text">
+  <input type="button" value="Sprawdz" onclick="sprawdzanie()">
+
+</body>
+</html>

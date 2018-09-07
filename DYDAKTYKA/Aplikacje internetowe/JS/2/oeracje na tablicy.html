@@ -1,0 +1,25 @@
+﻿<html>
+<script>
+var licznik=0;
+var suma=0;
+var tab=new Array(10);
+for (i=0;i<10;i++)
+{
+liczba = Math.random()*10;
+liczba=Math.round(liczba);
+tab[i]=liczba;
+}
+document.write("<br>")
+for (j=0;j<10;j++)
+{
+suma+=tab[j];
+if (!(tab[j]%2))
+ document.write(tab[j]+", ");
+if (tab[j]==5)
+licznik++; 
+}
+document.write("<br>"+"suma tablicy="+suma);
+document.write("<br>"+"ilosc 5="+licznik);
+</script>
+
+</html>

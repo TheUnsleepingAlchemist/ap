@@ -1,0 +1,89 @@
+body {
+    
+		color: black;
+		margin-left: 200px;
+		margin-right: 200px;
+}
+
+
+img#logo {
+	height: 200px;
+	width: 846px;
+}
+
+
+#menu{
+	width: 98%; 
+	height: 25px; 
+	background-color: 79b0ff;
+	float: left;
+	text-align: center;
+	
+	
+}
+#menua {
+	padding-left: 25px;
+	padding-right: 25px;
+	cursor: pointer;
+	}
+
+#linkia {
+	padding-left: 5px;
+	padding-right: 5px;
+	cursor: pointer;
+	color: black;
+	text-decoration: none;
+}	
+
+#obrazeg{
+	height: 300px;
+	width: 630px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+	
+button {
+	height: 50px;
+	width: 100px;
+	cursor: pointer;
+
+}
+	
+#tresc{
+	width: 78%; 
+	height: 75%; 
+//	background-color: blue;
+	float: left;
+}
+
+#dane{
+	width: 20%;
+	height: 25%;
+//	background-color: green;
+	float: left;
+	text-align: center;
+}
+
+#linki{
+	width: 20%;
+	height: 25%;
+//	background-color: cyan;
+	float: left;
+}
+
+#motto{
+	width: 20%;
+	height: 25%;
+//	background-color: purple;
+	float: left;
+	text-align: center;
+}
+
+img#obrazek {
+	padding-left: 200px;
+	padding-right: 200px;
+	padding-top: 200px;
+}
+

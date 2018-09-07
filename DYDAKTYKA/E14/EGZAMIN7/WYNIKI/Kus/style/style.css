@@ -1,0 +1,40 @@
+	#container
+	{
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+			outline-style: solid;
+		outline-color: black;
+		background-image: url('grafika\tlo.jpg');
+	}
+	#logo
+	{
+		padding: 15px;
+	}
+	#nav
+	{
+		float: left;
+		width: 120px;
+		min-height: 593px;
+		padding: 10px;
+			outline-style: solid;
+	outline-color: black;
+	}
+	#content
+	{
+		float: left;
+		padding: 9px;
+		width: 840px;
+			outline-style: solid;
+	outline-color: black;
+	}
+	
+	#footer
+	{
+		clear: both;
+		color: black;
+		text-align: center;
+		padding: 20px;
+			outline-style: solid;
+	outline-color: black;
+	}

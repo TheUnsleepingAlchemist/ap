@@ -1,0 +1,32 @@
+
+<html>
+<head>
+<script>
+	function NoweOkno()
+	{
+	okienko=window.open("","","scrollbars=no,width=200,height=200")
+	okienko.document.write("<H3> To jest nowe okno </H3>")
+	}
+	function NowszeOkno(strona)
+	{
+	okienko=window.open(strona,"","scrollbars=no,width=200,height=200")
+	}
+</script>
+</head>
+
+<body>
+	<input type="button" name="okno1" value="OKNO" onclick=NoweOkno()>
+	<br>
+	<input type="button" name="okno2" value="OKNO NOWSZE" onclick=NowszeOkno("form16.htm")>
+<script>
+</script>
+</body>
+
+</html>
+
+<!--
+	otwieramy nowe okno o nazwie OKNO1
+	wpisujemy do nigo tekst
+	otwieramy nowe okno o nazwie OKNO2
+	w jego wnêtrzy wyœwietlamy stronê HTML
+-->

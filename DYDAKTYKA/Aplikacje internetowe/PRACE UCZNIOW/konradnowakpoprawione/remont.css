@@ -1,0 +1,110 @@
+body
+{
+	margin:0;
+}
+
+
+#blok_glowny
+{
+    text-align:left;
+    float:left;
+    clear:both;
+    width:100%;
+    height:300px;
+}
+
+h1
+{
+	color:#1BA352;
+	text-align:center;
+	font-size:30px;
+}
+h2
+{
+    font-family: arial;
+    color:darkgreen;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+p
+{
+	font-size:20px;
+}
+
+#menu>ol>li>a
+{
+	color:white;
+	list-style-type:none;
+}
+
+#menu>ol>li 
+{
+	width:24%;
+	color:white;
+	padding:0;
+	margin-left:auto;
+	margin-right:auto;
+	float:left;
+	list-style-type:none;
+	text-decoration:none;
+	display:inline-block;
+	text-align:center;
+
+}
+
+ul>li
+{
+	width:150px;
+	color:black;
+	padding:0;
+	margin:0;
+	font-size:20px;
+}
+
+button>a
+{
+	color:white;
+	text-decoration:none;
+}
+
+button
+{
+    font-weight: 900;
+    text-align: center;
+    padding: 15px;
+    color:white;
+    background:green;
+    border:1px solid green;
+}
+
+#button
+{
+    font-weight: 900;
+    text-align: center;
+    padding: 15px;
+    color:white;
+    background:green;
+    border:1px solid green;
+}
+
+#menu
+{
+    font-size: :150%;
+    background-color:#39B46B;
+    text-align:center;
+    width:100%;
+    height:220px;
+	list-style-type:none;
+	display:inline-block;
+}
+
+#stopka
+{
+    background-color:#39b46B;
+    text-align:center;
+    clear:both;
+    width:100%;
+    height:5%;
+    font-size: 150%;
+}

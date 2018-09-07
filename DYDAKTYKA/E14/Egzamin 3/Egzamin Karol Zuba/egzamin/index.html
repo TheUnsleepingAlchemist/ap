@@ -1,0 +1,73 @@
+<html>
+<head>
+<script>
+function haslo(){
+	var target = "<html><body><table><tr><td>1. Jurand ze Spychowa</td></tr><tr><td>2. Zbyszko z Bogdanca</td></tr><tr><td>3. Janusz z Wachocka</td></tr></table></body></html>";
+	var haslo = prompt("Podaj hasło aby przejść:");
+	if (haslo == "belfer") {
+		document.getElementById('tresc').innerHTML = target;
+	
+	} else {
+		alert ("Niepoprawne haslo!");
+	}
+}
+
+function home(){
+	var cel = 'Witamy na stronie gimnazjum w Ćmielowie<br> <img src="grafiki/szkola.jpg" />';
+	document.getElementById('tresc').innerHTML = target;
+}
+
+function strona () {
+document.getElementById('tresc').innerHTML='<h1>Witamy na stronie gimnazjum w Ćmielowie</h1><br><img src="grafiki/szkola.jpg"id="obrazek" />';
+}
+function galeria() {
+document.getElementById('tresc').innerHTML='<img src="grafiki/obrazek1.jpg" id="obrazeg" /><br><img src="grafiki/obrazek2.jpg" id="obrazeg" /><br><img src="grafiki/obrazek3.jpg" id="obrazeg" /><br>';
+}
+function autor() {
+document.getElementById('tresc').innerHTML="<center><h2>Autorem strony jest Karol Zuba</h2></center>";
+}
+</script>
+<meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
+<link rel="stylesheet" type="text/css" href="style/strona.css">
+</head>
+<body>
+<div id="strona">
+
+<div id="logo">
+<img src="grafiki/logo.png" id="logo" />
+</div>
+
+<div id="menu">
+<a id="menua" onClick="strona()">Home</a> 
+<a id="menua" onClick="galeria()">Galeria</a>
+<a id="menua" onClick="autor()">Autor</a>
+</div> <!-- menu-->
+
+<div id="tresc">
+<h1>Witamy na stronie gimnazjum w Ćmielowie</h1><br>
+<img src="grafiki/szkola.jpg" id="obrazek" />
+</div> <!-- tresc-->
+
+<div id="dane">
+<h2>Dane osobowe nauczycieli:</h2><br>
+<button onClick="haslo()">Dane osobowe nauczycieli</button>
+</div> <!--dane-->
+
+<div id="linki">
+<ul>
+	<li><a id="linkia" href="http://www.zst-skarzysko.pl/" target="_blank">ZST</a></li>
+	<li><a id="linkia" href="http://www.wp.pl/" target="_blank">Wirtualna Polska</a></li>
+	<li><a id="linkia" href="http://www.onet.pl/" target="_blank">Onet</a></li>
+</div> <!--linki-->
+
+<div id="motto">
+<h2>Motto:<h2><br>
+<h3>I am the one who knocks.<h3>
+</div> <!--motto-->
+
+
+</div> <!--strona-->
+
+
+</body>
+</html>

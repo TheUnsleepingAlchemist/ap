@@ -1,0 +1,23 @@
+<html>
+<Head>
+<script>
+function licz()
+{a = parseInt(form.p1.value);
+ b = parseInt(form.p2.value);
+ suma=0;
+ for ( ;a<=b;a++)
+  suma+=a;
+document.getElementById("wstaw").innerHTML="suma="+suma;  
+}
+
+</script>
+</Head>
+<body>
+<form name="form">
+<input type="text" name="p1">
+<input type="text" name="p2">
+<input type="button" name="przycisk" value="Oblicz" onclick=licz()>
+</form>
+<p id="wstaw"></p>
+</body>
+</html>

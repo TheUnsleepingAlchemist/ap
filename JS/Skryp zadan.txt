@@ -1,0 +1,71 @@
+﻿Zad 1
+Dane są trzy zmienne a,b,c. Sprawdź, która wartość zmiennej jest największa. Pomiń wartości równe. 
+
+Zad 2
+Wyświetl na ekranie n gwiazdek poziomo za pomocą pętli while. 
+
+Zad 3
+Wyświetl na ekranie n gwiazdek pionowo za pomocą pętli for.
+
+Zad 4 
+Wyświetl na ekranie za pomocą pętli n x m  gwiazdek jak na poniższym przykładzie
+n i m wprowadz z formularza.
+
+******
+******  n
+******
+  m
+
+  
+Zad 5
+Wyświetl na ekranie za pomocą pętli n linii gwiazdek jak na poniższym przykładzie:
+*
+ *
+   *
+     * 
+
+Zad 6
+Rozwiąż równanie liniowe y=ax+b
+ax+b=0
+x=-b/a
+
+1. rów. ma roz. a!=0 
+    x=-b/a
+2. rów. sprzeczne a=0 
+3. row. ma nieskoncz. wiele roz. 
+    a=0 b=0 
+
+Zad 7 
+Oblicz sumę kolejnych liczb z podanego przedziału. Początek i koniec zakresu pobierz poprzez pola formularza.
+
+Zad 8 
+Pobierz zmienną „x” i sprawdź czy należy do przedziału od 0 do 360, jeśli tak to oblicz sin liczby x oraz oblicz pierwiastek z liczby x.
+
+zad 9
+Utwórz tablice jednowymiaromą 
+10 elementową typu całkowitego
+i nadaj jej domyślne wartości.
+
+	a) Wyszukaj najmniejszy
+	   element tablicy
+	b) oblicz iloczyn dodatnich
+		elementów
+	
+Zad 10 
+Wyszukaj ile razy powtórzył się każdy element tablicy w zainicjowanej przez ciebie dowolnej 10. elementowej tablicy liczb całkowitych.	
+
+Zad 11 
+Wprowadź zmienną całkowitą „a” i sprawdź czy należy do przedziału od 10-200. Jeżeli należy to oblicz sumę liczb od wartości zmiennej a do końca przedziłu. np a=20 suma=20+21+22 + ... + 200 
+
+𝑎
+Zad 12 
+Wprowadź dowolny ciąg znaków i sprawdź czy występuje w nim podany w formularzu znak x i ile razy się powtarza. charAt();
+
+Zad 13 
+Napisz program który liczy ile dni zostało do końca bieżącego roku.
+
+* Zad 14
+Wylosuj liczbę z przedziału od 1-10 a nstępnie za pomocą instrukcji switch wyświetl jedno z dziesięciu podanych przez ciebie przysłów. Można zastosować dowolny inny algorytm. 
+ 
+
+

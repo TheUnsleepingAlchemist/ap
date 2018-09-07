@@ -1,0 +1,63 @@
+
+<html>
+<head>
+<script>
+	function NowaGra()
+	{
+	liczba=Math.round(Math.random()*100)
+	licznik=0
+	wpisana.value=""
+	ilerazy.value=8
+	komunikat.value="Wymyœli³em liczbê pomiêdzy 1 a 100. Masz 8 prób!"
+	}
+
+	function Sprawdzaj()
+	{
+		wpis=wpisana.value
+		if (wpis=="") 
+			komunikat.value="Nic nie wpisa³eœ do pola z odpowiedziami"
+		else
+		{
+			licznik=licznik+1
+			ilerazy.value=8-licznik
+			if (licznik==8)	
+				komunikat.value="Przegra³eœ! W³aœciwa odpowiedŸ to " + liczba
+			else
+			{
+				if (wpis<liczba) komunikat.value="za ma³a"
+				if (wpis>liczba) komunikat.value="za du¿a"
+				if (wpis==liczba) komunikat.value="Odgad³eœ po " + licznik + " próbach"
+			}
+		}
+	}
+	
+</script>
+</head>
+
+<body>
+<h3>Spróbuj zgadn¹æ pomyœlan¹ przeze mnie liczbê?</h3>
+Tutaj wpisz swoj¹ odpowiedŸ
+<input type="text" name="wpisana" size=10>
+<input type="button" name="wynik" value="SPRAWD" onclick=Sprawdzaj()>
+<br><br>
+<input type="text" name="komunikat" size=48>
+<input type="text" name="ilerazy" size=1><br>
+<input type="button" name="nowa" value="NOWA GRA" onclick=NowaGra()>
+
+<script>
+	NowaGra()
+</script>
+</body>
+
+</html>
+
+<!--
+	najpierw wpisano szkielet strony - pola i przyciski
+	przycisk nowa gra  - funkcja NowaGra()
+		liczba - pomyœla³ komputer
+		licznik - ile razy zgadywa³ u¿ytkownik
+	funkcja Sprawdzaj przyypisana do przycisku sprawdŸ
+		komunikat, gdy nic nie by³o wpisane
+		gdy 8 prób to koniec
+		gdy <> lub = to komunikat
+-->

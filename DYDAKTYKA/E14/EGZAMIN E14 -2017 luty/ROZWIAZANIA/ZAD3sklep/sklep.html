@@ -1,0 +1,43 @@
+﻿<html>
+<head>
+<meta charset="utf-8">
+<title>Sklep muzyczny</title>
+<link rel="stylesheet" href="muzyka.css" />
+</head>
+<body>
+<div id="pojemnik">
+
+	<div id="baner">
+			<h1> SKLEP MUZYCZNY</h1>
+	</div>
+
+	<div id="prawy">
+		<h2> FORMULARZ REJESTRACYJNY </h2> 
+		<p>Dane osobowe</p>
+		<form action="formularz.php" method="POST">
+			Imię:<br><INPUT type="text" name="imie"><br>
+			Nazwisko:<br><INPUT type="text" name="nazwisko"><br>
+			Adres:<br><INPUT type="text" name="adres"><br>
+			Telefon:<br> <INPUT type="text" name="telefon"><br>
+			<HR>
+			<p>Dane logowania:</p>
+			Login:<br> <INPUT type="text" name="login"><br>
+			Hasło:<br> <INPUT type="password" name="haslo"><br>
+			<INPUT type="checkbox" checked="checked"> <a href="polityka.txt" target="okno">Zapoznałem się zpolityką bezpieczeństwa</a><br>
+			<INPUT type="submit" value="Rejestruj">
+			<INPUT type="reset" value="Wyczyść">
+		</form>	
+	</div>
+
+	<div id="lewy">
+		<h2> NASZA OFERTA </h2> 
+		<Ol>
+			<li>Instrumenty muzyczne</li>
+			<li>Sprzęt audio</li>
+			<li>Płyty CD</li>
+		</Ol>
+	</div>
+
+</div>
+</body>
+</html>

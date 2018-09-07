@@ -1,0 +1,46 @@
+W tym zadaniu obsługujemy bazę danych "ksiegarnia" z poziomu PHP. 
+Aby to było możliwe, należy:
+1. Zarejestrować użytkownika z uprawnieniami administratora 
+(w zadaniu jest do "root" z hasłem "") za pomocą phpMyAdmin. 
+
+2. Za pomocą poleceń SQL znajdujących się w pliku baza.sql utworzyć porzebne tabele. 
+Można te polecenia przekopiować do zakładki SQL w phpMyAdminie albo 
+skorzystać z monitora MySQL.
+
+Uczestniczysz w projekcie tworzenie witryny sklepu księgarni internetowej. Twoim zadaniem jest utworzyć:
+-------------------------------------------------------------
+Szablon strony
+Utworzenie szablonu strony zgodnego z pokazanymi stronami: grafika/index.jpg, grafika/logowanie.jpg, grafika/zakupy.jpg oraz grafika/koszyk.jpg. Strona powinna mieć szerokość 1000 pikseli. Zmiana rozmiaru strony powinna być widoczna podczas zmieniania rozmiaru okna przeglądarki.
+Wysokość nagłówka wynosi 100 pikseli. Szerokość sekcji zawierającej obszar nawigacyjny i treść strony jest dzielona przez te elementy w proporcji 1:4 (szerokość obszaru treści jest cztery razy większa od szerokości części nawigacyjnej). Czcionka strony bezszeryfowa, Arial. Rozmiar czcionki 16 pikseli, kolor navy. Tło strony, to grafika/tlo.jpg.
+
+Tworząc szablon pamiętaj o zamieszczeniu opisu strony oraz słów kluczowych i kodowaniu polskich znaków. Podaj swoje imię jako autora strony.
+Na jasnopomarańczowym pasku powinna być pokazana informacja o zalogowanym użytkowniku. 
+
+Nagłówek
+W nagłówku umieścić obrazek uzyskany po przetworzeniu "grafika/ksiazki.gif" oraz napis "Księgarnia internetowa BOOK-MAX". W napisie tekst wycentrowany. Obrazek oraz napis powinny być odsyłaczami do strony głównej.
+
+Nawigacja
+Wykonaj lewe menu stosując listę. Po najechaniu wskaźnikiem myszki na przycisk, tło staje się ciemniejsze, natomiast czcionka przyjmuje kolor biały. 
+
+Stopka strony
+Wysokość 40 pikseli, czcionka Arial koloru czarnego, pogrubiona, rozmiar 12 pikseli, odstęp między znakami 5 pikseli, tekst wyśrodkowany w poziomie i w pionie. W stopce znajduje się napis "Copyright © 2010-2015 Księgarnia internetowa BOOK-MAX" i jest linkiem do strony głównej.
+
+--------------------------------------------------------------
+Należy wykonać następujące strony:
+
+Strona główna - index.php
+Powinna zawierać listę informujacą o zaletach księgarni, taką jak na obrazku "grafika/index.jpg". Należy za pomocą dowolnego programu, utworzyć prostą animację w której pokazywane są na przemian obrazki "czyta_a.gif" oraz "czyta_b.gif". Animacja powinna być osadzona pod listą.
+
+Logowanie - logowanie.php
+Wykonaj wg. wzoru "grafika/logowanie.jpg.
+
+Zakupy - zakupy.php
+Wykonaj wg. wzoru "grafika/zakupy.jpg. Jeżeli użytkownik nie jest zalogowany, to jest pokazywany tylko komunikat "Musisz się najpierw zalogować", w przeciwnym przypadku pokazany jest aktualny stan książek zapisanych w bazie "księgarnia" (kolumna "Stan"). Aby dodać książki do koszyka, należy zaznaczyć "Kupuję" oraz określić liczbę sztuk. Przycisk "Wrzuć do koszyka zaznaczone książki" zapisuje dane do pliku tekstowego koszyk.txt
+
+Koszyk - Nie wykonuj przycisku koszyk!!!!
+
+
+--------------------------------------------------------------
+Uwaga! Wszystie utworzone przez Ciebie pliki i foldery mają się znaleźć w folderze twoje "imie i nazwisko". Skrypty PHP powinny się znajdować w folderze "php", natomiast obrazki w folderze "grafika".
+ 
+

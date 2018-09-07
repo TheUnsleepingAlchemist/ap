@@ -1,0 +1,30 @@
+<html>
+<head>
+<script>
+function los2()
+{
+ tab=new Array(10);
+ for (i=0;i<10;i++)
+ {liczba=Math.random()*10;
+  liczba=Math.round(liczba);
+  tab[i]=liczba;
+ }
+ suma=0;
+ for (j=0;j<10;j++)
+  {//document.write(tab[j]+"..");
+	 suma=suma+tab[j];
+	}
+document.sumowanie.pole1.value=suma;
+}
+</script>
+
+</head>
+<body>
+<form name="sumowanie">
+<input type="text" name="pole1">
+<input type="button" name="wykonaj" value="Suma Tablicy" onClick="los2()" />
+</body>
+
+</html>
+
+

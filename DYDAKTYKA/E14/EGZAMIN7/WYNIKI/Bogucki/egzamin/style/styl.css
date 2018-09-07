@@ -1,0 +1,41 @@
+#naglowek
+{
+	font-size:40;
+	border:3px solid black;
+	height:50px;
+}
+
+#menu
+{
+font-size:30px;
+	color:black;
+    margin-top:-3px;
+	width:190px;
+	height:562px;
+	border:3px solid black;
+	position:left;
+	right:649px;
+    
+}
+
+#tresc
+{
+	
+	color:black;
+	margin-top:-562px;
+	width:1062px;
+	height:560px;
+	border:3px solid black;
+	position:fixed;
+	right:7px;
+	
+}
+
+ #stopka
+ {
+border:3px solid black;
+	width:1980px;
+	position:fixed;
+	left:0px;
+	margin-top:1px;
+ }

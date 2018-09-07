@@ -1,0 +1,45 @@
+<style>
+	#menu
+	{
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#logo
+	{
+		background-color: green;
+		color: white;
+		text-align: center;
+		
+	}
+	#nav
+	{
+		float: left;
+		background-color: lightgray;
+		width: 120px;
+		min-height: 620px;
+		padding: 10px;
+	}
+	#content
+	{
+		float: left;
+		padding: 20px;
+		width: 640px;
+	}
+	#ad
+	{
+		float: left;
+		width: 160px;
+		min-height: 620px;
+		padding: 10px;
+		background-color: lightgray;
+	}
+	#footer
+	{
+		clear: both;
+		background-color: green;
+		color: white;
+		text-align: center;
+		padding: 20px;
+	}	
+	</style>

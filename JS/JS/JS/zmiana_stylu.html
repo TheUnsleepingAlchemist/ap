@@ -1,0 +1,23 @@
+﻿<html>
+<body>
+<p>Zmien styl strony</p>
+
+<button onclick="zmiana()">styl1</button>
+<button onclick="zmiana2()">styl2</button>
+<p id="demo">    </p>
+
+<script>
+function zmiana()
+{
+var styl1;
+styl1="<link rel='stylesheet' type='text/css' href='arkusz1.css'>";
+document.getElementById("demo").innerHTML=styl1;
+}
+function zmiana2()
+{
+document.getElementById("demo").innerHTML="<link rel='stylesheet' type='text/css' href='arkusz2.css'>";
+}
+</script>
+
+</body>
+</html>

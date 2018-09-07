@@ -1,0 +1,72 @@
+﻿<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-2">
+<link rel="stylesheet" type="text/css" href="style/styl.css">
+</head>
+<body background="grafika/tlo.jpg" onLoad="wyswietlDane()">
+<div id="naglowek">
+<div id="menu">
+<a target="tresc" href="firma.html"><h3>O firmie</h3></a>
+<a target="tresc" href="opis.html"><h3>Opis Roweru</h3></a>
+<a target="tresc" href="cennik.php"><h3>Cennik</h3></a></div>
+<div id="tresc">
+<iframe  src="home.html" name="tresc" width="900" height="500" ></iframe>
+</div>
+
+<script LANGUAGE= "JavaScript" type= "text/javascript">
+function wyswietlDane()
+{
+  var data = new Date();
+  var godziny = data.getHours();
+  var minuty = data.getMinutes();
+  var sekundy = data.getSeconds();
+  var czas = godziny;
+  czas += ((minuty < 10) ? ":0" : ":") + minuty;
+  czas += ((sekundy < 10) ? ":0" : ":") + sekundy;
+  var miesiac = data.getMonth() + 1;
+  if (miesiac < 9){
+    miesiac = "0" + miesiac;
+  }
+  var dzien = data.getDate();
+  if (dzien < 9){
+    dzien = "0" + dzien;
+  }
+  var rok = data.getYear();
+  if (rok < 1000){
+    rok = 2000 + rok - 100;
+  }
+  var dzisiaj = dzien + "." + miesiac + "." + rok;
+
+  var dzienTygodnia = data.getDay();
+  switch(dzienTygodnia){
+    case 0: dzienTygodnia = "niedziela"; break;
+    case 1: dzienTygodnia = "poniedziałek"; break;
+    case 2: dzienTygodnia = "wtorek"; break;
+    case 3: dzienTygodnia = "środa"; break;
+    case 4: dzienTygodnia = "czwartek"; break;
+    case 5: dzienTygodnia = "piątek"; break;
+    case 6: dzienTygodnia = "sobota"; break;
+  }
+
+  var tekst = "Dziś jest " + dzienTygodnia + ", " + dzisiaj;
+  tekst += "<BR>";
+  tekst += czas;
+  document.getElementById("dataLayer").innerHTML = tekst;
+  timerID = setTimeout("wyswietlDane()",1000);
+}
+
+</script>
+<DIV ID="dataLayer"
+  STYLE="
+    visibility: visible; 
+    color: blue; 
+    position: absolute; 
+    font-weight:bold;
+    top: 20;
+    left: 20;" 
+>
+
+
+</body>
+
+</html>

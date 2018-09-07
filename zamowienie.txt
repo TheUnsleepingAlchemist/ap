@@ -1,3 +1,6 @@
 08:43,15th January		-opony 		-olej 
 09:52,15th January		-opony 		-olej 
 10:00,15th January	3	-opony 	4	-olej 
+20:13,9th August	222	-opony 	22	-olej 
+20:31,9th August	33	-opony 	44	-olej 
+19:46,11th August	3	-opony 	44	-olej 

@@ -1,0 +1,1815 @@
+<HTML>
+<HEAD>
+	<TITLE> PYTANIA</TITLE>
+	<META HTTP-EQUIV="Refresh" CONTENT="1500; URL=koniec.htm">
+</HEAD>
+
+<SCRIPT LANGUAGE="JavaScript">
+function compute() {
+   var punkty, strname
+	 punkty = 0	
+	 if (document.WBB.odp3.checked) {punkty = punkty + 1}
+	 if (document.ECZ.odp.value=="odpi") {punkty = punkty + 1}
+	 if (document.ECP.odp.value=="odpf") {punkty = punkty + 1}
+	 if (document.OBA.odp[2].checked) {punkty = punkty + 1}
+	 if (document.DWR.odp.value=="GATES") {punkty = punkty + 1}
+	 if (document.ECY.odp.value=="odpe") {punkty = punkty + 1}
+	 if (document.WWB.odp[3].checked) {punkty = punkty + 1}
+	 if (document.UZG.odp.value=="odpa") {punkty = punkty + 1}
+	 if (document.URA.odp[0].checked) {punkty = punkty + 1}
+	 if (document.CAB.odp[0].checked) {punkty = punkty + 1}
+	 if (document.FFO.odp[2].checked) {punkty = punkty + 1}
+	 if (document.FFZ.odp[0].checked) {punkty = punkty + 1}
+	 if (document.FFI.odp[3].checked) {punkty = punkty + 1}
+	 if (document.FFS.odp[2].checked) {punkty = punkty + 1}
+	 if (document.CCA.odp.value=="odpowiedŸ a") {punkty = punkty + 1}
+	 if (document.CAA.odp[0].checked) {punkty = punkty + 1}
+	 if (document.BBC.odp1.checked && document.BBC.odp2.checked && document.BBC.odp3.checked) {punkty = punkty + 1}
+	 if (document.BBC.odp4.checked) {punkty = punkty - 1}
+	 if (document.FFK.odp[3].checked) {punkty = punkty + 1}
+	 if (document.ECO.odp.value=="odpc") {punkty = punkty + 1}
+	 if (document.CCB.odp.value=="odpowiedŸ a") {punkty = punkty + 1}
+	 if (document.ECB.odp.value=="odpb") {punkty = punkty + 1}
+	 if (document.ABC.odp[3].checked) {punkty = punkty + 1}
+	 if (document.URB.p7a.checked) {punkty = punkty + 1}
+	 if (document.URB.p7b.checked) {punkty = punkty + 1}
+	 if (document.URB.p7c.checked) {punkty = punkty + 1}
+	 if (document.URB.p9a.checked) {punkty = punkty + 1}
+	 if (document.URB.p9c.checked) {punkty = punkty + 1}
+	 if (document.URB.p9d.checked) {punkty = punkty + 1}
+	 if (document.URB.p10a.checked) {punkty = punkty + 1}
+	 if (document.URB.p10c.checked) {punkty = punkty + 1}
+	 if (document.URB.p11.value=="odpa") {punkty = punkty + 2}
+	 if (document.URB.p12.value=="odpb") {punkty = punkty + 2}
+	 if (document.URB.p13.value=="odpb") {punkty = punkty + 2}
+	 if (document.URB.p14.value=="odpa") {punkty = punkty + 2}
+	 if (document.URB.p15.value=="odpd") {punkty = punkty + 2}
+	 if (document.URB.p16.value=="odpb") {punkty = punkty + 2}
+	 if (document.URB.p17.value=="odpa") {punkty = punkty + 2}
+	 if (document.URB.p18.value=="odpc") {punkty = punkty + 2}
+	 if (document.URB.p19.value=="odpa") {punkty = punkty + 2}
+	 if (document.TRK.a1.value=="odpb") {punkty = punkty + 2}
+	 if (document.TRK.a2.value=="odpa") {punkty = punkty + 2}
+	 if (document.TRK.a3.value=="odpc") {punkty = punkty + 2}
+	 if (document.TRK.a4.value=="odpc") {punkty = punkty + 2}
+	 if (document.TRK.a5.value=="odpc") {punkty = punkty + 2}
+	 if (document.TRK.a6.value=="odpc") {punkty = punkty + 2}
+	 if (document.TRK.a7.value=="odpa") {punkty = punkty + 2}
+	 if (document.TRK.a8.value=="odpd") {punkty = punkty + 2}
+	 if (document.TRK.a9.value=="odpb") {punkty = punkty + 2}
+	 if (document.TRK.a10.value=="odpb") {punkty = punkty + 2}
+	 if (document.TRK.a11.value=="odpb") {punkty = punkty + 2}
+	 if (document.TRK.a12.value=="odpa") {punkty = punkty + 2}
+	 if (document.TRK.a13.value=="odpd") {punkty = punkty + 2}
+	 if (document.TRK.a14.value=="odpc") {punkty = punkty + 2}
+	 if (document.TRK.a15.value=="odpa") {punkty = punkty + 2}
+	 if (document.TRK.a16.value=="odpc") {punkty = punkty + 2}
+	 if (document.TRK.a17.value=="odpb") {punkty = punkty + 2}
+	 if (document.TRK.a19.value=="odpa") {punkty = punkty + 2}
+	 if (document.CWW.odp3.checked) {punkty = punkty + 1}
+	 if (document.CBC.odp1.checked) {punkty = punkty + 1}
+	 if (document.WDR.odp4.checked) {punkty = punkty - 1}
+	 if (document.WBB.odp1.checked) {punkty = punkty + 1}
+	 if (document.ECD.odp.value=="odpg") {punkty = punkty + 1}
+	 if (document.WDR.odp3.checked) {punkty = punkty + 1}
+	 if (document.ADB.odp[1].checked) {punkty = punkty + 1}
+	 if (document.BBM.odp[0].checked) {punkty = punkty + 1}
+	 if (document.FFU.odp[0].checked) {punkty = punkty + 1}
+	 if (document.UFI.odp[2].checked) {punkty = punkty + 1}
+	 if (document.URB.p2[1].checked) {punkty = punkty + 1}
+	 if (document.URB.p3[2].checked) {punkty = punkty + 1}
+	 if (document.UFU.odp[0].checked) {punkty = punkty + 1}
+	 if (document.UFO.odp[3].checked) {punkty = punkty + 1}
+	 if (document.UFE.odp[0].checked) {punkty = punkty + 1}
+	 if (document.CBC.odp3.checked) {punkty = punkty + 1}
+	 if (document.ECL.odp.value=="odpk") {punkty = punkty + 1}
+	 if (document.DWR.odp.value=="Gates") {punkty = punkty + 1}
+	 if (document.ECE.odp.value=="odpd") {punkty = punkty + 1}
+	 if (document.ECI.odp.value=="odpj") {punkty = punkty + 1}
+	 if (document.WDR.odp1.checked) {punkty = punkty - 1}
+	 if (document.DWR.odp.value=="gates") {punkty = punkty + 1}
+	 if (document.KWW.odp[0].checked) {punkty = punkty + 1}
+	 if (document.CWW.odp4.checked) {punkty = punkty + 1}
+	 if (document.WBB.odp2.checked) {punkty = punkty + 1}
+	 if (document.DDR.odp.value=="cache") {punkty = punkty + 1}
+	 if (document.DDR.odp.value=="Cache") {punkty = punkty + 1}
+	 if (document.ECU.odp.value=="odph") {punkty = punkty + 1}
+	 if (document.DDR.odp.value=="CACHE") {punkty = punkty + 1}
+	 if (document.WDR.odp2.checked) {punkty = punkty - 1}
+	 if (document.CWW.odp1.checked) {punkty = punkty + 1}
+
+	if (document.P1.odp[3].checked) {punkty = punkty + 1}
+	if (document.P2.odp.value=="odpowiedŸ a") {punkty = punkty + 1}
+	if (document.P4.I.checked) {punkty = punkty + 1}
+	if (document.P4.IIII.checked) {punkty = punkty + 1}
+	if (document.P5.plik.value=="C") {punkty = punkty + 1}
+	if (document.P6.cc.checked) {punkty = punkty + 1}
+	if (document.P7.W.value=="cc" && document.P7.A.value=="ob")  {punkty = punkty + 1}	
+	if (document.P8.odp[3].checked) {punkty = punkty + 1}
+	if (document.P9.a.checked && document.P9.b.checked && document.P9.d.checked)  {punkty = punkty + 1}
+	if (document.P10.odpa.value=="bat") {punkty = punkty + 1}
+	if (document.P10.odpa.value=="com") {punkty = punkty + 1}
+	if (document.P10.odpa.value=="exe") {punkty = punkty + 1}
+	if (document.P10.odpb.value=="bat") {punkty = punkty + 1}
+	if (document.P10.odpb.value=="com") {punkty = punkty + 1}
+	if (document.P10.odpb.value=="exe") {punkty = punkty + 1}
+	if (document.P10.odpc.value=="bat") {punkty = punkty + 1}
+	if (document.P10.odpc.value=="com") {punkty = punkty + 1}
+	if (document.P10.odpc.value=="exe") {punkty = punkty + 1}
+	if (document.P11.b.checked) {punkty = punkty + 1}
+	if (document.P12.ALT.value=="ALT") {punkty = punkty + 1}
+	if (document.P12.ALT.value=="Alt") {punkty = punkty + 1}
+	if (document.P12.ALT.value=="alt") {punkty = punkty + 1}
+	if (document.P13.A.value=="63,5") {punkty = punkty + 1}
+	if (document.P13.B.value=="JPG") {punkty = punkty + 1}
+	if (document.P13.B.value=="Jpg") {punkty = punkty + 1}
+	if (document.P13.B.value=="jpg") {punkty = punkty + 1}
+	if (document.P14.odp[3].checked) {punkty = punkty + 1}
+	if (document.P15.odp.value=="CC") {punkty = punkty + 1}
+	if (document.P17.G[2].checked) {punkty = punkty + 1}
+
+
+	if (document.OOA.odpA.value=="IDE") {punkty = punkty + 4}
+if (document.OOA.odpB.value=="Kompresja") {punkty = punkty + 3}
+if (document.OOA.odpB.value=="KOMPRESJA") {punkty = punkty + 3}
+if (document.OOA.odpB.value=="kompresja") {punkty = punkty + 3}
+if (document.OOA.odpC.value=="ASCII") {punkty = punkty + 5}
+if (document.OOA.odpD.value=="akapit") {punkty = punkty + 2}
+if (document.OOA.odpD.value=="Akapit") {punkty = punkty + 2}
+if (document.OOA.odpD.value=="AKAPIT") {punkty = punkty + 2}
+if (document.OOA.odpD.value=="akapitem") {punkty = punkty + 2}
+if (document.OOA.odpD.value=="Akapitem") {punkty = punkty + 2}
+if (document.OOA.odpD.value=="AKAPITEM") {punkty = punkty + 2}
+if (document.OOA.odpE.value=="rastrowej") {punkty = punkty + 2}
+if (document.OOA.odpE.value=="Rastrowej") {punkty = punkty + 2}
+if (document.OOA.odpE.value=="RASTROWEJ") {punkty = punkty + 2}
+if (document.OOA.odpE.value=="raster") {punkty = punkty + 2}
+if (document.OOA.odpE.value=="Raster") {punkty = punkty + 2}
+if (document.OOA.odpE.value=="RASTER") {punkty = punkty + 2}
+if (document.OOA.odpF.value=="Partycja") {punkty = punkty + 4}
+if (document.OOA.odpF.value=="partycja") {punkty = punkty + 4}
+if (document.OOA.odpF.value=="PARTYCJA") {punkty = punkty + 4}
+if (document.OOA.odpG.value=="FAT") {punkty = punkty + 4}
+if (document.OOA.odpH.value=="Interface") {punkty = punkty + 5}
+if (document.OOA.odpH.value=="INTERFACE") {punkty = punkty + 5}
+if (document.OOA.odpH.value=="interface") {punkty = punkty + 5}
+if (document.OOA.odpH.value=="Interfejs") {punkty = punkty + 5}
+if (document.OOA.odpH.value=="INTERFEJS") {punkty = punkty + 5}
+if (document.OOA.odpH.value=="interfejs") {punkty = punkty + 5}
+if (document.OOA.odpI.value=="Algorytm") {punkty = punkty + 4}
+if (document.OOA.odpI.value=="algorytm") {punkty = punkty + 4}
+if (document.OOA.odpI.value=="ALGORYTM") {punkty = punkty + 4}
+if (document.OOA.odpJ.value=="Konkatenacja") {punkty = punkty + 6}
+if (document.OOA.odpJ.value=="konkatenacja") {punkty = punkty + 6}
+if (document.OOA.odpJ.value=="KONKATENACJA") {punkty = punkty + 6}
+if (document.OOA.odpJ.value=="Konkatenacji") {punkty = punkty + 6}
+if (document.OOA.odpJ.value=="konkatenacji") {punkty = punkty + 6}
+if (document.OOA.odpJ.value=="KONKATENACJI") {punkty = punkty + 6}
+if (document.OOA.odpK.value=="DEKREMENTACJA") {punkty = punkty + 6}
+if (document.OOA.odpK.value=="dekrementacja") {punkty = punkty + 6}
+if (document.OOA.odpK.value=="Dekrementacja") {punkty = punkty + 6}
+if (document.DDR.odp.value=="bufor") {punkty = punkty + 1}
+if (document.DDR.odp.value=="Bufor") {punkty = punkty + 1}
+if (document.DDR.odp.value=="BUFOR") {punkty = punkty + 1}
+
+if (document.AAA.aa2.checked) {punkty = punkty + 2}
+if (document.AAA.aa3.checked) {punkty = punkty + 2}
+if (document.AAA.aa6.checked) {punkty = punkty + 2}
+if (document.AAA.aa1.checked) {punkty = punkty - 1}
+if (document.AAA.aa4.checked) {punkty = punkty - 1}
+if (document.AAA.aa5.checked) {punkty = punkty - 1}
+
+if (document.BBB.odp[3].checked) {punkty = punkty + 2}
+if (document.BBB.odp[0].checked) {punkty = punkty - 1}
+if (document.BBB.odp[1].checked) {punkty = punkty - 1}
+if (document.BBB.odp[2].checked) {punkty = punkty - 1}
+
+if (document.CCC.odp[3].checked) {punkty = punkty + 2}
+if (document.CCC.odp[0].checked) {punkty = punkty - 1}
+if (document.CCC.odp[1].checked) {punkty = punkty - 1}
+if (document.CCC.odp[2].checked) {punkty = punkty - 1}
+if (document.CCC.odp[4].checked) {punkty = punkty - 1}
+if (document.CCC.odp[5].checked) {punkty = punkty - 1}
+
+if (document.DDD.odp[2].checked) {punkty = punkty + 2}
+if (document.DDD.odp[0].checked) {punkty = punkty - 1}
+if (document.DDD.odp[1].checked) {punkty = punkty - 1}
+if (document.DDD.odp[3].checked) {punkty = punkty - 1}
+
+if (document.EEE.odp.selectedIndex=="4") {punkty = punkty + 2}
+if (document.EEE.odp.selectedIndex=="1") {punkty = punkty - 1}
+if (document.EEE.odp.selectedIndex=="2") {punkty = punkty - 1}
+if (document.EEE.odp.selectedIndex=="3") {punkty = punkty - 1}
+if (document.EEE.odp.selectedIndex=="5") {punkty = punkty - 1}
+if (document.EEE.odp.selectedIndex=="6") {punkty = punkty - 1}
+if (document.EEE.odp.selectedIndex=="7") {punkty = punkty - 1}
+if (document.EEE.odp.selectedIndex=="8") {punkty = punkty - 1}
+if (document.EEE.odp.selectedIndex=="9") {punkty = punkty - 1}
+if (document.EEE.odp.selectedIndex=="10") {punkty = punkty - 1}
+if (document.EEE.odp.selectedIndex=="11") {punkty = punkty - 1}
+if (document.EEE.odp.selectedIndex=="12") {punkty = punkty - 1}
+
+if (document.FFF.odp[2].checked) {punkty = punkty + 2}
+if (document.FFF.odp[0].checked) {punkty = punkty - 1}
+if (document.FFF.odp[1].checked) {punkty = punkty - 1}
+if (document.FFF.odp[3].checked) {punkty = punkty - 1}
+
+if (document.GGG.aa1.checked) {punkty = punkty + 2}
+if (document.GGG.aa4.checked) {punkty = punkty + 2}
+if (document.GGG.aa2.checked) {punkty = punkty - 1}
+if (document.GGG.aa3.checked) {punkty = punkty - 1}
+
+if (document.HHH.odp[2].checked) {punkty = punkty + 2}
+if (document.HHH.odp[0].checked) {punkty = punkty - 1}
+if (document.HHH.odp[1].checked) {punkty = punkty - 1}
+if (document.HHH.odp[3].checked) {punkty = punkty - 1}
+
+if (document.III.odp[1].checked) {punkty = punkty + 2}
+if (document.III.odp[0].checked) {punkty = punkty - 1}
+if (document.III.odp[2].checked) {punkty = punkty - 1}
+if (document.III.odp[3].checked) {punkty = punkty - 1}
+
+if (document.JJJ.odp[0].checked) {punkty = punkty + 2}
+if (document.JJJ.odp[1].checked) {punkty = punkty - 1}
+if (document.JJJ.odp[2].checked) {punkty = punkty - 1}
+
+if (document.KKK.aa3.checked) {punkty = punkty + 2}
+if (document.KKK.aa4.checked) {punkty = punkty + 2}
+if (document.KKK.aa1.checked) {punkty = punkty - 1}
+if (document.KKK.aa2.checked) {punkty = punkty - 1}
+
+if (document.LLL.odp[0].checked) {punkty = punkty + 2}
+if (document.LLL.odp[1].checked) {punkty = punkty - 1}
+if (document.LLL.odp[2].checked) {punkty = punkty - 1}
+
+if (document.MMM.odp[1].checked) {punkty = punkty + 2}
+if (document.MMM.odp[0].checked) {punkty = punkty - 1}
+if (document.MMM.odp[2].checked) {punkty = punkty - 1}
+
+if (document.NNN.aa1.checked) {punkty = punkty + 2}
+if (document.NNN.aa3.checked) {punkty = punkty + 2}
+if (document.NNN.aa2.checked) {punkty = punkty - 1}
+if (document.NNN.aa4.checked) {punkty = punkty - 1}
+
+if (document.OOO.odp[1].checked) {punkty = punkty + 2}
+if (document.OOO.odp[0].checked) {punkty = punkty - 1}
+if (document.OOO.odp[2].checked) {punkty = punkty - 1}
+
+if (document.PP1.odp[3].checked) {punkty = punkty + 2}
+if (document.PP1.odp[0].checked) {punkty = punkty - 1}
+if (document.PP1.odp[1].checked) {punkty = punkty - 1}
+if (document.PP1.odp[2].checked) {punkty = punkty - 1}
+
+if (document.PP2.odp[2].checked) {punkty = punkty + 2}
+if (document.PP2.odp[0].checked) {punkty = punkty - 1}
+if (document.PP2.odp[1].checked) {punkty = punkty - 1}
+if (document.PP2.odp[3].checked) {punkty = punkty - 1}
+
+if (document.PP3.odp[0].checked) {punkty = punkty + 2}
+if (document.PP3.odp[1].checked) {punkty = punkty - 1}
+if (document.PP3.odp[2].checked) {punkty = punkty - 1}
+if (document.PP3.odp[3].checked) {punkty = punkty - 1}
+
+if (document.PP4.odp[1].checked) {punkty = punkty + 2}
+if (document.PP4.odp[0].checked) {punkty = punkty - 1}
+if (document.PP4.odp[2].checked) {punkty = punkty - 1}
+if (document.PP4.odp[3].checked) {punkty = punkty - 1}
+
+if (document.RRR.odp[2].checked) {punkty = punkty + 2}
+if (document.RRR.odp[0].checked) {punkty = punkty - 1}
+if (document.RRR.odp[1].checked) {punkty = punkty - 1}
+if (document.RRR.odp[3].checked) {punkty = punkty - 1}
+
+if (document.SSS.aa1.checked) {punkty = punkty + 2}
+if (document.SSS.aa2.checked) {punkty = punkty - 1}
+if (document.SSS.aa3.checked) {punkty = punkty + 2}
+if (document.SSS.aa4.checked) {punkty = punkty + 2}
+if (document.SSS.aa5.checked) {punkty = punkty + 2}
+if (document.SSS.aa6.checked) {punkty = punkty - 1}
+if (document.SSS.aa7.checked) {punkty = punkty + 2}
+if (document.SSS.aa8.checked) {punkty = punkty - 1}
+if (document.SSS.aa9.checked) {punkty = punkty - 1}
+if (document.SSS.a10.checked) {punkty = punkty - 1}
+if (document.SSS.a11.checked) {punkty = punkty + 2}
+if (document.SSS.a12.checked) {punkty = punkty - 1}
+
+if (document.TTT.odp[3].checked) {punkty = punkty + 2}
+if (document.TTT.odp[0].checked) {punkty = punkty - 1}
+if (document.TTT.odp[1].checked) {punkty = punkty - 1}
+if (document.TTT.odp[2].checked) {punkty = punkty - 1}
+
+if (document.UUU.odp[0].checked) {punkty = punkty + 2}
+if (document.UUU.odp[1].checked) {punkty = punkty - 1}
+if (document.UUU.odp[2].checked) {punkty = punkty - 1}
+if (document.UUU.odp[3].checked) {punkty = punkty - 1}
+
+
+	
+	
+	odpowiedz=prompt("Twoja liczba punktów wynosi "+punkty,"januszek");
+
+}
+
+</SCRIPT>
+
+
+
+
+<BODY BGCOLOR="white" TEXT="black" LEFTMARGIN="0" RIGHTMARGIN="0" TOPMARGIN="0">
+
+<TABLE BGCOLOR="lightblue" WIDTH=100%>
+<TR><TD><IMG SRC="../grafiki/Airport.jpg" WIDTH=220>
+<TD><FONT COLOR="navy" SIZE=4>
+<FORM NAME="CCB">BIG BLUE to nieoficjalna nazwa firmy: <SELECT NAME="odp" SIZE=1>
+	<OPTION VALUE=none>Proszê wybierz
+	<OPTION VALUE="odpowiedŸ a">IBM
+	<OPTION VALUE="odpowiedŸ b">Intel
+	<OPTION VALUE="odpowiedŸ c">AMD
+	<OPTION VALUE="odpowiedŸ d">DTK
+	</SELECT></FORM>
+<TD><IMG SRC="../grafiki/win95-a.gif" ALIGN="left">
+<TR><TD COLSPAN=4><HR>
+</TABLE>
+
+
+<TABLE BGCOLOR="white" WIDTH=100%>
+<TR>
+   <TD>
+
+<FORM NAME="P1">
+   <H4> 1 Bajt to:   </H4>
+
+   <OL TYPE="A">
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="a">  punkt œwietlny na ekranie monitora, bêd¹cy podstawow¹ czêœci¹ sk³adow¹ obrazu.
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="b">   najmniejsza jednostka informacji.
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="c">   1024 bity.
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="d">   wyra¿enie z³o¿one z 8 bitów.
+  </OL>
+</FORM>
+</TABLE>
+
+<FORM NAME=TTT>
+<table border=0 cellpadding=20 BGCOLOR=red><tr>
+<td><font color="white"><font face=arial>
+W tabeli znajduj¹ siê dwie serie danych: iloœæ mieszkañców Czech w kolejnych latach oraz iloœæ mieszkañców S³owacji w kolejnych latach. Twoim zadaniem jest utworzenie wykresu na którym poka¿esz porównanie populacji obydwóch krajów w poszczególnych latach. Jaki typ wykresu wybierzesz?
+<table><tr><td width=70><TD><font color="white">
+<INPUT TYPE="radio" NAME="odp" VALUE="a">ko³owy<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="b">liniowy<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="c">powierzchniowy<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="d">kolumnowy<br></table>
+</table>
+</FORM> 
+
+
+<HR COLOR="red" SIZE=2>
+
+<FORM NAME=FFF>
+<table border=0 cellpadding=20><tr>
+<td width=2>
+<td><font color="black"><font face=arial>
+<table>
+<tr><td><img src="../grafiki/znaczki.gif" border=1><td>Znaczki "####" w komórkach A2:C2 oznaczaj¹:
+</table>
+<table><tr><td width=100><td>
+<INPUT TYPE="radio" NAME="odp" VALUE="a">b³¹d w formule<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="b">nieprawid³owo wpisan¹ liczbê<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="c">liczby nie mieszcz¹ce siê w komórkach<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="d">liczby uleg³y wykasowaniu<br></td></tr></table>
+</table>
+</FORM> 
+
+<HR COLOR="red" SIZE=2>
+
+
+<TABLE BGCOLOR="red" WIDTH=100%>
+<TR>
+   <TD>
+
+<FORM NAME="P2">
+   <FONT COLOR="white">
+   <H4> W celu wykonania polecenia "KOPIUJ" przyciskamy na klawiaturze:   </H4>
+<CENTER>
+   <SELECT NAME="odp" SIZE=1>
+      <OPTION VALUE=none>Wybierz 
+      <OPTION VALUE="odpowiedŸ a"> CTRL + C
+      <OPTION VALUE="odpowiedŸ b"> SHIFT + C
+      <OPTION VALUE="odpowiedŸ c"> CTRL + V 
+      <OPTION VALUE="odpowiedŸ d"> ALT + K
+   </SELECT>
+</CENTER>
+</FORM>
+</TABLE>
+
+
+
+<HR COLOR="red" SIZE=2>
+
+
+<TABLE BGCOLOR="#00FFFF" WIDTH=100%>
+<FORM NAME="P4">
+<TR>
+   <TD>
+   <H4> Zaznacz, które z wymienionych elementów s¹ urz¹dzeniami  wyjœcia:  </H4>
+	<INPUT TYPE="checkbox" NAME="I" > drukarka     <BR>
+	<INPUT TYPE="checkbox" NAME="II" > skaner       <BR>
+	<INPUT TYPE="checkbox" NAME="III" > klawiatura <BR>
+	<INPUT TYPE="checkbox" NAME="IIII" > monitor        <BR>
+</FORM>
+</TABLE>
+
+<HR COLOR="red" SIZE=2>
+
+<FORM NAME=MMM>
+<td><font color="black"><font face=arial>
+Co oznacza zapis 6,762E+11?
+<table><tr><td width=11><td>
+<INPUT TYPE="radio" NAME="odp" VALUE="a">Jest to b³êdna formu³a<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="b">Jest to liczba 6,762 razy 10 do potêgi 11<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="c">Jest to adres bezwzglêdny komórki<br>
+</table>
+</table>
+</FORM> 
+
+
+<TABLE BGCOLOR="violet" WIDTH=100%>
+<FORM NAME="P5">
+<TR>
+   <TD>
+   <H4> Który z podanych jest plikiem graficznym  </H4>
+   <CENTER>
+      <SELECT NAME="plik" SIZE=4>
+	<OPTION VALUE="A"> Wojna.exe
+	<OPTION VALUE="B"> Word.wav
+	<OPTION VALUE="C"> Start.jpg
+	<OPTION VALUE="D"> Arnold.avi
+      </SELECT>
+   </CENTER>
+
+</FORM>
+</TABLE>
+
+<HR COLOR="red" SIZE=2>
+
+<FORM NAME=GGG>
+<table border=0 cellpadding=20><tr>
+<td><font color="black"><font face=arial>
+<img src="../grafiki/mnozenie.gif" border=1><br>
+Aby pomno¿yc liczby 345 i 81 przez siebie, w pasku formu³y <b>nie</b> mo¿e pojawiæ siê zapis (zaznacz wszystkie w³aœciwe odpowiedzi):
+<table><tr><td width=70><td>
+<INPUT TYPE="checkbox" NAME="aa1" VALUE="aa1">=B1*C1<br>
+<INPUT TYPE="checkbox" NAME="aa2" VALUE="aa2">+B1*C1<br>
+<INPUT TYPE="checkbox" NAME="aa3" VALUE="aa3">=SUM(B1*C1)<br>
+<INPUT TYPE="checkbox" NAME="aa4" VALUE="aa4">=C1*B1<br>
+</table>
+</table>
+</FORM> 
+
+<HR COLOR="red" SIZE=2>
+
+<TABLE BGCOLOR="#fff000" WIDTH=100%>
+<FORM NAME="P6">
+<TR>
+   <TD>
+   <CENTER>
+   <IMG SRC="../grafiki/Skrot.gif">
+   </CENTER>
+   <H4>Prezentowana ikona oznacza :    </H4>
+
+   <PRE>
+	<INPUT TYPE="checkbox" NAME="aa" > plik      
+	          <INPUT TYPE="checkbox" NAME="bb" > folder  
+	                    <INPUT TYPE="checkbox" NAME="cc" > skrót   
+	                              <INPUT TYPE="checkbox" NAME="dd" > wyjœcie z programu
+   </PRE>
+
+
+</FORM>
+</TABLE>
+
+<HR COLOR="red" SIZE=2>
+
+<FORM NAME=AAA>
+<table border=0 cellpadding=20>
+<tr>
+<td><font color="black"><font face=arial>
+Które z poni¿szych programów s¹ arkuszami kalkulacyjnymi? Zaznacz wszystkie poprawne odpowiedzi:<br>
+<table><tr><td width=70></td><td>
+<INPUT TYPE="checkbox" NAME="aa1" VALUE="aa1">CuteMap<br>
+<INPUT TYPE="checkbox" NAME="aa2" VALUE="aa2">Excel<br>
+<INPUT TYPE="checkbox" NAME="aa3" VALUE="aa3">Quattro Pro<br>
+<INPUT TYPE="checkbox" NAME="aa4" VALUE="aa4">Corel Xara<br>
+<INPUT TYPE="checkbox" NAME="aa5" VALUE="aa5">Paradox<br>
+<INPUT TYPE="checkbox" NAME="aa6" VALUE="aa6">123 Lotus<br></table>
+</table>
+</FORM> 
+
+<HR COLOR="red" SIZE=2>
+
+<TABLE BGCOLOR="#00f0f0" WIDTH=100%>
+<FORM NAME="P7">
+<TR>
+   <TD>
+   <H4> Polecenie „COFNIJ” to kombinacja klawiszy:</H4>
+<CENTER>
+      <SELECT NAME="W" SIZE=4>
+	<OPTION VALUE="aa"> ALT
+	<OPTION VALUE="bb"> SHIFT
+	<OPTION VALUE="cc"> CTRL
+	<OPTION VALUE="dd"> ESC
+      </SELECT>
+      <SELECT NAME="N" SIZE=4>
+	<OPTION VALUE="aa"> 
+	<OPTION VALUE="bb"> +
+	<OPTION VALUE="cc"> 
+	<OPTION VALUE="dd"> 
+      </SELECT>
+      <SELECT NAME="A" SIZE=4>
+	<OPTION VALUE="oa"> X
+	<OPTION VALUE="ob"> Z
+	<OPTION VALUE="od"> V
+	<OPTION VALUE="oe"> C
+      </SELECT>
+</CENTER>
+</FORM>
+<TD><IMG SRC="../grafiki/Fullmonty2.gif">
+</TABLE>
+
+<HR COLOR="red" SIZE=2>
+
+<TABLE BGCOLOR="#40ff40" WIDTH=100%>
+<TR>
+   <TD>
+
+<FORM NAME="P8">
+   <H4> Podczas edycji tekstu do prawid³owego centrowania tytu³u s³u¿y ikona:  </H4>
+
+<IMG SRC="../grafiki/A_KOMPUTER3.gif" ALIGN="right" ALT="Nie myœl tyle, tylko kliknij obok ostatniej ikony">
+
+<IMG SRC="../grafiki/Pogrubienie.jpg"  WIDTH=35 HSPACE=20><INPUT TYPE="radio"  NAME="odp" VALUE="a"><BR>
+<IMG SRC="../grafiki/Niedrukowane.jpg" WIDTH=35 HSPACE=20><INPUT TYPE="radio"  NAME="odp" VALUE="b"><BR>
+<IMG SRC="../grafiki/Wklej.jpg"        WIDTH=35 HSPACE=20><INPUT TYPE="radio"  NAME="odp" VALUE="c"><BR>
+<IMG SRC="../grafiki/Centrowanie.jpg"  WIDTH=35 HSPACE=20><INPUT TYPE="radio"  NAME="odp" VALUE="d"><BR>
+
+
+
+</FORM>
+</TABLE>
+
+<HR COLOR="red" SIZE=2>
+
+<FORM NAME=NNN>
+<table border=0 cellpadding=20><tr>
+<td><font color="black"><font face=arial>
+Aby zapisaæ plik w arkuszu kalkulacyjnym nale¿y (zaznacz wszystkie poprawne odpowiedzi):
+<table><tr><td width=50><td>
+<INPUT TYPE="checkbox" NAME="aa1" VALUE="aa1">z menu PLIK wybraæ polecenie ZAPISZ JAKO<br>
+<INPUT TYPE="checkbox" NAME="aa2" VALUE="aa2">nacisn¹æ klawisz ENTER<br>
+<INPUT TYPE="checkbox" NAME="aa3" VALUE="aa3">klikn¹æ myszk¹ przycisk&nbsp;&nbsp;<img src="../grafiki/zapisz.gif" align=middle border=1><br>
+<INPUT TYPE="checkbox" NAME="aa4" VALUE="aa4">nacisn¹æ klawisz ESC<br>
+</table>
+</table>
+</FORM> 
+
+
+<HR COLOR="red" SIZE=2>
+
+<TABLE BGCOLOR="#ff8800" WIDTH=100%>
+
+<TR>
+    <TD>
+<FORM NAME="P9">
+    <H4> „Tward¹” spacjê uzyskujemy dziêki kombinacji klawiszy:  </H4>
+
+	<INPUT TYPE="checkbox" NAME="a" > SHIFT <BR>
+        <INPUT TYPE="checkbox" NAME="b" > CTRL  <BR>
+        <INPUT TYPE="checkbox" NAME="c" > ALT   <BR>
+        <INPUT TYPE="checkbox" NAME="d" > SPACE [spacja]  <BR>
+
+</FORM>
+</TABLE>
+
+<HR COLOR="red" SIZE=2>
+
+<TABLE BGCOLOR="#44ff33" WIDTH=100%>
+
+<TR>
+    <TD>
+<FORM NAME="P10">
+    <H4> Aplikacje, zwane plikami startowymi posiadaj¹ rozszerzenia: </H4>
+
+<FONT SIZE=2>
+ <I> (Wpisz ma³ymi literami 3-znakowe rozszerzenia) </I> <BR><BR><BR> 
+ <INPUT TYPE="text" NAME="odpa"> <BR>
+ <INPUT TYPE="text" NAME="odpb"> <BR>
+ <INPUT TYPE="text" NAME="odpc"> <BR>
+</FONT>
+
+</FORM>
+</TABLE>
+
+<HR COLOR="red" SIZE=2>
+
+<TABLE BGCOLOR="#aa3311" WIDTH=100%>
+
+<TR>
+    <TD>
+<FORM NAME="P11">
+    <H4> Który z elementów <U> nie charakteryzuje </U> programów typu „freeware” :</H4>
+
+	<INPUT TYPE="checkbox" NAME="a" > brak prawa modyfikowania<BR>
+        <INPUT TYPE="checkbox" NAME="b" > darmowy, 30-dniowy okres u¿ytkowania <BR>
+        <INPUT TYPE="checkbox" NAME="c" > brak prawa odsprzeda¿y <BR>
+        <INPUT TYPE="checkbox" NAME="d" > nieodp³atnoœæ  <BR>
+
+</FORM>
+</TABLE>
+
+<HR COLOR="red" SIZE=2">
+
+<FORM NAME=OOO>
+<table border=0 cellpadding=20><tr>
+<td><font color="black"><font face=arial>
+Czy zapis $A$5 to adres:
+<table><tr><td width=11><td>
+<INPUT TYPE="radio" NAME="odp" VALUE="a">wzglêdny<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="b">bezwzglêdny<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="c">mieszany<br>
+</table>
+</table>
+</FORM> 
+
+<HR COLOR="red" SIZE=2">
+
+<TABLE BGCOLOR="#11cc99" WIDTH=100%>
+
+<TR>
+    <TD>
+<FORM NAME="P12">
+    <H4> Edytuj¹c tekst pewn¹ trudnoœæ napotykamy chc¹c zastosowaæ polskie 
+         znaki diakrytyczne. W celu uzyskania polskich liter (¹, ê, œ, æ ...) 
+nale¿y przytrzymaæ prawy klawisz:  </H4>
+
+
+<INPUT TYPE="text" NAME="ALT"> <BR>
+
+
+<MARQUEE BEHAVIOR="alternate" WIDTH=20%>
+<FONT SIZE=2>
+<I> Wpisz jego nazwê </I>
+</FONT>
+</MARQUEE>
+
+
+</FORM>
+</TABLE>
+
+<HR COLOR="red" SIZE=2>
+
+
+<TABLE BGCOLOR="#118800" WIDTH=100%>
+
+<TR>
+    <TD>
+<FORM NAME="P13">
+    <H4> Na podstawie widoku <B> „W³aœciwoœci" </B> uzupe³nij brakuj¹ce dane : </H4>
+
+<CENTER>
+   <IMG SRC="../grafiki/Tyniec.jpg" ALT="Napisane takimi literami, ¿e widzê z koñca sali !">
+</CENTER>
+
+<FONT COLOR="red">
+<MARQUEE BEHAVIOR="scroll" WIDTH=41% DIRECTION="right" SCROLLAMOUNT=2>
+   Uzupe³nij !
+</MARQUEE>
+</FONT>
+
+<PRE>
+    Rozmiar pliku : <INPUT TYPE="text" NAME="A"> KB<BR> 
+    Rozszerzenie  : <INPUT TYPE="text" NAME="B"> <BR>
+</PRE>
+
+</FORM>
+</TABLE>
+
+<HR COLOR="red" SIZE=2>
+
+
+<TABLE BGCOLOR="#5522bb" WIDTH=100%>
+
+<TR>
+    <TD>
+<FORM NAME="P14">
+    <H4> Ikonie <IMG SRC="../grafiki/F4.jpg" WIDTH=20 HSPACE=15 VSPACE=7> umieszczonej na pasku tytu³u odpowiada polecenie: </H4>
+
+   <OL TYPE="1">
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="a"> minimalizuj
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="b"> przywróæ
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="c"> maksymalizuj
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="d"> zamknij
+  </OL>
+
+</FORM>
+</TABLE>
+
+<HR COLOR="red" SIZE=2>
+
+
+<TABLE BGCOLOR="#009900" WIDTH=100%>
+<FORM NAME="P15">
+
+<TR>
+   <TD>
+      <H4> Do oznaczania w komputerze partycji g³ównej dysku twardego zarezerwowano literê :</H4>
+
+<TR>
+   <TD><BR>
+
+	<IMG SRC="../grafiki/A_KOMPUTER.gif" HSPACE=25 ALIGN="right" ALT="No pewnie, ¿e NIE literê D">
+<CENTER>
+
+      <SELECT NAME="odp" SIZE=4>
+	<OPTION VALUE="AA"> A
+	<OPTION VALUE="BB"> B
+	<OPTION VALUE="CC"> C
+	<OPTION VALUE="DD"> D
+      </SELECT>
+
+</CENTER>
+
+
+</FORM>
+</TABLE>
+
+<HR COLOR="red" SIZE=2>
+
+<TABLE BGCOLOR="yellow" WIDTH=100%>
+<FORM NAME="P17">
+
+<TR>
+   <TD>
+
+      <H4> Prostym edytorem grafiki wbudowanym do systemu operacyjnego WINDOWS 95, WINDOWS 98 <BR> i WINDOWS NT jest: </H4>
+
+
+<TR>
+   <TD><BR>
+  
+   <OL TYPE="1"><B>
+	<LI><INPUT TYPE="radio" NAME="G" VALUE="a"> Winword
+	<LI><INPUT TYPE="radio" NAME="G" VALUE="b"> Excel
+	<LI><INPUT TYPE="radio" NAME="G" VALUE="c"> Paint
+	<LI><INPUT TYPE="radio" NAME="G" VALUE="d"> Notepad </B>
+  </OL>
+
+
+</FORM>
+</TABLE>
+
+
+<FORM NAME=CCC>
+<table border=0 cellpadding=20>
+<td><font color="black"><font face=arial>
+Wyrównanie "do prawej" liczb w komórkach mo¿na wykonaæ klikaj¹c myszk¹ przycisk:<br>
+<table width=100%>
+<tr>
+<td><INPUT TYPE="radio" NAME="odp" VALUE="a"><img src="../grafiki/wyrown1.gif" border=1>
+<td><INPUT TYPE="radio" NAME="odp" VALUE="b"><img src="../grafiki/wyrown5.gif" border=1>
+<td><INPUT TYPE="radio" NAME="odp" VALUE="c"><img src="../grafiki/wyrown4.gif" border=1>
+<tr>
+<td><INPUT TYPE="radio" NAME="odp" VALUE="d"><img src="../grafiki/wyrown3.gif" border=1>
+<td><INPUT TYPE="radio" NAME="odp" VALUE="e"><img src="../grafiki/wyrown2.gif" border=1>
+<td><INPUT TYPE="radio" NAME="odp" VALUE="f"><img src="../grafiki/wyrown6.gif" border=1>
+</table>
+</table>
+</FORM> 
+
+
+<TABLE BGCOLOR="lightblue" WIDTH=100%>
+<TR><TD WIDTH=80>
+<TD><IMG SRC="../grafiki/countr-a.gif" ALIGN="left">
+<TD><FONT COLOR="navy" SIZE=4>
+1 KB to:
+<FORM NAME="ABC"><OL TYPE="a">
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="a">1000 bajtów
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="b">1024 bity
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="c">1000 bitów
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="d">1024 bajtów
+</OL></FORM>
+<TD><IMG SRC="../grafiki/countr-a.gif" ALIGN="left"><TD>
+<TR><TD COLSPAN=5><HR>
+</TABLE>
+
+<FORM NAME=KKK>
+<table border=0 cellpadding=20><tr><TD>
+<font color="black"><font face=arial>
+Aby zatwierdziæ dane wprowadzone do komórki arkusza nale¿y (zaznacz wszystkie w³aœciwe odpowiedzi):
+<table><tr><td width=50><td>
+<INPUT TYPE="checkbox" NAME="aa1" VALUE="aa1">nacisn¹æ klawisz ESC<br>
+<INPUT TYPE="checkbox" NAME="aa2" VALUE="aa2">klikn¹æ myszk¹ na komórce<br>
+<INPUT TYPE="checkbox" NAME="aa3" VALUE="aa3">przesun¹æ kursor do innej komórki<br>
+<INPUT TYPE="checkbox" NAME="aa4" VALUE="aa4">nacisn¹æ klawisz ENTER<br>
+</table>
+</table>
+</FORM> 
+
+<TABLE BGCOLOR="lightblue" WIDTH=100%>
+<FONT COLOR="navy" SIZE=4>
+	<TR><CENTER><TD><FORM NAME="UZG"><FONT COLOR="navy" SIZE=4>Program <SELECT NAME="odp" SIZE=1>
+	<OPTION VALUE=none>Wybierz
+	<OPTION VALUE="odpa">PKZip
+	<OPTION VALUE="odpb">DOS
+	<OPTION VALUE="odpc">UNIX
+	<OPTION VALUE="odpd">OS/2
+	</SELECT><FONT COLOR="navy" SIZE=4> nie jest systemem operacyjnym.</FORM>
+	<TD><IMG SRC="../grafiki/51.gif" ALIGN="left">
+	<TR><TD COLSPAN=5><HR>
+</TABLE>
+
+<FORM NAME=LLL>
+<table border=0 cellpadding=20><tr>
+<td><font color="black"><font face=arial>
+Komórka w arkuszu kalkulacyjnym to:
+<table><tr><td width=1><td>
+<INPUT TYPE="radio" NAME="odp" VALUE="a">pojedyncze pole tabeli powstaj¹ce w miejscu przeciêcia wiersza i kolumny<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="b">czêœæ pamiêci w której przechowywane s¹ skopiowane fragmenty dokumentu<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="c">miejsce w którym przechowywane s¹ niepotrzebne pliki<br></table>
+</table>
+</FORM> 
+
+
+
+<TABLE BGCOLOR="lightblue" WIDTH=100%>
+<TR>
+<TD><IMG SRC="../grafiki/diabel.gif" ALIGN="left">
+<TD><FORM NAME="DWR"><FONT COLOR="navy" SIZE=4>
+W³aœciciel firmy MICROSOFT nazywa siê Bill       <INPUT TYPE="text" NAME="odp"> .
+</FORM>
+<TR><TD COLSPAN=5><HR>
+</TABLE>
+
+<FORM NAME=JJJ>
+<table border=0 cellpadding=20><tr>
+<td><font color="black"><font face=arial>
+Zastosowanie adresowania wzglêdnego powoduje ¿e adresy komórek w kopiowanych formu³ach:
+<table><tr><td width=30><td>
+<INPUT TYPE="radio" NAME="odp" VALUE="a">zmieniaj¹ siê<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="b">nie zmieniaj¹ siê<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="c">zmieniaj¹ siê lub nie w zale¿noœci od budowy tabeli<br></table>
+</table>
+</FORM> 
+
+<TABLE BGCOLOR="lightblue" WIDTH=100%>
+<TR><TD WIDTH=80>
+<TD><IMG SRC="../grafiki/countr-a.gif" ALIGN="left">
+<TD><FONT COLOR="navy" SIZE=4>
+Jednostka zwana Bajt (byte) <IMG SRC="../grafiki/42.gif"> to:
+<FORM NAME="URA"><OL TYPE="a">
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="a">8 bitów
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="b">256 bitów
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="c">najmniejsza jednostka informacji równa 1 bit
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="d">1/8 czêœæ jednostki zwanej bit
+</OL></FORM>
+	<TR><TD COLSPAN=5><HR>
+</TABLE>
+<TABLE BGCOLOR="lightblue" WIDTH=100%><TR><TD><FONT COLOR="navy" SIZE=4><FORM NAME=URB>
+Jak nazywa siê najnowszy chipset firmy Intel&reg wykorzystywany w p³ytach g³ównych obs³uguj¹cych magistralê 100Mhz?<br>
+&nbsp&nbsp&nbsp&nbsp<INPUT TYPE="radio" NAME="p2" VALUE="p2a">LX<br> 
+&nbsp&nbsp&nbsp&nbsp<INPUT TYPE="radio" NAME="p2" VALUE="p2a">BX<br> 
+&nbsp&nbsp&nbsp&nbsp<INPUT TYPE="radio" NAME="p2" VALUE="p2b">VXPRO+<br>
+&nbsp&nbsp&nbsp&nbsp<INPUT TYPE="radio" NAME="p2" VALUE="p2c">ATX<br>
+<HR>
+Jaki standard wypiera standard konstrukcji p³yt g³ównych Baby-AT?<br>
+&nbsp&nbsp&nbsp&nbsp<INPUT TYPE="radio" NAME="p3" VALUE="p3a">VXPRO+<br> 
+&nbsp&nbsp&nbsp&nbsp<INPUT TYPE="radio" NAME="p3" VALUE="p3b">Vp2<br>
+&nbsp&nbsp&nbsp&nbsp<INPUT TYPE="radio" NAME="p3" VALUE="p3c">ATX<br>
+&nbsp&nbsp&nbsp&nbsp<INPUT TYPE="radio" NAME="p3" VALUE="p3c">BTX<br>
+<HR>
+Które z podanych firm produkuj¹ procesory do komputerów klasy PC?<br>
+&nbsp&nbsp&nbsp&nbsp<INPUT TYPE="checkbox" NAME="p7a" VALUE="p7a">Intel<br> 
+&nbsp&nbsp&nbsp&nbsp<INPUT TYPE="checkbox" NAME="p7b" VALUE="p7b">AMD<br>
+&nbsp&nbsp&nbsp&nbsp<INPUT TYPE="checkbox" NAME="p7c" VALUE="p7c">IBM<br>
+&nbsp&nbsp&nbsp&nbsp<INPUT TYPE="checkbox" NAME="p7d" VALUE="p7d">Microsoft<br>
+<HR>
+Które z firm:<br>
+&nbsp&nbsp&nbsp&nbsp<INPUT TYPE="checkbox" NAME="p9a" VALUE="p9a">Western Digital<br> 
+&nbsp&nbsp&nbsp&nbsp<INPUT TYPE="checkbox" NAME="p9b" VALUE="p9b">Whirlpool<br>
+&nbsp&nbsp&nbsp&nbsp<INPUT TYPE="checkbox" NAME="p9c" VALUE="p9c">Seagate<br>
+&nbsp&nbsp&nbsp&nbsp<INPUT TYPE="checkbox" NAME="p9d" VALUE="p9d">Samsung<br>
+produkuj¹ dyski twarde?
+<HR>
+Które z poni¿szych nazw oznaczaj¹ standard podstawek pod procesor?<br>
+&nbsp&nbsp&nbsp&nbsp<INPUT TYPE="checkbox" NAME="p10a" VALUE="p10a">Socket 7<br> 
+&nbsp&nbsp&nbsp&nbsp<INPUT TYPE="checkbox" NAME="p10b" VALUE="p10b">Super 7<br>
+&nbsp&nbsp&nbsp&nbsp<INPUT TYPE="checkbox" NAME="p10c" VALUE="p10c">Slot 1<br>
+&nbsp&nbsp&nbsp&nbsp<INPUT TYPE="checkbox" NAME="p10d" VALUE="p10d">Slot 7<br>
+<HR>
+Dynamiczny rozwój slotów na p³ycie g³ównej rozpocz¹³ siê wraz z wprowadzeniem przez INTELA&reg procesora (p³yty) 486. 
+<SELECT NAME="p11">
+<OPTION VALUE=none>Ilu?
+<OPTION VALUE="odpa"> 16
+<OPTION VALUE="odpb"> 32
+<OPTION VALUE="odpc"> 8
+<OPTION VALUE="odpd"> 12
+</SELECT> 
+ - bitowy slot ISA, który królowa³ w czasach 386 zostaje wypierany przez nowy, szybszy slot  
+<SELECT NAME="p12">
+<OPTION VALUE=none>jaki?
+<OPTION VALUE="odpa"> AGP
+<OPTION VALUE="odpb"> PCI
+<OPTION VALUE="odpc"> DMA
+<OPTION VALUE="odpd"> USB
+</SELECT> 
+. Z pocz¹tku by³ on wykorzystywany g³ównie do instalacji
+<SELECT NAME="p13">
+<OPTION VALUE=none>czego?
+<OPTION VALUE="odpa"> kart dŸwiêkowych
+<OPTION VALUE="odpb"> kart graficznych
+<OPTION VALUE="odpc"> kart dŸwiêkowych
+<OPTION VALUE="odpd"> dysków twardych
+</SELECT> 
+. Nowoœci¹ ostatnich miesiêcy jest slot 
+<SELECT NAME="p14">
+<OPTION VALUE=none>o nazwie?
+<OPTION VALUE="odpa"> AGP
+<OPTION VALUE="odpb"> APG
+<OPTION VALUE="odpc"> USB
+<OPTION VALUE="odpd"> GTA
+</SELECT> 
+umo¿liwiaj¹cy zainstalowanym na nim kartach bezpoœredni dostêp do
+<SELECT NAME="p15">
+<OPTION VALUE=none>czego?
+<OPTION VALUE="odpa"> dysku twardego
+<OPTION VALUE="odpb"> karty graficznej 
+<OPTION VALUE="odpc"> pamiêci RAM
+<OPTION VALUE="odpd"> procesora 
+</SELECT> 
+. Oprócz slotów na p³ycie znajduj¹ siê wejœcia IDE, do których podpina siê 
+<SELECT NAME="p16">
+<OPTION VALUE=none>co?
+<OPTION VALUE="odpa"> drukarki
+<OPTION VALUE="odpb"> dyski twarde 
+<OPTION VALUE="odpc"> procesory
+<OPTION VALUE="odpd"> pamiêæ cache
+</SELECT> 
+. Obecnie mo¿na go zast¹piæ modnym ostatnio z³¹czem 
+<SELECT NAME="p17">
+<OPTION VALUE=none>jakim?
+<OPTION VALUE="odpa"> SCSII 
+<OPTION VALUE="odpb"> DER
+<OPTION VALUE="odpc"> TWA
+<OPTION VALUE="odpd"> DMA
+</SELECT> 
+.W modzie jest obecnie posiadanie myszki korzystaj¹cej z wejœcia 
+<SELECT NAME="p18">
+<OPTION VALUE=none>jakiego?
+<OPTION VALUE="odpa"> lpt1
+<OPTION VALUE="odpb"> p/2s
+<OPTION VALUE="odpc"> ps/2
+<OPTION VALUE="odpd"> com1
+</SELECT> 
+oraz z³¹cze o najdoskonalszym jak do tej pory systemie PLUG&PLAY
+<SELECT NAME="p19">
+<OPTION VALUE=none>o nazwie?
+<OPTION VALUE="odpa"> USB
+<OPTION VALUE="odpb"> HUB
+<OPTION VALUE="odpc"> UBS
+<OPTION VALUE="odpd"> FAT
+</SELECT> 
+<HR>
+</FORM>
+</TABLE>
+
+<table border=0 cellpadding=20><tr>
+<td><font color="black"><font face=arial>
+Przypisz nazwy rodzajów wykresów do odpowiednich rysunków poni¿ej:
+<FORM NAME=PP1>
+<table><tr><td><img src="../grafiki/wyk-kol.gif" hspace=20 border=1><td>
+<INPUT TYPE="radio" NAME="odp" VALUE="a">ko³owy<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="a">XY (punktowy)<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="b">liniowy<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="c">kolumnowy</table>
+</FORM> 
+<FORM NAME=PP2>
+<table><tr><td><img src="../grafiki/wyk-lin.gif" hspace=20 border=1><td>
+<INPUT TYPE="radio" NAME="odp" VALUE="a">ko³owy<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="a">XY (punktowy)<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="b">liniowy<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="c">kolumnowy</table>
+</FORM> 
+<FORM NAME=PP3>
+<table><tr><td><img src="../grafiki/wyk-tor.gif" hspace=20 border=1><td>
+<INPUT TYPE="radio" NAME="odp" VALUE="a">ko³owy<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="a">XY (punktowy)<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="b">liniowy<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="c">kolumnowy</table>
+</FORM> 
+<FORM NAME=PP4>
+<table><tr><td><img src="../grafiki/wyk-xy.gif" hspace=20 border=1><td>
+<INPUT TYPE="radio" NAME="odp" VALUE="a">ko³owy<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="a">XY (punktowy)<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="b">liniowy<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="c">kolumnowy</table>
+</FORM> 
+</table>
+
+<FORM NAME=UUU>
+<table border=0 cellpadding=20 BGCOLOR=green><tr>
+<td><font color=yellow><font face=arial>
+Jakiego typu wykresu nie mo¿na utworzyæ z dwóch serii danych jednoczeœnie?
+<table><tr><td width=70><td><font color=yellow>
+<INPUT TYPE="radio" NAME="odp" VALUE="a">ko³owego<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="b">kolumnowego<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="c">liniowego<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="d">XY (punktowego)<br></table>
+</table>
+</FORM> 
+
+
+<TABLE BGCOLOR="black" WIDTH=100%>
+<TR><TD><FONT COLOR="yellow" SIZE=4>
+Które oznaczenie nie dotyczy typu procesora:
+<FORM NAME="OBA"><OL TYPE="a">
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="a">286
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="b">386 DX
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="c">430 VX
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="d">586
+</OL></FORM>
+<TD><IMG SRC="../grafiki/a5.gif" ALIGN="left">
+<TR><TD COLSPAN=2><HR>
+</TABLE>
+
+<TABLE BGCOLOR="black" WIDTH=100%>
+<TR><TD><FONT COLOR="lime" SIZE=4>
+Twain <IMG SRC="../grafiki/47.gif"> to standard sterowników dla:
+<FORM NAME="CAB"><OL TYPE=a>
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="a">skanerów,
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="b">CD-ROM - ów,
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="c">dysków twardych,
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="d">kart muzycznych.
+</OL></FORM>
+<TD><IMG SRC="../grafiki/ag00011.gif" ALIGN="left">
+<TR><TD COLSPAN=2><HR>
+</TABLE>
+
+<TABLE BGCOLOR="black" WIDTH=100%>
+<TR><TD><IMG SRC="../grafiki/skullslim.gif">
+<TD><FONT COLOR="orange" SIZE=4>
+<FORM NAME="CCA">Rozkazy multimedialne rozszerzaj¹ce mo¿liwoœci procesora okreœlamy symbolem:<P ALIGN="center">
+	<SELECT NAME="odp" SIZE=1>
+	<OPTION VALUE=none>Proszê wybierz
+	<OPTION VALUE="odpowiedŸ a">MMX
+	<OPTION VALUE="odpowiedŸ b">MPEG
+	<OPTION VALUE="odpowiedŸ c">AGP
+	<OPTION VALUE="odpowiedŸ d">USB
+	</SELECT></FORM>
+</TABLE>
+
+<TABLE WIDTH=100%>
+<TD COLSPAN=4><FONT COLOR="darkgreen" SIZE=4>
+Komputer bêdzie wydajniejszy, je¿eli zwiêkszysz iloœæ pamiêci RAM.<BR> Wystarczy zdj¹æ obudowê i zamontowaæ:
+	<OL TYPE=a><FORM NAME="CAA">
+	<TR><TD><LI><INPUT TYPE="radio" NAME="odp" VALUE="a"><FONT COLOR="red" SIZE=5> a.
+	<TD><LI><INPUT TYPE="radio" NAME="odp" VALUE="b"><FONT COLOR="red" SIZE=5> b.
+	<TD><LI><INPUT TYPE="radio" NAME="odp" VALUE="c"><FONT COLOR="red" SIZE=5> c.
+	<TD><LI><INPUT TYPE="radio" NAME="odp" VALUE="d"><FONT COLOR="red" SIZE=5> d.
+	<TR><TD><IMG SRC="../grafiki/1.gif">
+	<TD><IMG SRC="../grafiki/2.gif">
+	<TD><IMG SRC="../grafiki/3.gif">
+	<TD><IMG SRC="../grafiki/4.gif">
+	</FORM></OL>
+</TABLE>
+
+<HR COLOR=red SIZE=2>
+
+<FORM NAME=RRR>
+<table border=0 cellpadding=20><tr>
+<td><font color="black"><font face=arial>
+Aby wkleiæ tabelê utworzon¹ w arkuszu kalkulacyjnym do dokumentu tekstowego z wykorzystaniem mechanizmu OLE nale¿y zaznaczyæ ja jako blok tekstu, skopiowaæ do Schowka przy u¿yciu opcji menu EDYCJA / KOPIUJ, przejœæ do dokumentu tekstowego a nastêpnie wkleiæ tabelê:
+<table><tr><td width=1><td>
+<INPUT TYPE="radio" NAME="odp" VALUE="a">przy pomocy opcji menu EDYCJA / WKLEJ<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="a">wybieraj¹c z menu opcjê EDYCJA / WKLEJ SPECJALNIE<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="b">korzystaj¹c z opcji menu EDYCJA / WKLEJ SPECJALNIE i zaznaczaj¹c parametr WKLEJ £¥CZE<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="c">korzystaj¹c z kombinacji klawiszy CTRL-V</table>
+</table>
+</FORM> 
+
+<HR COLOR=red SIZE=2>
+
+<TABLE WIDTH=100% BGCOLOR="yellow">
+<TD COLSPAN=4>
+<TR><TD COLSPAN=2><FONT COLOR="maroon" SIZE=4>
+W przypadku gdy komputer siê "zawiesi" stosujemy "gor¹cy start" naciskaj¹c jednoczeœnie klawisze:
+<TR><TD><CENTER><IMG SRC="../grafiki/clown1.gif">
+	<TD><OL TYPE=a><FORM NAME="BBC"><FONT COLOR="maroon" SIZE=4>
+	<LI><INPUT TYPE="checkbox" NAME="odp1" VALUE="a">ALT
+	<LI><INPUT TYPE="checkbox" NAME="odp2" VALUE="b">CTRL
+	<LI><INPUT TYPE="checkbox" NAME="odp3" VALUE="c">DEL
+	<LI><INPUT TYPE="checkbox" NAME="odp4" VALUE="d">ESC
+	</FORM></OL>
+<TR><TD COLSPAN=2><HR>
+</TABLE>
+
+
+<TABLE WIDTH=100% BGCOLOR="yellow">
+<TD COLSPAN=4>
+<TR><TD COLSPAN=2><FONT COLOR="maroon" SIZE=4>
+Najmniejsza jednostka <IMG SRC="../grafiki/44.gif"> obrazu cyfrowego to: 
+<TR><TD><IMG SRC="../grafiki/Ani75.gif" WIDTH=100>
+	<TD><OL TYPE=a><FORM NAME="FFK"><FONT COLOR="maroon" SIZE=4>
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="a">CMYK
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="b">RGB
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="c">pin
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="d">piksel
+	</FORM></OL>
+<TD><CENTER><IMG SRC="../grafiki/Ani74.gif">
+<TR><TD COLSPAN=3><HR>
+</TABLE>
+
+<TABLE WIDTH=100% BGCOLOR="yellow">
+<TD COLSPAN=4>
+<TR><TD COLSPAN=2><FONT COLOR="maroon" SIZE=4>
+Drukarkê <IMG SRC="../grafiki/45.gif"> najlepiej pod³¹czyæ do komputera z wykorzystaniem:
+	<OL TYPE=a><FORM NAME="BBM">
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="a">portu równoleg³ego LPT,
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="b">z³¹cza szeregowego COM,
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="c">z³¹cza RJ-45
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="d">oryginalnej karty SCSI
+	</FORM></OL>
+<TR><TD COLSPAN=2><HR>
+</TABLE>
+
+
+<TABLE WIDTH=100% BGCOLOR="yellow">
+<TD COLSPAN=4>
+<TR><TD COLSPAN=4><FONT COLOR="maroon" SIZE=4>
+Jako przedstawiciel firmy <IMG SRC="../grafiki/14.gif">polecam Ci nasz "flagowy" produkt:
+	<FORM NAME="KWW">
+	<TR><TD WIDTH=25%><INPUT TYPE="radio" NAME="odp" VALUE="a"><FONT COLOR="maroon" SIZE=4> a.
+	<TD WIDTH=25%><INPUT TYPE="radio" NAME="odp" VALUE="b"><FONT COLOR="maroon" SIZE=4> b.
+	<TD WIDTH=25%><INPUT TYPE="radio" NAME="odp" VALUE="c"><FONT COLOR="maroon" SIZE=4> c.
+	<TD WIDTH=25%><INPUT TYPE="radio" NAME="odp" VALUE="d"><FONT COLOR="maroon" SIZE=4> d.
+	<TR><TD><IMG SRC="../grafiki/15.gif">	
+	<TD><IMG SRC="../grafiki/16.gif">
+	<TD><IMG SRC="../grafiki/17.gif">
+	<TD><IMG SRC="../grafiki/18.gif">
+</FORM>
+</TABLE>
+
+<TABLE WIDTH=100% BGCOLOR="lightgreen"><TR><TD><BR>
+<TR><TD><FONT COLOR="darkgreen" SIZE=4>
+<FORM NAME="DDR">
+Pamiêæ podrêczna przyspieszaj¹ca pracê procesora to <INPUT TYPE="text" NAME="odp"> .
+</FORM>
+<TR><TD><IMG SRC="../grafiki/snoopy.gif"><IMG SRC="../grafiki/Ani31.gif">
+</TABLE>
+
+
+<TABLE WIDTH=100% BGCOLOR="lightgreen">
+<TR><TD><FONT COLOR="darkgreen" SIZE=4>
+Okreœlenie WYSIWG oznacza, ¿e:
+	<OL TYPE=a><FORM NAME="ADB">
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="a">system automatycznie zainstaluje kartê rozszerzeñ lub 	urz¹dzenie dodatkowe w komputerze,
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="b">tekst widziany na ekranie bêdzie mia³ ten sam wygl¹d 	po wydrukowaniu,
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="c">kod programu napisany jest w sposób umo¿liwiajacy 	automatyczn¹ samoreplikacjê,
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="d">dane na tym noœniku mozna zapisaæ tylko raz, ale 	mo¿na wielokrotnie je odczytywaæ.
+	</FORM></OL>
+</TABLE>
+
+<TABLE WIDTH=100% BGCOLOR="white">
+<TR><TD VALIGN=middle><FONT COLOR="purple" SIZE=4>
+Robi³em porz¹dki <BR>i znalaz³em takie rzeczy.
+<TD VALIGN=middle><IMG SRC="../grafiki/28.gif"> 
+<TD COLSPAN=4 VALIGN=middle><FONT COLOR="purple" SIZE=4> Tylko do czego mo¿e siê to przydaæ ?
+	<FORM NAME="WWB">
+	<TR><TD><INPUT TYPE="radio" NAME="odp" VALUE="a"><FONT COLOR="purple" SIZE=4>A.
+	<TD><INPUT TYPE="radio" NAME="odp" VALUE="b"><FONT COLOR="purple" SIZE=4>B.
+	<TD><INPUT TYPE="radio" NAME="odp" VALUE="c"><FONT COLOR="purple" SIZE=4>C.
+	<TD><INPUT TYPE="radio" NAME="odp" VALUE="d"><FONT COLOR="purple" SIZE=4>D.
+	<TR><TD><IMG SRC="../grafiki/31.gif">
+	<TD><IMG SRC="../grafiki/30.gif">
+	<TD><IMG SRC="../grafiki/32.gif">
+	<TD><IMG SRC="../grafiki/29.gif">
+	</FORM>
+<TR><TD COLSPAN=4><CENTER>
+<IMG SRC="../grafiki/Ani59.gif" WIDTH=33%>
+<IMG SRC="../grafiki/Ani59.gif" WIDTH=33%>
+<IMG SRC="../grafiki/Ani59.gif" WIDTH=33%>
+</TABLE>
+
+
+<TABLE WIDTH=100% BACKGROUND="../grafiki/Colors3.jpg">
+<TD COLSPAN=4>
+<TR><TD COLSPAN=2><FONT COLOR="purple" SIZE=4>
+Aby wybrany element znalaz³ siê w schowku nale¿y wcisn¹æ jednoczeœnie klawisze:
+<TR><TD><CENTER><IMG SRC="../grafiki/¿aba.gif">
+	<TD><OL TYPE=a><FORM NAME="CBC"><FONT COLOR="maroon" SIZE=4>
+	<LI><INPUT TYPE="checkbox" NAME="odp1" VALUE="a">CTRL-C
+	<LI><INPUT TYPE="checkbox" NAME="odp2" VALUE="b">CTRL-V
+	<LI><INPUT TYPE="checkbox" NAME="odp3" VALUE="c">CTRL-X
+	<LI><INPUT TYPE="checkbox" NAME="odp4" VALUE="d">CTRL-K
+	</FORM></OL>
+<TR><TD COLSPAN=2>
+</TABLE>
+
+<TABLE WIDTH=100% BACKGROUND="../grafiki/Colors3.jpg">
+<TD COLSPAN=4>
+<TR><TD COLSPAN=2><FONT COLOR="navy" SIZE=4>
+Z plików o podanych ni¿ej rozszerzeniach plikiem archiwizatora jest :
+	<TR><TD><OL TYPE=a><FORM NAME="WBB"><FONT COLOR="maroon" SIZE=5><B>
+	<LI><INPUT TYPE="checkbox" NAME="odp1" VALUE="a">arh
+	<LI><INPUT TYPE="checkbox" NAME="odp2" VALUE="b">zip
+	<LI><INPUT TYPE="checkbox" NAME="odp3" VALUE="c">rar
+	<LI><INPUT TYPE="checkbox" NAME="odp4" VALUE="d">anj
+	</FORM></OL>
+	<TD><CENTER><IMG SRC="../grafiki/A_3hap~1.gif">
+<TR><TD COLSPAN=2>
+
+<TR><TD COLSPAN=2><FONT COLOR="red" SIZE=4>
+Funkcjê  w  arkuszu kalkulacyjnym EXCEL mo¿emy wprowadziæ do komórki poprzedzaj¹c jej nazwê znakiem :<TR><TD><CENTER><IMG SRC="../grafiki/Duffy.gif">
+	<TD><OL TYPE=a><FORM NAME="CWW"><FONT COLOR="darkgreen" SIZE=5><B>
+	<LI><INPUT TYPE="checkbox" NAME="odp1" VALUE="a">+
+	<LI><INPUT TYPE="checkbox" NAME="odp2" VALUE="b">&
+	<LI><INPUT TYPE="checkbox" NAME="odp3" VALUE="c">=
+	<LI><INPUT TYPE="checkbox" NAME="odp4" VALUE="d">-
+	</FORM></OL>
+<TR><TD COLSPAN=2>
+ 
+<FORM NAME=EEE>
+<table border=0 cellpadding=10><tr>
+<td><font color="maroon" face=arial size=3><B>
+Pliki skoroszytów utworzone w arkuszu kalkulacyjnym Excel maj¹ rozszerzenie:
+<SELECT NAME="odp">
+<OPTION VALUE=none>wybierz:
+<OPTION VALUE="odpa">txt
+<OPTION VALUE="odpb">exc
+<OPTION VALUE="odpc">exl
+<OPTION VALUE="odpd">xls
+<OPTION VALUE="odpe">dat
+<OPTION VALUE="odpf">sko
+<OPTION VALUE="odpg">skr
+<OPTION VALUE="odph">arc
+<OPTION VALUE="odpi">ark
+<OPTION VALUE="odpj">lsx
+<OPTION VALUE="odpk">wri
+<OPTION VALUE="odpl">sav
+</SELECT></B>
+</table>
+</FORM> 
+
+
+<TR><TD COLSPAN=2><FONT COLOR="navy" SIZE=4>
+Najbardziej typowy tryb znakowy wyœwietlania znaków na ekranie monitora to : 
+	<TR><TD><OL TYPE=a><FORM NAME="WDR"><FONT COLOR="maroon" SIZE=4><B>
+	<LI><INPUT TYPE="checkbox" NAME="odp1" VALUE="a">w 24 wierszach po 80 znaków.	<LI><INPUT TYPE="checkbox" NAME="odp2" VALUE="b">w 80 wierszach po 25 znaków. 
+	<LI><INPUT TYPE="checkbox" NAME="odp3" VALUE="c">w 25 wierszach po 80 znaków 
+	<LI><INPUT TYPE="checkbox" NAME="odp4" VALUE="d">w 24 wierszach po 79 znaków. 
+	</FORM></OL>
+	<TD><CENTER><IMG SRC="../grafiki/dog.gif">
+</TABLE>
+<IMG SRC="../grafiki/Ani59.gif" WIDTH=45%>
+<IMG SRC="../grafiki/Ani59.gif" WIDTH=45%>
+
+<TABLE BACKGROUND="../grafiki/tlo8.jpg" WIDTH=100%>
+<TR><TD COLSPAN=4><BR><FONT COLOR="gold" SIZE=5>Dobierz proszê znaczenia do odpowiednich wyrazów angielskich: 
+<TR><TD><FONT COLOR="yellow" SIZE=7><B><CENTER>save
+<TD><CENTER><FORM NAME="ECB"><BR><SELECT NAME="odp" SIZE=6>
+	<OPTION VALUE="odpa">katalog
+	<OPTION VALUE="odpb">zapisz
+	<OPTION VALUE="odpc">drukuj
+	<OPTION VALUE="odpd">kasuj
+	<OPTION VALUE="odpe">wybierz
+	<OPTION VALUE="odpf">nowy
+	<OPTION VALUE="odpg">zamknij
+	<OPTION VALUE="odph">szukaj
+	<OPTION VALUE="odpi">cofnij
+	<OPTION VALUE="odpj">wytnij
+	<OPTION VALUE="odpk">wklej
+	</SELECT></FORM>
+<TD ALIGN="center"><IMG SRC="../grafiki/31-25.jpg" WIDTH=220>
+
+<TR><TD><FONT COLOR="yellow" SIZE=7><B><CENTER>close
+<TD><CENTER><FORM NAME="ECD"><BR><SELECT NAME="odp" SIZE=6>
+	<OPTION VALUE="odpa">katalog
+	<OPTION VALUE="odpb">zapisz
+	<OPTION VALUE="odpc">drukuj
+	<OPTION VALUE="odpd">kasuj
+	<OPTION VALUE="odpe">kopiuj
+	<OPTION VALUE="odpf">nowy
+	<OPTION VALUE="odpg">zamknij
+	<OPTION VALUE="odph">szukaj
+	<OPTION VALUE="odpi">cofnij
+	<OPTION VALUE="odpj">wytnij
+	<OPTION VALUE="odpk">wklej
+	</SELECT></FORM>
+<TD ALIGN="center"><IMG SRC="../grafiki/31-24.jpg" WIDTH=220>
+</TABLE>
+
+<TABLE BACKGROUND="../grafiki/tlo8.jpg" WIDTH=100%>
+<TR><TD><FONT COLOR="yellow" SIZE=7><B><CENTER>search
+<TD><CENTER><FORM NAME="ECU"><BR><SELECT NAME="odp" SIZE=6>
+	<OPTION VALUE="odpa">katalog
+	<OPTION VALUE="odpb">zapisz
+	<OPTION VALUE="odpc">drukuj
+	<OPTION VALUE="odpd">kasuj
+	<OPTION VALUE="odpe">kopiuj
+	<OPTION VALUE="odpf">nowy
+	<OPTION VALUE="odpg">zamknij
+	<OPTION VALUE="odph">szukaj
+	<OPTION VALUE="odpi">cofnij
+	<OPTION VALUE="odpj">wytnij
+	<OPTION VALUE="odpk">wklej
+	</SELECT></FORM>
+
+<TD><FONT COLOR="yellow" SIZE=7><B><CENTER>paste
+<TD ALIGN="left"><FORM NAME="ECL"><BR><SELECT NAME="odp" SIZE=6>
+	<OPTION VALUE="odpa">katalog
+	<OPTION VALUE="odpb">zapisz
+	<OPTION VALUE="odpc">drukuj
+	<OPTION VALUE="odpd">kasuj
+	<OPTION VALUE="odpe">kopiuj
+	<OPTION VALUE="odpf">nowy
+	<OPTION VALUE="odpg">zamknij
+	<OPTION VALUE="odph">szukaj
+	<OPTION VALUE="odpi">cofnij
+	<OPTION VALUE="odpj">wytnij
+	<OPTION VALUE="odpk">wklej
+	</SELECT></FORM>
+
+
+<TR><TD><FONT COLOR="yellow" SIZE=7><B><CENTER>print
+<TD><CENTER><FORM NAME="ECO"><BR><SELECT NAME="odp" SIZE=6>
+	<OPTION VALUE="odpa">katalog
+	<OPTION VALUE="odpb">zapisz
+	<OPTION VALUE="odpc">drukuj
+	<OPTION VALUE="odpd">kasuj
+	<OPTION VALUE="odpe">kopiuj
+	<OPTION VALUE="odpf">nowy
+	<OPTION VALUE="odpg">zamknij
+	<OPTION VALUE="odph">szukaj
+	<OPTION VALUE="odpi">cofnij
+	<OPTION VALUE="odpj">wytnij
+	<OPTION VALUE="odpk">wklej
+	</SELECT></FORM>
+
+<TD><FONT COLOR="yellow" SIZE=7><B><CENTER>undo
+<TD ALIGN="left"><FORM NAME="ECZ"><BR><SELECT NAME="odp" SIZE=6>
+	<OPTION VALUE="odpa">katalog
+	<OPTION VALUE="odpb">zapisz
+	<OPTION VALUE="odpc">drukuj
+	<OPTION VALUE="odpd">kasuj
+	<OPTION VALUE="odpe">kopiuj
+	<OPTION VALUE="odpf">nowy
+	<OPTION VALUE="odpg">zamknij
+	<OPTION VALUE="odph">szukaj
+	<OPTION VALUE="odpi">cofnij
+	<OPTION VALUE="odpj">wytnij
+	<OPTION VALUE="odpk">wklej
+	</SELECT></FORM>
+
+<TR><TD><FONT COLOR="yellow" SIZE=7><B><CENTER>cut
+<TD><CENTER><FORM NAME="ECI"><BR><SELECT NAME="odp" SIZE=6>
+	<OPTION VALUE="odpa">katalog
+	<OPTION VALUE="odpb">zapisz
+	<OPTION VALUE="odpc">drukuj
+	<OPTION VALUE="odpd">kasuj
+	<OPTION VALUE="odpe">kopiuj
+	<OPTION VALUE="odpf">nowy
+	<OPTION VALUE="odpg">zamknij
+	<OPTION VALUE="odph">szukaj
+	<OPTION VALUE="odpi">cofnij
+	<OPTION VALUE="odpj">wytnij
+	<OPTION VALUE="odpk">wklej
+	</SELECT></FORM>
+
+<TD><FONT COLOR="yellow" SIZE=7><B><CENTER>delete
+<TD ALIGN="left"><FORM NAME="ECE"><BR><SELECT NAME="odp" SIZE=6>
+	<OPTION VALUE="odpa">katalog
+	<OPTION VALUE="odpb">zapisz
+	<OPTION VALUE="odpc">drukuj
+	<OPTION VALUE="odpd">kasuj
+	<OPTION VALUE="odpe">kopiuj
+	<OPTION VALUE="odpf">nowy
+	<OPTION VALUE="odpg">zamknij
+	<OPTION VALUE="odph">szukaj
+	<OPTION VALUE="odpi">cofnij
+	<OPTION VALUE="odpj">wytnij
+	<OPTION VALUE="odpk">wklej
+	</SELECT></FORM>
+
+<TR><TD><FONT COLOR="yellow" SIZE=7><B><CENTER>copy
+<TD><CENTER><FORM NAME="ECY"><BR><SELECT NAME="odp" SIZE=6>
+	<OPTION VALUE="odpa">katalog
+	<OPTION VALUE="odpb">zapisz
+	<OPTION VALUE="odpc">drukuj
+	<OPTION VALUE="odpd">kasuj
+	<OPTION VALUE="odpe">kopiuj
+	<OPTION VALUE="odpf">nowy
+	<OPTION VALUE="odpg">zamknij
+	<OPTION VALUE="odph">szukaj
+	<OPTION VALUE="odpi">cofnij
+	<OPTION VALUE="odpj">wytnij
+	<OPTION VALUE="odpk">wklej
+	</SELECT></FORM>
+
+<TD><FONT COLOR="yellow" SIZE=7><B><CENTER>new
+<TD ALIGN="left"><FORM NAME="ECP"><BR><SELECT NAME="odp" SIZE=6>
+	<OPTION VALUE="odpa">katalog
+	<OPTION VALUE="odpb">zapisz
+	<OPTION VALUE="odpc">drukuj
+	<OPTION VALUE="odpd">kasuj
+	<OPTION VALUE="odpe">kopiuj
+	<OPTION VALUE="odpf">nowy
+	<OPTION VALUE="odpg">zamknij
+	<OPTION VALUE="odph">szukaj
+	<OPTION VALUE="odpi">cofnij
+	<OPTION VALUE="odpj">wytnij
+	<OPTION VALUE="odpk">wklej
+	</SELECT></FORM>
+</TABLE>
+
+<FORM NAME=BBB>
+<table border=0 cellpadding=20><tr>
+<td><font color="black"><font face=arial>
+Funkcjê w arkuszu kalkulacyjnym wprowadzamy do komórki poprzedzaj¹c jej nazwê znakiem:<br>
+<table><tr><td width=70><td>
+<INPUT TYPE="radio" NAME="odp" VALUE="a">$<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="b">&<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="c">@<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="d">=<br></table>
+</table>
+</FORM> 
+
+
+<TABLE WIDTH=100% BACKGROUND="../grafiki/Litnotes.jpg">
+<TR><TD COLSPAN=3><FONT COLOR="maroon" SIZE=4><BR>
+Format pliku u¿ywanego przez Microsoft Windows do "magazynowania" dŸwiêku i obrazu to:
+<TR><TD><IMG SRC="../grafiki/Ani75.gif" WIDTH=100>
+	<TD><OL TYPE=a><FORM NAME="FFU"><FONT COLOR="maroon" SIZE=4>
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="a">AVI
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="b">ARJ
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="c">ASP
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="d">API
+	</FORM></OL>
+<TD><CENTER><IMG SRC="../grafiki/Guitar.gif">
+<TR><TD COLSPAN=3><FONT COLOR="maroon" SIZE=4><BR>
+Plikami dŸwiêkowymi nie s¹ pliki o nastepuj¹cych rozszerzeniach:
+<TR><TD><IMG SRC="../grafiki/Vrloop.gif" WIDTH=100>
+	<TD><OL TYPE=a><FORM NAME="FFO"><FONT COLOR="maroon" SIZE=4>
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="a">WAV
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="b">MP3
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="c">SPC
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="d">MID
+	</FORM></OL>
+<TD><CENTER><IMG SRC="../grafiki/ptasek.gif">
+
+<TR><TD COLSPAN=2><FONT COLOR="maroon" SIZE=4><BR>
+AGP to nowy interfejs opracowany dla:
+	<TR><TD><OL TYPE=a><FORM NAME="FFZ"><FONT COLOR="maroon" SIZE=4>
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="a">kart graficznych
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="b">kart muzycznych
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="c">procesorów
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="d">pamiêci
+	</FORM></OL>
+<TD><CENTER><IMG SRC="../grafiki/Ani38.gif">
+
+<TR><TD COLSPAN=5><FONT COLOR="maroon" SIZE=4><BR>
+Aby pos³uchaæ muzyki z komputera wystarczy zainstalowaæ kartê muzyczn¹. Potrzebny bêdzie œrubokrêt i:
+	<TR><TD><OL TYPE=a><FORM NAME="FFI"><FONT COLOR="maroon" SIZE=4>
+	<INPUT TYPE="radio" NAME="odp" VALUE="a"><IMG SRC="../grafiki/9.gif">
+	<TD><INPUT TYPE="radio" NAME="odp" VALUE="b"><IMG SRC="../grafiki/7.gif">
+	<TD><INPUT TYPE="radio" NAME="odp" VALUE="c"><IMG SRC="../grafiki/8.gif">
+	<TD><INPUT TYPE="radio" NAME="odp" VALUE="d"><IMG SRC="../grafiki/6.gif">
+	<TD WIDTH=50></FORM></OL>
+
+<TR><TD COLSPAN=4><FONT COLOR="maroon" SIZE=4><BR>
+Rozszerzenia systemowe Windows 95 i Windows NT (programowy interfejs u¿ytkownika) miêdzy innymi dla grafiki i 	dŸwiêku to:
+	<TR><TD><OL TYPE=a><FORM NAME="FFS"><FONT COLOR="maroon" SIZE=4>
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="a">DLL
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="b">DMA Mode
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="c">DirectX
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="d">DVL
+	</FORM></OL>
+</TABLE>
+
+<FORM NAME=DDD>
+<table border=0 cellpadding=20><tr>
+<td width=2>
+<td><font color="black"><font face=arial>
+Który z przycisków w arkuszu kalkulacyjnym Excel s³u¿y do tworzenia wykresów?<br>
+<table><tr><td width=70><td>
+<INPUT TYPE="radio" NAME="odp" VALUE="a"><img src="../grafiki/wykres1.gif" border=1><br>
+<INPUT TYPE="radio" NAME="odp" VALUE="b"><img src="../grafiki/wykres2.gif" border=1><br>
+<INPUT TYPE="radio" NAME="odp" VALUE="c"><img src="../grafiki/wykres3.gif" border=1><br>
+<INPUT TYPE="radio" NAME="odp" VALUE="d"><img src="../grafiki/wykres4.gif" border=1><br></table>
+</table>
+</FORM> 
+
+<FORM NAME=III>
+<table border=0 cellpadding=20><tr>
+<td width=2>
+<td><font color="black"><font face=arial>
+Aby zsumowaæ liczby w kolumnie B umieszczaj¹c wynik w komórce B7 nale¿y nacisn¹æ przycisk:
+<table>
+<tr><td><img src="../grafiki/suma.gif" border=1></td><td width=60> <td><td>
+<INPUT TYPE="radio" NAME="odp" VALUE="a"><img src="../grafiki/suma-1.gif" border=1><br>
+<INPUT TYPE="radio" NAME="odp" VALUE="b"><img src="../grafiki/suma-2.gif" border=1><br>
+<INPUT TYPE="radio" NAME="odp" VALUE="c"><img src="../grafiki/suma-3.gif" border=1><br>
+<INPUT TYPE="radio" NAME="odp" VALUE="d"><img src="../grafiki/suma-4.gif" border=1><br>
+</table>
+</table>
+</FORM> 
+
+
+<TABLE WIDTH=100% BACKGROUND="../grafiki/Cottcndy.jpg">
+<TR><TD COLSPAN=3><FONT COLOR="red" SIZE=4><B><BR>
+A oto kilka zdañ, które powinienieœ uzupe³niæ o znane Ci zapewne s³owa:<BR></B><P ALIGN="left"><FONT COLOR="maroon" SIZE=4>
+
+<FORM NAME="OOA">Z³¹cze wewn¹trz komputera, do którego pod³¹cza siê dyski twarde oraz napêdy CD i DVD oczywiœcie nazywa siê  <INPUT TYPE="text" NAME="odpA" SIZE=3>.      <INPUT TYPE="text" NAME="odpB" SIZE=10> to proces redukcji miejsca, które zajmuje dana informacja. Opiera siê na specjalnych algorytmach matematycznych, dziêki którym ta sama informacja mo¿e zostaæ zapisana w taki sposób, ¿e zajmuje mniej miejsca. Redagowanie tekstu w jêzyku polskim przy pomocy niepolskich edytorów napotyka na pewne trudnoœci, które s¹ zwi¹zane z definicj¹ polskich znaków diakrytycznych. Na œwiecie za standardowy uwa¿a siê kod <INPUT TYPE="text" NAME="odpC" SIZE=6>, w którym nie przewidziano polskich liter. Dlatego dla polskich znaków pojawi³y siê inne standardy. Czêœæ tekstu pomiêdzy dwoma naciœniêciami klawisza [ENTER] nazywamy<INPUT TYPE="text" NAME="odpD" SIZE=12>. Z punktu widzenia budowy czcionki wyró¿niamy czcionkê rastrow¹ i czcionkê wektorow¹. W przypadku du¿ego powiêkszenia czcionki <INPUT TYPE="text" NAME="odpE" SIZE=12> w jej kszta³cie pojawiaj¹ siê "z¹bkowane linie". Wydzielona logicznie czêœæ dysku twardego nazywa siê <INPUT TYPE="text" NAME="odpF" SIZE=12>. I tak dysk o wielkoœci 4 GB mo¿na przyk³adowo podzieliæ na kilka takich czêœci: 2 GB, 1,5 GB, 0,5 GB. <INPUT TYPE="text" NAME="odpG" SIZE=3> to lista plików zapisanych na dysku twardym, dziêki czemu mo¿na je w odpowiednim momencie odszukaæ. MS-DOS i pierwsze wersje Windows 95 u¿ywa³y tzw. wersji 16. Windows 95 OSR2 i Windows 98 mog¹ u¿ywaæ zarówno wersji 16, jak i ulepszonej wersji - 32.    <INPUT TYPE="text" NAME="odpI"> to skoñczona liczba kroków, która ma rozwi¹zaæ problem natury logicznej lub matematycznej. Okreœlenia tego u¿ywa siê potocznie w celu przedstawienia procesu lub sposobu dzia³ania. Warto tak¿e znaæ pojêcie <INPUT TYPE="text" NAME="odpJ">, które oznacza ³¹czenie ze sob¹ ³añcuchów tekstowych. Z kolei na proces zmiejszania o jednostkê mówimy, ¿e jest to  <INPUT TYPE="text" NAME="odpK">.  Zdefiniowany przez autora programu sposób komunikowania siê u¿ytkownika z programem i programu z u¿ytkownikiem zwykliœmy okreœlaæ jako <INPUT TYPE="text" NAME="odpH">.
+</FORM>
+</TABLE>
+
+<TABLE WIDTH=100% BGCOLOR="white">
+<TR><TD COLSPAN=4><FONT COLOR="fuchsia" SIZE=4><BR>
+Planujê zakup skanera, jako fachowiec z pewnoœci¹ polecisz mi produkt firmy:
+	<TR><TD><FORM NAME="UFU">
+	<INPUT TYPE="radio" NAME="odp" VALUE="a"><IMG SRC="../grafiki/10.gif">
+	<TD><INPUT TYPE="radio" NAME="odp" VALUE="b"><IMG SRC="../grafiki/11.gif">
+	<TD><INPUT TYPE="radio" NAME="odp" VALUE="c"><IMG SRC="../grafiki/12.gif">
+	<TD><INPUT TYPE="radio" NAME="odp" VALUE="d"><IMG SRC="../grafiki/13.gif">
+	</FORM>
+</TABLE>
+<IMG SRC="../grafiki/Lista.gif" WIDTH=45%>
+<IMG SRC="../grafiki/Lista.gif" WIDTH=45%>
+<TABLE WIDTH=100% BGCOLOR="white">
+<TR><TD COLSPAN=6><FONT COLOR="fuchsia" SIZE=4><BR>
+"True color" to okreœlenie dotycz¹ce kolorów zdefiniowanych przez: 
+	<TR><TD WIDTH=30><TD><IMG SRC="../grafiki/Bean.gif">
+	<FORM NAME="UFO">
+	<TD><OL><FONT COLOR="darkviolet" SIZE=4>
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="a"><FONT COLOR="darkviolet" SIZE=4>24 bity,
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="b"><FONT COLOR="darkviolet" SIZE=4>48 bitów,
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="c"><FONT COLOR="darkviolet" SIZE=4>16 bitów,
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="d"><FONT COLOR="darkviolet" SIZE=4>33 bity.
+	</OL></FORM>
+</TABLE></TABLE>
+
+<FORM NAME=HHH>
+<table border=0 cellpadding=20><tr>
+<td><font color="black"><font face=arial>
+Aby powi¹zaæ cenê ka¿dej z maszyn z cen¹ dolara umieszczon¹ w komórce B1 nale¿y skorzystaæ z w³asnoœci arkusza zwanej adresowaniem bezwzglêdnym. W tym przypadku do komórek D4, D5 i D6 nale¿y wpisaæ formu³ê:
+<table>
+<tr><td><img src="../grafiki/maszyny.gif" border=1><td>
+<INPUT TYPE="radio" NAME="odp" VALUE="a">=C4*&B1<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="b">=C4*B$1<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="c">=C4*$B$1<br>
+<INPUT TYPE="radio" NAME="odp" VALUE="d">=C4*B1<br>
+</table>
+</table>
+</FORM> 
+
+
+
+<TABLE WIDTH=100% BGCOLOR="white">
+<TR><TD COLSPAN=4><FONT COLOR="fuchsia" SIZE=4><BR><CENTER>
+Jeden z wiêkszych konkurentów firmy <IMG SRC="../grafiki/19.gif"> to oczywiœcie:
+	<TR><TD><FORM NAME="UFE">
+	<INPUT TYPE="radio" NAME="odp" VALUE="a"><IMG SRC="../grafiki/20.gif">
+	<TD><INPUT TYPE="radio" NAME="odp" VALUE="b"><IMG SRC="../grafiki/21.gif">
+	<TD><INPUT TYPE="radio" NAME="odp" VALUE="c"><IMG SRC="../grafiki/22.gif">
+	<TD><INPUT TYPE="radio" NAME="odp" VALUE="d"><IMG SRC="../grafiki/23.gif">
+	</FORM>
+</TABLE>
+<IMG SRC="../grafiki/Lista.gif" WIDTH=33%>
+<IMG SRC="../grafiki/Lista.gif" WIDTH=33%>
+<TABLE WIDTH=100% BGCOLOR="white">
+<TR><TD COLSPAN=6><FONT COLOR="fuchsia" SIZE=4><BR>
+Dysk twardy, z którego uruchamiamy system zawsze jest oznaczony liter¹: 
+	<TR><TD WIDTH=40>
+	<FORM NAME="UFI"><FONT COLOR="darkviolet" SIZE=5>
+	<TD><LI><INPUT TYPE="radio" NAME="odp" VALUE="a"><FONT COLOR="darkviolet" SIZE=5><B>A
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="b"><FONT COLOR="darkviolet" SIZE=5><B>B
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="c"><FONT COLOR="darkviolet" SIZE=5><B>C
+	<LI><INPUT TYPE="radio" NAME="odp" VALUE="d"><FONT COLOR="darkviolet" SIZE=5><B>D
+	</OL></FORM>
+	<TD WIDTH=30><TD><IMG SRC="../grafiki/Ani5.gif">
+</TABLE><HR></CENTER>
+<FONT COLOR="darkgreen" SIZE=2 FACE="Arial CE"><B>
+<FORM NAME="TRK">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Windows 98 stosuje system plików:
+<SELECT NAME="a1">
+<OPTION VALUE=none>** wybierz z listy **
+<OPTION VALUE="odpa"> NTFS
+<OPTION VALUE="odpb"> FAT 32
+<OPTION VALUE="odpc"> FAT 16
+<OPTION VALUE="odpd"> DOS
+</SELECT> 
+<HR>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+"Master boot record" to:
+<SELECT NAME="a2">
+<OPTION VALUE=none>** wybierz z listy **
+<OPTION VALUE="odpa"> Pierwszy sektor dysku twardego
+<OPTION VALUE="odpb"> Klaster
+<OPTION VALUE="odpc"> Plik dostêpu sieciowego
+<OPTION VALUE="odpd"> Tablica alokacji zbiorów
+</SELECT> 
+<HR>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+HUB -  to:
+<SELECT NAME="a3">
+<OPTION VALUE=none>** wybierz z listy **
+<OPTION VALUE="odpa">rodzaj kompresji plików
+<OPTION VALUE="odpb">z³¹cze 24 stykowe
+<OPTION VALUE="odpc">koncentrator sieciowy
+<OPTION VALUE="odpd">awaryjny zasilacz do komputera
+</SELECT> 
+<HR>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Jednostka logicznej pojemnoœci dysku twardego -  to:
+<SELECT NAME="a4">
+<OPTION VALUE=none>** wybierz z listy **
+<OPTION VALUE="odpa">plik
+<OPTION VALUE="odpb">sektor
+<OPTION VALUE="odpc">klaster
+<OPTION VALUE="odpd">dpi
+</SELECT> 
+<HR>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+PCI - to:
+<SELECT NAME="a5">
+<OPTION VALUE=none>** wybierz z listy **
+<OPTION VALUE="odpa">szybka magistrala sieciowa
+<OPTION VALUE="odpb">rodzaj szybkiej architektury systemowej
+<OPTION VALUE="odpc">protokó³ sieciowy
+<OPTION VALUE="odpd">typ zapisu bez korekty b³êdów na dysk
+</SELECT> 
+<HR>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Modu³ szybkiej pamiêci do 64 bitowej magistrali:
+<SELECT NAME="a6">
+<OPTION VALUE=none>** wybierz z listy **
+<OPTION VALUE="odpa">SIPP
+<OPTION VALUE="odpb">DRAM
+<OPTION VALUE="odpc">DIMM
+<OPTION VALUE="odpd">SIMM
+</SELECT> 
+<HR>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Znak & nosi nazwê:
+<SELECT NAME="a7">
+<OPTION VALUE=none>** wybierz z listy **
+<OPTION VALUE="odpa">ampersand
+<OPTION VALUE="odpb">tylda
+<OPTION VALUE="odpc">hash
+<OPTION VALUE="odpd">slash
+</SELECT> 
+<HR>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Okreœlenie "plug and  play" oznacza :
+<SELECT NAME="a8">
+<OPTION VALUE=none>** wybierz z listy **
+<OPTION VALUE="odpa">program do odtwarzania plików audio i video
+<OPTION VALUE="odpb">typy plików muzycznych nowego formatu
+<OPTION VALUE="odpc">standard urz¹dzeñ do odtwarzania muzyki przez internet
+<OPTION VALUE="odpd">automatyczne wykrywanie i instalowanie urz¹dzeñ przez Windows 98
+</SELECT> 
+<HR>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+TCP/IP jest :
+<SELECT NAME="a9">
+<OPTION VALUE=none>** wybierz z listy **
+<OPTION VALUE="odpa">metod¹ kompresji plików systemowych
+<OPTION VALUE="odpb">protoko³em po³¹czenia sieciowego
+<OPTION VALUE="odpc">nowym standardem karty grafiki
+<OPTION VALUE="odpd">metod¹ kompresji plików poczty elektronicznej
+</SELECT> 
+<HR>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+ScanDisk usuwa:
+<SELECT NAME="a10">
+<OPTION VALUE=none>** wybierz z listy **
+<OPTION VALUE="odpa">wirusy
+<OPTION VALUE="odpb">b³êdy zwi¹zane z zagubionymi plikami
+<OPTION VALUE="odpc">zaznaczone pliki na twardym dysku
+<OPTION VALUE="odpd">zeskanowane pliki graficzne
+<OPTION VALUE="odpe">niepo¿¹dan¹ ci¹¿ê
+</SELECT> 
+<HR>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Defrag to:
+<SELECT NAME="a11">
+<OPTION VALUE=none>** wybierz z listy **
+<OPTION VALUE="odpa">program usuwaj¹cy fragmentacjê plików na dysku
+<OPTION VALUE="odpb">program ukrywaj¹cy pliki na dysku
+<OPTION VALUE="odpc">program badaj¹cy strukturê dysku
+<OPTION VALUE="odpd">program optymalizuj¹cy przesy³anie plików sieci¹
+</SELECT> 
+<HR>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+RegEdit to program do:
+<SELECT NAME="a12">
+<OPTION VALUE=none>** wybierz z listy **
+<OPTION VALUE="odpa">edycji plików i efektów muzycznych
+<OPTION VALUE="odpb">edycji zawartoœci rejestrów systemu
+<OPTION VALUE="odpc">nagrywania i konwersji plików muzycznych
+<OPTION VALUE="odpd">edycji rejestrów boot sektora
+</SELECT> 
+<HR>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Zawartoœæ ekranu mo¿na skopiowaæ:
+<SELECT NAME="a13">
+<OPTION VALUE=none>** wybierz z listy **
+<OPTION VALUE="odpa">naciskaj¹c klawisze Alt+PrintScrn
+<OPTION VALUE="odpb">naciskaj¹c klawisze Shift+PrintScrn
+<OPTION VALUE="odpc">naciskaj¹c klawisze Ctrl+Shift+Enter
+<OPTION VALUE="odpd">naciskaj¹c klawisz PrintScrn
+</SELECT> 
+<HR>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Do podzia³u dysku na partycje mo¿na stosowaæ program:
+<SELECT NAME="a19">
+<OPTION VALUE=none>** wybierz z listy **
+<OPTION VALUE="odpa">fdisk
+<OPTION VALUE="odpb">defrag
+<OPTION VALUE="odpc">scandisk
+<OPTION VALUE="odpd">Regedit
+</SELECT> 
+<HR>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+W Windows 98 nazwy plików mog¹ byæ:
+<SELECT NAME="a14">
+<OPTION VALUE=none>** wybierz z listy **
+<OPTION VALUE="odpa">o nieograniczonej liczbie znaków
+<OPTION VALUE="odpb">o maksymalnej liczbie 8 znaków
+<OPTION VALUE="odpc">o maksymalnej liczbie znaków 255
+<OPTION VALUE="odpd">o maksymalnej liczbie znaków 256
+</SELECT> 
+<HR>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+MP3 to:
+<SELECT NAME="a15">
+<OPTION VALUE=none>** wybierz z listy **
+<OPTION VALUE="odpa">format kompresji plików audio
+<OPTION VALUE="odpb">format kompresji plików wideo
+<OPTION VALUE="odpc">format kompatybilny z MPEG-3
+<OPTION VALUE="odpd">format kompatybilny z MPEG-1
+</SELECT> 
+<HR>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Tylda to:
+<SELECT NAME="a16">
+<OPTION VALUE=none>** wybierz z listy **
+<OPTION VALUE="odpa">Nastepuj¹cy znaczek - <B>@
+<OPTION VALUE="odpb">Nastepuj¹cy znaczek - <B>&
+<OPTION VALUE="odpc">Nastepuj¹cy znaczek - <B>~
+<OPTION VALUE="odpd">Nastepuj¹cy znaczek - <B>#
+</SELECT> 
+<HR>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Aby na klawiaturze nieprzystosowanej do WINDOWS uruchomiæ menu START nale¿y wybrac:
+<SELECT NAME="a17">
+<OPTION VALUE=none>** wybierz z listy **
+<OPTION VALUE="odpa">Ctrl+Shift+Enter
+<OPTION VALUE="odpb">Ctrl+Esc
+<OPTION VALUE="odpc">Shift+Alt+Esc
+<OPTION VALUE="odpd">Ctrl+Enter
+</SELECT> 
+<HR>
+</FORM><CENTER>
+<IMG SRC="../grafiki/laska.gif" ALIGN="center"><BR><BR></CENTER>
+<HR>
+
+<FORM NAME=SSS>
+<table border=1 cellpadding=20 BGCOLOR=lime><tr>
+<td><font color="black"><font face=arial>
+Zaznacz wszystkie znaki które w arkuszu kalkulacyjnym EXCEL s¹ operatorami arytmetycznymi:
+<table width=100%><tr><td>
+<INPUT TYPE="checkbox" NAME="aa1" VALUE="aa1">^<br>
+<INPUT TYPE="checkbox" NAME="aa2" VALUE="aa2">#<br>
+<INPUT TYPE="checkbox" NAME="aa3" VALUE="aa3">-<br>
+<INPUT TYPE="checkbox" NAME="aa4" VALUE="aa4">*
+<td>
+<INPUT TYPE="checkbox" NAME="aa5" VALUE="aa5">%<br>
+<INPUT TYPE="checkbox" NAME="aa6" VALUE="aa6">~<br>
+<INPUT TYPE="checkbox" NAME="aa7" VALUE="aa7">/<br>
+<INPUT TYPE="checkbox" NAME="aa8" VALUE="aa8">@
+<td>
+<INPUT TYPE="checkbox" NAME="aa9" VALUE="aa9">!<br>
+<INPUT TYPE="checkbox" NAME="a10" VALUE="a10">$<br>
+<INPUT TYPE="checkbox" NAME="a11" VALUE="a11">+<br>
+<INPUT TYPE="checkbox" NAME="a12" VALUE="a12">\
+</table>
+</table>
+</FORM> 
+
+<HR>
+
+
+<FONT COLOR="maroon" SIZE=3>To ju¿ koniec, niestety nie zd¹¿y³em wiêcej, mo¿e nastêpnym razem. Je¿eli skoñczy³eœ wczeœniej poproœ prowadz¹cego.<BR><BR>Dziêkujê za uwagê<P ALIGN="center"><IMG SRC="../grafiki/januszek.jpg"><BR><BR><FONT COLOR="maroon" SIZE=2><I>Twój J@nuszek</I><BR><BR><BR><BR>
+
+<CENTER> <form>
+	    <input type="Button" name="question" value="Jeœli skoñczy³eœ naciœnij ten klawisz. Pamiêtaj mo¿esz jeszcze wróciæ i coœ poprawiæ!" align="LEFT" ONCLICK="compute()">
+    </form>
+</BODY>
+</HTML>

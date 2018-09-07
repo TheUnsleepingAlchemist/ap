@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+   
+ <link rel="stylesheet" href="remont.css">
+       <script type="text/javascript">
+  function asd()
+  {
+    if (document.form.plytki[0].checked)
+    x=form.pole1.value*80;
+    if (document.form.plytki[1].checked)
+    x=form.pole1.value*70;
+  document.getElementById("val").innerHTML="Koszt kafelkowania: "+x+"zł";
+  }
+</script>
+
+	<meta charset="utf-8" />
+   
+    
+    
+	<title>Remonty mieszkań</title>
+	
+	
+</head>
+<body>
+
+	<div id="menu">
+		<table align="center">
+		<td valign="center" width="220"><img src="logo.jpg" /><br></td>
+		<td valign="top" width="220"><a href="index.html">O FIRMIE</a></td>
+		<td valign="top" width="220"><a href="adres.html">ADRES</a></td>
+		<td valign="top" width="220"><a href="policz.html">POLICZ</a></td>
+		<td valign="top" width="220"><a target="_blank" href="http://jakremontowac.pl">LINKI</td>
+	</table>
+	</div>
+	<div id="glowny">
+        <h1>Kafelkowanei łazienki</h1>
+            <form name="form">
+ 
+  powierzchnia: <input type="number" name="pole1" min="0" max="1000"><br></br>
+  <input type="radio" name="plytki" value="1" id="c1">Płytki 20x15 <br></br>
+  <input type="radio" name="plytki" value="2" id="c2">Płytki 15x15 <br>
+  <button type="button" name="Policz" onClick="asd()">Policz</button><br>
+  <p id="val"></p>
+</form>
+                    
+    </div>
+    
+		<div id="stopka">
+		Maciej Wojtyna 98080310559
+		</div>
+		
+	
+	</div>
+
+</body>
+</html>
+		
+		

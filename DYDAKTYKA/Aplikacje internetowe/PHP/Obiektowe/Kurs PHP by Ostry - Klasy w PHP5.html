@@ -1,0 +1,518 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- saved from url=(0048)http://ti.zs2-stargard.edu.pl/kurs_php/oop5.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
+	
+	<meta http-equiv="Creation-date" content="2005-10-16T09:49:05Z">
+	<meta http-equiv="Reply-to" content="p.ostalecki@gmail.com">
+	<meta http-equiv="Content-Language" content="pl">
+	<meta name="Keywords" content="php, php4, php5, kurs, ostry, oop, programowanie obiektowe, html, xhtml, www, programowanie, obiekty, klasy, referencje">
+	<meta name="Description" content="Kurs PHP - od postaw aż do zaawansowanego programowania obiektowego w PHP.">
+	<meta name="Author" content="Piotr Ostry Ostalecki">
+	<meta name="Authoring_tool" content="CS Pajaczek NxG PRO v5.0.2">
+	<meta name="Robots" content="ALL">
+	<title>Kurs PHP by Ostry - Klasy w PHP5</title>
+	<link rel="stylesheet" href="./Kurs PHP by Ostry - Klasy w PHP5_files/css.css" type="text/css">
+</head>
+
+<body data-feedly-mini="yes">
+	
+	<table style="width:100%">
+	<tbody><tr>
+		<td>
+			&nbsp;
+		</td>
+		<td style="width:750px">
+			<h2>Kurs PHP by Ostry</h2>
+			<h3>Klasy - wstęp == PHP5</h3>
+			
+			<div class="body">
+				<a id="roznice"></a>
+				<h4>Różnice pomiędzy PHP4 i PHP5</h4>
+				<p>
+					W nowym PHP nie wprowadzono wiele zmian. Poprawiono obsługę plików XML, dodano obsługę wyjątków, ale co najważniejsze - przebudowano model obiektowy (obsługę klas), który można teraz porównać do tego z C++ czy Javy.
+				</p>
+				<p>
+					Rozdział ten opisuje tylko nowe rzeczy w programowaniu obiektowym w PHP5, tak więc jeśli nie wiesz na czym to polega, przeczytaj rodział o obiektach w PHP4 - tam znajdziesz wszystkie podstawy, a dopiero potem ten rozdział.
+				</p>
+				<a id="autoload"></a>
+				<h4>Automatycznie wczytywanie</h4>
+				<p>
+					Wiele osób piszących skrypty oparte na obiektach umieszcza po jedenej definicji klasy w pojedynczym includowanym pliku. Jedna z najbardziej denerwujących rzeczy jest napisanie listy 'includów' na początku skryptu. Aby to rozwiązać dodana została funkcja<code>__autoload()</code>, która automatycznie wykona zaplanowanie zadania, podczas tworzenia obiektu.
+					<br>
+					<br>
+					Wyjątki typu<code>fatal_error</code>zwracane przez __autoload() nie moga być wyłapane przez blok<code>catch</code>.
+				</p>
+				
+				<div class="kod">
+					<code>&lt;?
+						<br>
+						&nbsp;&nbsp;function __autoload($klasa) {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;require_once $klasa . '.php';
+						<br>
+						&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;
+						<br>
+						&nbsp;&nbsp;$obj  = new klasa1();
+						<br>
+						&nbsp;&nbsp;$obj2 = new klasa2();
+						<br>
+					?&gt;</code>
+				</div>
+				
+				<a id="cons-destruct"></a>
+				<h4>Konstruktory i destruktory</h4>
+				<p>
+					W poprzednich wersjach konstruktor musiał nazywać się tak samo jak klasa. Prowadziło to do pomyłek w tworzeniu klas pochodnych i ich kontruktorach. Teraz konstruktor każdej klasy nazywa się po prostu<code>__construct()</code>- pamiętaj o dwóch znakach podkreślenia na początku.
+				</p>
+				<p>
+					Destruktory to natomiast funkcje uruchamiane podczas niszczenia obiektu - zazwyczaj jest właśnie to koniec skryptu. Destruktor ma postać<code>__destruct()</code>- również zaczyna się od dwóch znaków podkreślenia.
+				</p>
+				
+				<div class="kod">
+					<code>&lt;?
+						<br>
+						&nbsp;&nbsp;class zarowka {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;function __construct() {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo "zarówka włączona&lt;br  /&gt;";
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;function __destruct() {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo "zarowka wylaczona&lt;br  /&gt;";
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;$zar1 = new zarowka;
+						<br>
+					?&gt;</code>
+				</div>
+				
+				<p>
+					Skrypt ten da w wyniku nastepujący tekst:
+					<br>
+					<code>zarówka włączona
+						<br>
+					zarowka wylaczona</code>
+					<br>
+					Tekst z destruktora wyświetli się w tym przypadku, ponieważ nastąpi zniszczenie obiektu (czyli zazwyczaj dzieje się to przy zakończeniu skryptu, chociaż można też to zrobić ręcznie).
+				</p>
+				<a id="ref"></a>
+				<h4>Referencje i klonowanie</h4>
+				<p>
+					W PHP4, aby utworzyć referencję (<a href="http://ti.zs2-stargard.edu.pl/kurs_php/ref.html">Referencje</a>) do obiektu należało wykonać taką linijkę kodu:<code>$obiekt2 =&amp; $obiekt1;</code>natomiast<code>$obiekt2 = $obiekt1;</code>tworzyło po prostu kopię obiektu. W PHP5 zmieniono tą kwestię i teraz<code>$obiekt2 = $obiekt1;</code>tworzy referencję. Aby skopiować obiekt należy  użyć funkcji<code>clone(obiekt)</code>, która jako parametr pobiera obiekt do skopiowania, a zwraca nowy obiekt.
+					<br>
+					<br>
+					<code>$obiekt2 = clone($obiekt1);</code>
+					<br>
+				</p>
+				
+				<div class="kod">
+					<code>&lt;?
+						<br>
+						&nbsp;&nbsp;class zarowka {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;var $wlaczona;
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;function __construct() {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;wlaczona='wlaczona';
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;function pokaz() {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return $this-&gt;wlaczona;
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;$zarowka1 = new zarowka;
+						<br>
+						&nbsp;&nbsp;$zarowka2 = $zarowka1;
+						<br>
+						&nbsp;&nbsp;$zarowka1-&gt;wlaczona="wylaczona";
+						<br>
+						&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;echo "zarowka2 jest ".$zarowka2-&gt;pokaz();
+						<br>
+					?&gt;</code>
+				</div>
+				
+				<p>
+					<br>
+					Powyższy kod wyświetli 'zarowka2 jest wylaczona', ponieważ<code>$zarowka2</code>jest referencją do<code>$zarowka1</code>, a więc odnosi się do tych samych wartości zmiennych.
+					<br>
+					Jesli natomiast ktoś chciałby skopiowac obiekt, należy zamiast linii<code>$zarowka2 = $zarowka1;</code>wstawić<code>$zarowka2 = clone($zarowka1);</code>. Wtedy skrypt zwróci 'zarowka2 jest wlaczona', ponieważ<code>$zarowka2</code>to wtedy całkiem inny obiekt, operujący na innych zmiennych.
+				</p>
+				<a id="trzy-p"></a>
+				<h4>Klasy publiczne, chronione i prywatne czyli 3P</h4>
+				<p>
+					W PHP5 każda metoda klasy lub jej zmienna może być zadaklarowana z jednym z trzech słów kluczowych występujących w podtytule tego rozdziału.
+				</p>
+				<ol style="text-align:left">
+					<li><b>public</b>(publiczna) - zmienna lub metoda jest widoczna z całego skryptu</li>
+					<li><b>protected</b>(chroniona) - zmienna lub metoda jest widoczna tylko z obiektu w którym się znajduje bądź z jego obiektu podrzędnego</li>
+					<li><b>private</b>(prywatna) - zmienna lub metoda jest widoczna tylko z obiektu w którym się znajduje</li>
+				</ol>
+				
+				<div class="kod">
+					<code>&lt;?
+						<br>
+						&nbsp;&nbsp;class klasa1 {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;public $public = 'public';
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;protected $protected = 'protected';
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;private $private = 'private';
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;function pokazZmienne() {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo $this-&gt;public.'&lt;br  /&gt;';
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo $this-&gt;protected.'&lt;br  /&gt;';
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo $this-&gt;private.'&lt;br  /&gt;';
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;
+						<br>
+						&nbsp;&nbsp;$obj1 = new klasa1;
+						<br>
+						&nbsp;&nbsp;echo $obj1-&gt;public; //działa
+						<br>
+						&nbsp;&nbsp;echo $obj1-&gt;protected; //fatal error
+						<br>
+						&nbsp;&nbsp;echo $obj1-&gt;private; //fatal error
+						<br>
+						&nbsp;&nbsp;$obj1-&gt;pokazZmienne(); //pokaże wszystkie zmienne
+						<br>
+						&nbsp;&nbsp;
+						<br>
+						&nbsp;&nbsp;class klasa2 extends klasa1 {}
+						<br>
+						&nbsp;&nbsp;$obj2 = new klasa2;
+						<br>
+						&nbsp;&nbsp;echo $obj2-&gt;public; //działa
+						<br>
+						&nbsp;&nbsp;echo $obj2-&gt;protected; //fatal error
+						<br>
+						&nbsp;&nbsp;echo $obj2-&gt;private; //zmienna niezdefiniowana
+						<br>
+						&nbsp;&nbsp;$obj2-&gt;pokazZmienne(); //pokaże $public i $protected
+						<br>
+						&nbsp;&nbsp;// ale nie $private, gdyż nie została ona odziedziczona z klasa1
+						<br>
+					?&gt;</code>
+				</div>
+				
+				<p>
+					<br>
+					<br>
+					W powyższym przykładzie wykorzystałem zmienne, ale rzecz ma się tak samo do metod w klasie. publiczna jest widoczna nawet spoza obiektu, natomiast chronione i prywatne moga być wywołane tylko ze środka obiektu. (<code>$klasa-&gt;metoda()</code>wyświetli błąd<code>fatal error</code>jeśli<code>metoda()</code>jest chroniona bądź prywatna).
+				</p>
+				<a id="interface"></a>
+				<h4>Interfejsy</h4>
+				<p>
+					Klasy mogą dziedziczyć tylko z jednej klasy nadrzędnej. To prowadziło czasami do nadmiernego komplikowania drzewa klas. Aby temu zapobiec w PHP5 wprowadzono interfejsy, które w rzeczywistości nie mają żadnych metod. Interfejs to tylko definicja metody i parametrów jakie ona pobiera. Do kalsy można potem zainplementować dowolną liczbę interfejsów, pod warunkiem, że w klasie zostaną zadeklarowane metody z interfejsów. Jeśli nie zostanie zadeklarowana jakaś metoda, wymagana przez zaimplementowany interfejs wyświetli się<code>fatal error</code>Aby dołączyć interfejs nalezy sie posłużyć słowem<code>implements</code>.
+				</p>
+				
+				<div class="kod">
+					<code>&lt;?
+						<br>
+						&nbsp;&nbsp;interface jasnosc {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;function rozjasnij($wartosc);
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;function sciemnij($wartosc);
+						<br>
+						&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;interface dzialanie {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;function wlacz();
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;function wylacz();
+						<br>
+						&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;class zarowka implements jasnosc, dzialanie {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;function rozjasnij($wartosc) {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo "rozjaśniam o ".$wartosc."&lt;br  /&gt;";
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;function sciemnij($wartosc) {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo "ściemniam o ".$wartosc."&lt;br  /&gt;";
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;function wlacz() {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo "wlaczam&lt;br  /&gt;";
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;function wylacz() {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo "wylaczam&lt;br  /&gt;";
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;}
+						<br>
+					?&gt;</code>
+				</div>
+				
+				<br>
+				<a id="abs"></a>
+				<h4>Abstrakcje</h4>
+				<p>
+					W PHP5 wprowadzono abstrakcyjne klasy i metody. Są to specjalne klasy, na podstawie, których nie można utworzyć obiektu, moga być natomiast dziedziczone i to jest właśnie ich podstawowe zadanie. Służą jako bazy, do tworzenia na ich podstawie klas pochodnych. Abstrakcyjne metody to tylko ich deklaracje. Nie moga zawierać kodu do wykonania, muszą być natomiast rozbudowane w każdej z klas potomnych.
+					<br>
+					Klasę lub metodę deklaruje się jako abstrakcyjną wstawiając przed jej nazwę i typ (private, public, protected) słowo kluczowe<code>abstract</code>.
+					<br>
+					W klasie, w której zaimplementowano metode abstrakcyjną, musi ona być deklarowana z tym samym bądź niższym poziomem widoczności. Czyli jeśli w klasie abstrakcyjnej metoda była chroniona (protected)	to w klasie potomnej może ona być chroniona lub publiczna, bo w przeciwnym wypadku wygenerowany zostanie błąd<code>fatal error (Access level to klasa2::metoda() must be protected (as in class klasa1) or weaker i)</code>
+					<br>
+				</p>
+				
+				<div class="kod">
+					<code>&lt;?
+						<br>
+						&nbsp;&nbsp;abstract class klasaBazowa {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;abstract protected function func(); //wymuś rozbudowę metody
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//w klasach pochodnych
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;protected function func2 () {//zwykła funkcja
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo "jakiś tekst";
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;class klasa2 extends klasaBazowa {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;protected function func() {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo "inny tekst";
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;}
+						<br>
+					?&gt;</code>
+					<br>
+				</div>
+				
+				<a id="static"></a>
+				<h4>Metody i zmienne statyczne</h4>
+				<p>
+					Metody i zmienne statyczne to takie, do których dostęp mozna uzyskać z zewnątrz, bez definiowania obiektu danej klasy. Elementy statyczne definiowane są operatorem<code>static</code>i dostęp do nich musi być koniecznie publiczny. Nie mozna też używać<code>$this-&gt;</code>jako odniesienia do aktualnej klasy. Zamiast tego uzywaj<code>self::</code>. Zmienne z metody statycznej nie moga być pobierane za pomocą operatora<code>-&gt;</code>. Zamiast tego użyj operatora<code><a href="http://pl.php.net/manual/pl/language.oop5.paamayim-nekudotayim.php">Paamayim Nekudotayim</a></code>czyli :: (dwukropka).
+				</p>
+				
+				<div class="kod">
+					<code>&lt;?
+						<br>
+						&nbsp;&nbsp;class klasa {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;public static $statyczna = 'cos';
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;public function wartosc() {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return self::$statyczna;
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;$klasa = new klasa;
+						<br>
+						&nbsp;&nbsp;echo klasa::$statyczna;
+						<br>
+						&nbsp;&nbsp;echo klasa::wartosc();
+						<br>
+						&nbsp;&nbsp;echo $klasa-&gt;statyczna; //nie zadziała
+						<br>
+					?&gt;</code>
+				</div>
+				
+				<a id="kol"></a>
+				<h4>__call()</h4>
+				<p>
+					W przypadku wywołania metody danej klasy, która nie istnieje uruchomiona zostanie metoda<code>__call()</code>(o ile została zadeklarowana), która może wykonać dowolny kod, pokazać błąd, zapisać log czy poinformować że dana metoda nie istnieje. Jeśli metoda __call nie zostanie zadeklarowana, pokaże się<code>fatal error: call to an undefinied function</code>
+				</p>
+				
+				<div class="kod">
+					<code>&lt;?
+						<br>
+						&nbsp;&nbsp;class klasa {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;function _call ($name, $params) {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo 'Wywołałeś metodę '.$name.'.';
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;$klasa = new klasa;
+						<br>
+						&nbsp;&nbsp;$klasa-&gt;jakastam();//wyświetli 'Wywołałeś metodę jakastam.'
+						<br>
+					?&gt;</code>
+				</div>
+				
+				<a id="set"></a>
+				<h4>__set()</h4>
+				<p>
+					__set() jest metoda przechwytującą próby zmiany wartości zmiennej w klasie. Ma dwa argumenty, nazwę zmiennej i jej nowa wartość.
+				</p>
+				
+				<div class="kod">
+					<code>&lt;?
+						<br>
+						&nbsp;&nbsp;class klasa {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;function _set ($name, $value) {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo 'Probujesz nadać zmiennej '.$name.' wartość '.$value;
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;$klasa = new klasa;
+						<br>
+						&nbsp;&nbsp;$klasa-&gt;zmienna = 'costam';//wyświetli 'Probujesz nadać zmiennej zmienna wartość costam'
+						<br>
+					?&gt;</code>
+				</div>
+				
+				<a id="get"></a>
+				<h4>__get()</h4>
+				<p>
+					__get() jest metoda przechwytującą próby uzyskania dostępu do wartości zmiennej.
+				</p>
+				
+				<div class="kod">
+					<code>&lt;?
+						<br>
+						&nbsp;&nbsp;class klasa {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;function _get ($name) {
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo 'Probujesz odczytać znienną '.$name;
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;$klasa = new klasa;
+						<br>
+						&nbsp;&nbsp;echo $klasa-&gt;zmienna;//wyświetli 'Probujesz odczytać znienną zmienna'
+						<br>
+					?&gt;</code>
+				</div>
+				
+				<a id="final"></a>
+				<h4>final</h4>
+				<p>
+					Dzieki słowu kluczowemu<code>final</code>nie jest możliwe redefiniowanie metody w klasie pochodnej. Jeśli nastąpi próba redefiniowania metody finalnej, wyświetli się błąd.
+					<br>
+					Użycie:<code>final function funkcja()</code>.
+				</p>
+				<a id="instanceof"></a>
+				<h4>instanceof</h4>
+				<p>
+					Operator<code>instanceof</code>pozwala na sprawdzenie, czy obiekt jest powiązany z daną klasą lub interfejsem. Jeśli dany obiekt jest utworzony na bazie podanej klasy, jej klasy bazowej lub klasa implementuje dany interfejs zwraca TRUE.
+				</p>
+				
+				<div class="kod">
+					<code>&lt;?
+						<br>
+						&nbsp;&nbsp;interface zarowki{}
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;//interfejs zarowki
+						<br>
+						&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;class zarowkaBazowa implements zarowki {}
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;//klasa zarowkaBazowa
+						<br>
+						&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;class zarowka extends zarowkaBazowa {}
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;//klasa zarowkaBazowa
+						<br>
+						&nbsp;&nbsp;}
+						<br>
+						&nbsp;&nbsp;$zarowka = new zarowka;
+						<br>
+						&nbsp;&nbsp;if ($zarowka instanceof zarowka)
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;//prawda - $zarowka to obiekt klasy zarowka
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;echo '$zarowka jest powiązana z klasą zarowka';
+						<br>
+						&nbsp;&nbsp;if ($zarowka instanceof zarowkaBazowa)
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;//prawda - $zarowka to obiekt klasy zarowka (dziedziczonej po zarowkaBazowa)
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;echo '$zarowka jest powiązana z klasą zarowkaBazowa';
+						<br>
+						&nbsp;&nbsp;if ($zarowka instanceof zarowki)
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;//prawda - klasa zarowkaBazowa implementuje interfejs zarowki
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;echo '$zarowka jest powiązana z interfejsem zarowki';
+						<br>
+					?&gt;</code>
+				</div>
+				
+			</div>
+			
+			<table style="width:100%; border-top: thin solid #673300">
+			<tbody><tr>
+				<td style="text-align:left">
+					<a href="http://ti.zs2-stargard.edu.pl/kurs_php/index.html">Do strony głównej</a>
+				</td>
+					<td style="text-align:center">
+					<a href="http://validator.w3.org/check?uri=referer">
+					<img style="border:none" src="./Kurs PHP by Ostry - Klasy w PHP5_files/valid-xhtml11" alt="Valid XHTML 1.1" height="31" width="88">
+					</a>
+				</td>
+				<td style="text-align:right">
+					&#169;Copyright by<a href="mailto:p.ostalecki[malpa]gmail.com">Piotr 'Ostry' Ostalecki</a>
+				</td>
+			</tr>
+			</tbody></table>
+			
+		</td>
+		<td>
+			&nbsp;
+		</td>
+	</tr>
+	</tbody></table>
+	
+
+<div id="feedly-mini" title="feedly Mini tookit"></div></body></html>

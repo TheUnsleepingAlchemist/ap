@@ -1,0 +1,43 @@
+html {
+	height: 100%;
+}
+img#baner {
+	width: 70%;
+	height: 130px;
+}
+body {
+	margin-left: 0;
+	margin-right: 0;
+	background-color: black;
+	min-height: 98%;
+	position: relative;
+	color: #FF6D66;
+	font-size: 22px;
+	font-family: arial;
+}
+marquee {
+	padding: 10px;
+}
+div#bodydiv {
+	background-color: grey;
+	width: 100%;
+}
+img#zdjecie {
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 100%;
+	height: 500px;
+}
+table {
+	width: 97%;
+}
+a {
+	color: #FF6D66;
+	font-size: 20px;
+}
+div#modyfikacja {
+	margin-right: 5px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}

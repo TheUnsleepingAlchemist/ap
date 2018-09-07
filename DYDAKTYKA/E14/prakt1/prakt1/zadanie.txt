@@ -1,0 +1,46 @@
+Utwórz baner
+
+    Baner ma wymiary 720 px na 80px.
+    Tło banera powinno być wypełnione dowolnym odcieniem koloru niebieskiego, kolor czcionki czarny.
+    Wypełnienie kształtów - dowolny odcień koloru zielonego, krawędzie kształtów - kolor czarny.
+    Plik banera powinien być zapisany w formacie JPEG. Nazwij go baner.jpg.
+		
+----------------------------------------------------------------------------------------
+Utwórz stronę główną
+
+    Strona główna oraz podstrony mają układ zgodny z rysunkiem 1. Baner oraz menu są stałe dla wszystkich podstron witryny. Zmienia się tylko treść strony.
+    Rodzaj czcionki i rozmiar dobierz według uznania.
+    Menu złożone jest z dwóch linków prowadzących do podstron: proste działania i potęgowanie.
+    Baner stanowi link do strony głównej. Z każdej podstrony można przejść do strony głównej klikając baner.
+		
+    Strona główna nosi nazwę index.html.
+    Treść strony głównej to (w wykropkowane miejsce wstaw swój numer PESEL)
+    Znajdujesz się na stronie o tematyce matematycznej.
+    Mój PESEL to: ....................................
+    Czcionka powinna być pochylona.
+		
+----------------------------------------------------------------------------------------
+Utwórz podstronę "Proste działania"
+
+    Działanie wszystkich przycisków zaimplementuj w języku JavaScript (rysunek 2).
+    Po wciśnięciu dowolnego z przycisków, skrypt sprawdzi czy
+    a. Jedno lub oba pola są puste, jeśli tak wyświetli tekst: Proszę uzupełnić obie liczby.
+    b. po wciśnięciu przycisku DZIELENIE, druga liczba jest zero. Jeśli tak, wyświetli tekst Nie wolno dzielić przez zero.
+    W innym przypadku skrypt wykona działania dodawania, odejmowania, mnożenia lub dzielenia liczb, w zależności od wybranego przycisku.
+
+    Podstrona proste działania nosi nazwę strona1.html.
+    Tytuł "PROSTE DZIAŁANIA" powinien być umieszczony w odpowiednim znaczniku sekcji jako nagłówek 1.
+    Treść strony przedstawiona jest na rysunku 2.
+
+----------------------------------------------------------------------
+Utwórz podstronę "Potęgowanie"
+
+    Działanie przycisku POTĘGOWANIE zaimplementuj w języku PHP (rysunek 3).
+    Po wybraniu przycisku POTĘGOWANIE, skrypt powinien sprawdzić czy
+    a. podstawa i wykładnik zostały wprowadzone. Jeśli nie, wypisany jest tekst: Wpisz podstawę i wykładnik potęgi.
+    b. wykładnik potęgi jest dodatni. Jeśli nie, wypisany jest tekst: Wykładnik potęgi musi być dodatni.
+    Gdy dane są poprawne, skrypt obliczy potęgę dla dowolnych liczb naturalnych.
+
+    Podstrona potęgowanie działania nosi nazwę strona2.php.
+    Tytuł "POTĘGOWANIE" powinien być umieszczony w odpowiednim znaczniku sekcji nagłówkowej, oraz w treści strony jako nagłówek 1.
+    Treść strony przedstawiona jest na rysunku 3. Pola danych umożliwiają wpisanie jedynie wartości liczbowych.

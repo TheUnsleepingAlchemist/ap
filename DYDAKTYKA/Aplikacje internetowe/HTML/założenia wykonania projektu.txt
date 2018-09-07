@@ -1,0 +1,13 @@
+﻿Założenia wykonania strony www:
+1. Strona poświęcona konkretnemu tematowi.
+2. Zawartość:
+	- nagłówek, czcionki, tło,
+	- tabele,
+	- multimedia (grafika, muzyka, film)
+	- odnośniki (podstrony, inne strony www)
+3. Kryteria oceniania:
+	- Strona wykonana zgodnie ww z założeniami
+	- estetyka strony
+	- funkcjonalność
+	- przejrzystość
+

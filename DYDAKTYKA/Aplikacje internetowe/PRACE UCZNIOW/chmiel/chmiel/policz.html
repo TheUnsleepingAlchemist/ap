@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Remonty mieszkań</title>
+ <link rel="stylesheet" href="remont.css">
+ <script>
+	function licz()
+	{
+	 
+	 wynik = parseInt(form.liczba.value);
+	 var a=0;
+	
+		  if (document.form.odp[0].checked)
+		  a= wynik*70; 
+	 
+		  if (document.form.odp[1].checked)
+		  a= wynik*80;
+	
+	
+		document.getElementById("pole").innerHTML=a+"zł";
+	}
+	</script>
+		
+ <meta charset="utf-8">
+</head>
+<body>
+<div id="góra">  Witryna internetowa</div>
+<div id="srodek"> 
+<table>
+			<td><img src="images.jpg"></a></td>
+			<td><a href="index.html"> O FIRMIE</a></td>
+			<td><a href="adres.html"> ADRES</a></td>
+			<td><a href="policz.html"> POLICZ</td>
+			<td><a target="blanck" href="http://www.jakremontowac.pl"> Linki</td>
+			</table> </div>
+			<form name="form">
+<div id="prz"> <h2>Kafelkowanie łazienki </h2><br> Powierzchnia w m^2 <input type="number" name="liczba" min="0"/><br><br>
+	
+			
+			<INPUT TYPE="radio" NAME="odp" VALUE="1" />Płytki 20x20<br>
+<input type="radio"  NAME="odp" Value="2" >Płytki 25x12<br> <br>
+<input onClick="licz()" type="button" VALUE="PRZELICZ"><br><br><div id="pole"></div></div>
+
+	</form>
+<div id="doł"> Adres strony 12343523</div>
+</body>
+</html>

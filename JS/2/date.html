@@ -1,0 +1,29 @@
+<html>
+<title>miesi¹c</title>
+<script>
+miesiac = new Array(12)
+miesiac[0] = "styczeñ "
+miesiac[1] = "luty "
+miesiac[2] = "marzec "
+miesiac[3] = "kwiecieñ "
+miesiac[4] = "maj "
+miesiac[5] = "czerwiec "
+miesiac[6] = "lipiec "
+miesiac[7] = "sierpieñ "
+miesiac[8] = "wrzeœnia "
+miesiac[9] = "paŸdziernika "
+miesiac[10] = "listopad "
+miesiac[11] = "grudzien "
+
+function data(){
+    var Today = new Date();
+    var Month = Today.getMonth();
+	var dzien = Today.getDate();
+	var rok = Today.getYear();
+	rok=rok+1900;
+    return  dzien +"-"+ miesiac[Month] + "-"+rok;
+}
+</script>
+
+<script>document.write("Dzisiaj jest: " + data())</script>
+</html>

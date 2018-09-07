@@ -1,0 +1,22 @@
+﻿Egz!2016
+
+artykuły
+producenci
+magazyn
+
+Zwrócenie wszystkich modeli 
+i ich typów z tabeli artykuly posortowanych
+rosnąco wg cen.
+
+ZWRÓCENIE NAZWY PRODUCENTA, MODELU 
+I JEGO TYPU DLA WSZYSTKICH ARTYKUŁÓW
+
+Zwrócenie nazwy modelu, 
+dla którego w tabeli magazyn 
+pole ilość ma wartość 0
+
+Dodanie rekordu do tabeli producenci 
+z danymi" id=3, nazwa - Samsung, 
+URL - samsung.pl
+
+

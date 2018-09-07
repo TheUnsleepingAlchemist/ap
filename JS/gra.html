@@ -1,0 +1,39 @@
+<html>
+<head>
+<script>
+bank=20;
+function oblicz()
+{liczba1=parseInt(document.form1.pole1.value);
+los=Math.random() *10;
+los=Math.round(los);
+bank=bank-5;
+if (bank<=0)
+alert ("Nie masz kasy");
+else
+ {
+	if (liczba1==los)
+		alert ("Wygrales !!!!!!");
+	else
+		alert ("Przegra³es !!!!!!");
+ } 
+}
+
+function doladuj()
+{
+x=parseInt(document.form2.bank.value);
+bank=bank+x;
+}
+
+</script>
+</head>
+
+<body>
+<form name="form1">
+<input type="text" name="pole1" value="">
+<input type="button" name="wykonaj" value="ZAGRAJ" onclick="oblicz()" />
+
+<form name="form2">
+<input type="text" name="bank" value="">
+<input type="button" name="doladuj" value="Doladuj" onClick="doladuj()" />
+</body>
+</html>

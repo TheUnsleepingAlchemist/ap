@@ -1,0 +1,28 @@
+<html>
+
+<body>
+dzia³ania na tekstach <br>
+<script>
+	t="JavaScript jest super!"
+	l=t.length
+	document.write("tekst ma "+l+" liter"+"<br>")
+	s=t.indexOf(" ")
+	document.write("spacja jest na "+s+" pozycji"+"<br>")	
+	w=t.substring(0,s)
+	document.write("pierwszy wyraz to "+w+"<br>")	
+	for (i=0;i<=l;i++)
+		document.write(t.charAt(i)+"<br>")	
+	document.write(t.toUpperCase()+"<br>")	
+	document.write(t.toLowerCase()+"<br>")	
+</script>
+</body>
+</html>
+<!--
+
+	napis.length - podaje iloœæ znaków w ³añcuchu tekstowym
+	napis.indexOf(tekst) - podaje pozycjê wystêpowania tekstu w napisie - du¿e O w s³owie indexOf
+	napis.substring(n,m) - wycina z napisu ci¹g znaków od pozycji n do pozycji m-1 w³¹cznie
+	napis.charAt(n) - zwraca znak o numerze n z napisu -	znaki w napisie numerowane s¹ od 0
+	napis.toLowerCase() - zmienia wszystkie litery w napisie na ma³e
+	napis.toUpperCase() - zmienia wszystkie litery w napisie na du¿e
+-->

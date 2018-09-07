@@ -1,0 +1,15 @@
+﻿SELECT MODEL, TYP 
+FROM artykuly 
+ORDER BY CENA ASC;
+
+SELECT NAZWA, MODEL, TYP 
+FROM `producenci`, `ARTYKULY` 
+WHERE Producenci.IDproducenci=Artykuly.ProducenciID;
+
+SELECT model FROM `artykuly`, `magazyn` 
+WHERE idmagazyn=idartykuly and ilosc=0;
+
+INSERT INTO producenci 
+VALUES (3,"SAMSUNG", "samsung.pl");
+
+

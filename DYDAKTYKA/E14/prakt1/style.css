@@ -1,0 +1,42 @@
+body 
+{
+	margin:0;
+	padding:0;
+}
+
+a 
+{
+	text-decoration:none;
+}
+
+.pojemnik
+{
+	width:720px;
+	margin:0 auto;
+	margin-top:20px;
+}
+
+	.pojemnik  header
+	{
+		width:720px;
+		height:80px;
+	}
+
+	.pojemnik nav, .pojemnik article 
+	{
+		float:left;
+	}
+
+	.pojemnik nav
+	{	
+		background-color: #00CCFF;
+		width:30%;
+	}
+
+	.pojemnik article
+	{
+		width:70%;
+	}
+	
+	
+

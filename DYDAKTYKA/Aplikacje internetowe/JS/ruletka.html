@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+function los()
+{ //liczba=2;
+liczba=Math.random()*10;
+liczba=Math.round(liczba);
+
+liczba2=parseInt(document.sumowanie.pole1.value); 
+if (liczba==liczba2)
+  alert ("BUMMM - przegra³es zycie");
+else
+  alert ("graj dalej"); 
+ }
+</script>
+</head>
+<body>
+<form name="sumowanie">
+<input type="text" name="pole1" value="">
+<input type="button" name="wykonaj" value="ZAKREC" onclick="los()" />
+</body>
+
+</html>

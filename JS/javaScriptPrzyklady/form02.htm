@@ -1,0 +1,25 @@
+<html>
+<head>
+<title> testowanie innych zdarzeñ </title>
+<SCRIPT>
+	function klik()	{ alert("w³aœnie pukn¹³eœ w przycisk") }
+	function fokus()	{ alert("przycisk ma fokus") }
+	function fokus_()	{ alert("przycisk straci³ fokus") }
+	function wskazany()	{ alert("wskaŸnik myszy nad przyciskiem") }
+	function niewskazany()	{ alert("wskaŸnik myszy poza przyciskiem") }
+
+
+</SCRIPT>
+</head>
+
+<body>
+Naciœnij przycisk aby zobaczyæ dzia³anie skryptu
+<br>
+<input type="button" value="KLIK" name="przycisk1" onclick=klik()>
+<br>
+<input type="button" value="FOKUS" name="przycisk2" onblur=fokus_()	onfocus=fokus()>
+<br>
+<input type="button" value="WSKAZANIE" name="przycisk3" onmouseover=wskazany() onmouseout=niewskazany()>
+</body>
+
+</html>

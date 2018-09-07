@@ -1,0 +1,37 @@
+#top {
+  border-style: solid solid none;
+  border-width: 2px 2px 0;
+  background-image: url(grafika/tlo.jpg);
+  height: 100px;
+  width: 99.6%;
+  background-color: #548dd4;
+}
+#left {
+  border-width: 2px 0 2px 2px;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  height: 800px;
+  border-top-style: solid;
+  float: left;
+  width: 19%;
+  background-color: #548dd4;
+  background-image: url(grafika/tlo.jpg);
+}
+#right {
+  border-style: solid;
+  border-width: 2px;
+  height: 800px;
+  width: 80.4%;
+  float: left;
+  background-color: #548dd4;
+  background-image: url(grafika/tlo.jpg);
+}
+#bot {
+  border-style: none solid solid;
+  border-width: 0 2px 2px;
+  height: 100px;
+  width: 99.6%;
+  clear: both;
+  background-color: #548dd4;
+  background-image: url(grafika/tlo.jpg);
+}

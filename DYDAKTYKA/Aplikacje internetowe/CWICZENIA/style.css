@@ -1,0 +1,23 @@
+body 
+{
+  background-image: url("astra.jpg");
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+}
+h1
+{color: #990000;
+ background-color: #FC9804;
+ font-family: sans-serif;
+ font-style: italic;
+ font-weight:900;
+ font-size:20pt;
+}
+p
+{
+color: #990000;
+font-weight:bold;
+text-indent: 30px;
+text-decoration: overline;
+letter-spacing: 6px;
+}

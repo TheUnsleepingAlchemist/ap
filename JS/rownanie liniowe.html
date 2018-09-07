@@ -1,0 +1,27 @@
+<html>
+<head>
+<script>
+function calc()
+{
+	a = parseInt(form.pole1.value);
+	b = parseInt(form.pole2.value);
+	if (a==0 && b!=0)
+	  document.write ("rownanie sprzeczne");
+	 else if (a==0 && b==0 )
+		document.write ("rownanie nieskon. wiele roz.");
+		else if (a!=0)
+		 document.write ("rozwiazanie x=" + -b/a);
+	
+}
+</script>
+</head>
+
+<body>
+
+<form name="form">
+a<input value="" name="pole1" type="text">x + 
+b<input value="" name="pole2" type="text"> = 
+
+<input value="rozwiaz rownanie"  type="button"  onclick="calc()" />
+</form>
+</body></html>

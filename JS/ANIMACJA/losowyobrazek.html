@@ -1,0 +1,23 @@
+<html>
+<center> <strong>Losowy obrazek</strong><br><br>
+<img src="obrazek1.jpg" name="galeria" width="200" height="200">
+<script>
+var photos=new Array();
+photos[1]="obrazek1.jpg";
+photos[2]="obrazek2.jpg";
+photos[3]="obrazek1.jpg";
+photos[4]="obrazek3.jpg";
+photos[5]="obrazek2.jpg";
+photos[6]="obrazek1.jpg";
+photos[7]="obrazek3.jpg";
+photos[8]="obrazek1.jpg";
+photos[9]="obrazek3.jpg";
+photos[10]="obrazek3.jpg";
+function losowy(){
+index=Math.round(Math.random()*10);
+document.images.galeria.src=photos[index];
+}
+</script>
+<body onload="losowy()">
+</body>
+</html>

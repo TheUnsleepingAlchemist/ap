@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Przykład getElementById</title>
+<script type="text/javascript">
+a=20;
+function rozmiar()
+{
+ document.getElementById("para1").style.fontSize = a;
+ a++;
+ /*document.getElementById("para1").style.color = newColor;*/
+}
+function rozmiar2()
+{
+ elem = document.getElementById("para1");
+ elem.style.fontSize = a;
+ a--;
+ /*document.getElementById("para1").style.color = newColor;*/
+}
+</script>
+</head>
+<body id="para1">
+
+<button onclick="rozmiar();">A+</button>
+<button onclick="rozmiar2();">A-</button>
+<p id="para2">Jakis tekst</p>
+<h1>Inny text</h1>
+<img src="obraz.jpg">
+</body>
+</html>

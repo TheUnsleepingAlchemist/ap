@@ -1,0 +1,53 @@
+body {
+	background-image: url("../grafika/tlo.jpg");
+	margin-left:15%;
+	margin-right:15%;
+}
+
+div#strona {
+	height:100%;
+	width:100%;
+}
+
+div#naglowek {
+	position:absolute;
+	height:20%;
+	width:70%;
+	left:15%;
+	border: solid 1px black;
+}
+
+div#menu {
+	position:absolute;
+	height:50%;
+	width:20%;
+	top:21%;
+	border: solid 1px black;
+}
+
+
+div#tresc {
+	position:absolute;
+	height:50%;
+	width:50%;
+	top:21%;
+	left:35%;
+	border: solid 1px black;
+
+}
+
+#tresci{
+	height: 100%;
+	width: 100%;
+	border: none;
+}
+
+
+div#stopka {
+	position:absolute;
+	height:20%;
+	width:70%;
+	top:71%;
+	border: solid 1px black;
+}
+

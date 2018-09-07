@@ -1,0 +1,68 @@
+body
+{
+  background-color : white;
+
+	
+}
+#strona
+{
+	width:100%;
+	margin:auto;
+}
+#naglowek
+{
+	width:100%;
+	color: white;
+	background-color:#39B46B;
+	text-align:center;
+	margin-bottom:10px;
+	
+
+}
+
+
+
+#glowny
+{	width:100%;
+	color: black;
+	font-size:30px;
+	margin-left:10%;
+	margin-right:10%;
+	text-align:center;
+	text-align:justify;
+	
+}#stopka
+{
+	color:white;
+	text-align:center;
+	font-size:20px;
+	clear:both;
+	background-color:#39B46B;
+	
+	
+}
+table
+{   
+    background-color:#39B46B;
+    color:black;
+	width : 100%;
+	float : left;
+	font-size:35px;
+	padding-left:30px;
+	padding-bottom:20px;
+	padding-top:30px;
+}
+
+a
+{
+	text-decoration:none;
+	color:#fff;
+}
+
+button
+{
+	padding:15px;
+	font-weight:900;
+	border: 1px solid green;
+	background: green;
+}

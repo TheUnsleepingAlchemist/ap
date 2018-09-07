@@ -1,0 +1,156 @@
+body 
+{
+	font-family:Arial,sans-serif;
+	font-size:17px;
+	color:navy;
+	line-height:30px;
+	margin:0;
+	padding:0;
+	background-image:url('grafika/tlo.jpg');
+}
+
+header, section, nav, article, footer
+{
+	display:block;
+} 
+
+#pojemnik
+{
+	height:100vh;
+	margin:0 auto;
+	border:1px solid navy;
+}
+
+@media screen and (max-width:1200px)
+		
+{
+	#pojemnik
+	{
+		width:1000px;
+	}
+}		
+
+@media screen and (min-width:1200px)
+{
+	#pojemnik
+	{
+		width:1200px;
+	}
+}		
+
+header 
+{
+	width:100%;
+	height:100px;
+	background-color:#95c8f4;
+	color:black;
+	font-size:40px;
+	line-height:100px;
+	text-align:center;
+	letter-spacing:5px;
+	text-shadow: 2px 2px orange;
+}
+	header a
+	{
+		color:black;
+		text-decoration:none;
+	}
+
+	header #obrazek
+	{
+		width:131px;
+		height:100px;
+		margin-left:20px;
+		margin-right:20px;
+		float:left;
+		background-image:url('grafika/ksiazki.png');		
+	}
+
+section
+{
+	width:100%;
+	height:calc(100vh - 140px);
+}
+
+nav 
+{
+	width:20%;
+	height:inherit;
+	float:left;
+	background-color:#c5def4;
+}
+
+	/*lewe menu--------------------------*/
+	nav ul
+	{
+		display:block;
+		list-style-type:none;
+		margin:0;
+		padding:0;
+	}
+
+	nav ul li  
+	{
+		margin-top:30px;
+		height:40px;
+		line-height:40px;
+		text-align:center;
+		background-color:#95c8f4;
+		border:1px solid orange;
+		
+	}
+	
+	nav ul a
+	{
+		text-decoration:none;		
+		color:navy;
+	}
+	
+	nav ul li:hover, #bez_linku
+	{
+		background-color:#1568ae;
+		color:white;
+	}
+	/*----------------------------------*/
+
+article 
+{
+	width:80%;
+	height:inherit;
+	background-color:white;
+	float:left;
+}
+	article #zalogowany
+	{
+		width:100%;
+		height:40px;
+		line-height:40px;		
+		background-color:#fddda3;
+	}
+	
+footer
+{
+	height:40px;
+	line-height:40px;
+	width:100%;
+	background-color:#95c8f4;
+	font-size:12px;
+	letter-spacing:5px;
+	font-weight:bold;
+	text-align:center;
+	border-top:2px solid orange;
+}
+
+	footer a
+	{
+		text-decoration:none;
+		color:black;
+	}
+	
+	footer a:hover
+	{
+		text-decoration:none;
+		color:blue;
+	}	
+	
+	

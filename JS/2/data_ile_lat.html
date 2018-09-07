@@ -1,0 +1,28 @@
+﻿<html>
+<title>miesiąc</title>
+<script>
+function data(){
+    var Today = new Date();
+	var rok = Today.getYear();
+	rok=rok+1900;
+    return  rok;
+}
+function oblicz()
+{rok=data();
+ur=parseInt(form.rok.value);
+wiek=rok-ur;
+alert ("Masz "+wiek+" lat");
+}
+</script>
+
+<body>
+<form name="form">
+Podaj rok urodzenia: 
+<input name="rok" type="text" value="">
+<input type="button" name="przycisk" value="Sprawdz" onClick="oblicz()">
+</form>
+<script>
+
+</script>
+</body>
+</html>

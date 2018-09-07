@@ -1,0 +1,50 @@
+body {
+background-color: #999;
+/*
+text-align: center;
+color: #000;
+*/
+}
+
+#baner {
+	paddind: 10px;
+}
+
+img{
+	width: 80%;
+	height: 200px;
+}
+
+#menu{
+	position:absolute;
+	padding: 5px;
+	background-color: lightgreen;
+	margin-left: 1px;
+	margin-right: 60%;
+}
+
+#tresc {
+	position: relative;
+	padding:5px;
+	background-color: yellow;
+	margin-left: 40%;
+}
+
+#srodek {
+	position: relative;
+}
+
+#foot {
+/*	position: fixed;
+*/	position: absolute;
+	bottom:10px;
+	align: center;
+	background-color: #aaa;
+	color: white;
+}
+
+
+ul li {
+	list-style-type: none;
+}
+

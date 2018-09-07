@@ -1,0 +1,27 @@
+﻿<html><head>
+<script>
+function we()
+{
+	a = parseInt(form.pole1.value);
+	b = parseInt(form.pole2.value);
+	
+	for (    ;b>0;  b--)
+	  {
+		c=a;
+		for (    ;c>0;c--)
+			{document.write("*");
+			}
+		document.write("<br>");
+	  }
+}
+</script>
+</head>
+<body>
+<form name="form">
+<b>Wprowadz liczbe calkowita</b><br />
+a=<input name="pole1" type="text" value=""><br />
+b=<input name="pole2" type="text" value=""><br />
+<input value="Wyswietl"  type="button" onclick="we()" />
+</form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+﻿#pojemnik
+{
+background:grey;
+width:100%;
+height:100%;
+margin-left:0 px ;
+}
+body
+{background:yellow;}
+
+#democrats {
+background:blue;
+border:5px solid navy;
+border-color:#ee22ee;
+}
+#republicans {
+background:red;
+
+}

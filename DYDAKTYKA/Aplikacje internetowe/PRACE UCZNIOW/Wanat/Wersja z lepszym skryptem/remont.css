@@ -1,0 +1,68 @@
+	html, body {
+	background-color: #fff;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+h1
+{
+	color:#1ba352;
+	
+	
+	
+}
+
+#naglowek {
+	
+	
+}
+
+#menu
+{
+	
+	background-color: #39b46b;
+	text-align:center;
+	color:white;
+	font-size:150%;
+	width:20%;
+	height:220px;
+	float:left;
+	
+	
+	
+}
+
+   button 
+{
+	border-color:green;
+	border:1px;
+	background-color:green;
+	color:white;
+	padding:15px;
+	font-weight:bold;
+}
+
+
+#tresc {
+	width: 100%;
+	float: left;
+	display:inline;
+	text-align:left;
+	height:300px;
+}
+
+
+
+#stopka {
+	
+	width: 100%;
+	background-color: #39b46b;
+	
+	float:left;
+text-align:center;
+	color:white;
+	font-size:150%;
+	
+	
+}

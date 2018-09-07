@@ -1,0 +1,14 @@
+table#tabelka {
+	border-style: solid;
+	border-width: 2px;
+	border-color: white;
+	color: white;
+	border-collapse: collapse;
+}
+tr.tabelalala {
+	border: 1px solid;
+	text-align: center;
+}
+td.tabelalala {
+	border: 1px solid;
+}

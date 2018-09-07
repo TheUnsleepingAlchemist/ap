@@ -1,0 +1,2 @@
+http://www.webdiary.pl/modules/manualphp/index.
+http://webmade.org/porady/mysqli-mysql-baza-danych.php

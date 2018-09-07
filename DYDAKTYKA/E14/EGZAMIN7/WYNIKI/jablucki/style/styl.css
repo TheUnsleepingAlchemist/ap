@@ -1,0 +1,70 @@
+.menu
+{
+text-align:center;
+ color:White;
+ word-spacing:8px;
+margin-top:144px;
+	width:197px;
+	height:696px;
+	border:3px solid black;
+	position:fixed;
+	right:1099px;
+     
+
+ 
+}
+.strona
+
+
+
+
+{
+	margin-left:-130px;
+	margin-top:144px;
+	width:1093px;
+	height:696px;
+	border:3px solid black;
+	position:fixed;
+	right:3px;
+       
+}
+
+
+
+.naglowek
+
+
+{
+
+margin-left:-100px;
+	margin-top:2px;
+	width:1293px;
+	height:140px;
+	border:3px solid black;
+	position:fixed;
+	right:3px;
+
+        
+}
+
+
+.stopka
+
+
+{
+
+margin-left:-100px;
+	margin-top:843px;
+	width:1293px;
+	height:67px;
+	border:3px solid black;
+	position:fixed;
+	right:3px;
+
+}
+
+
+.link1
+{
+  color: red;
+}

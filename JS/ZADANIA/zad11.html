@@ -1,0 +1,22 @@
+<html>
+<head>
+	<script>
+		function spr()
+		{
+		 haslo=form.pole1.value;
+		 m=0;
+		 a="x";
+		 for (i=0;i<haslo.length;i++)
+		  if (a==haslo.charAt(i))
+		    m++;	document.getElementById("dane").innerHTML="znak x powtórzy³ siê w haœle " + m + " razy";
+		}
+	</script>
+</head>
+<body>
+<form name="form">
+<input  name="pole1" type="text">  
+<input value="pobierz"  type="button"  onclick="spr()" />
+</form>
+<p id="dane"></p>
+</body>
+</html>

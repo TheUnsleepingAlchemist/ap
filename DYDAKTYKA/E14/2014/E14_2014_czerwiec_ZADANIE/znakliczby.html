@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<head>
+	<title>Nazwa strony wyświetlana w zakładce przeglądarki</title>
+	<meta charset="utf-8" />
+<!-- deklaracja odwołania do arkusza stylów CSS -->
+	<link rel="Stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+<div id="baner">
+	<!-- dopisana obsługa kliknięcia w baner za pomocą znacznika 'a' -->
+<p align="center"><a href="index.html"><img src="baner.jpg" title="" ></a></p>
+</div>
+<div>
+<div id="menu">
+<h3>Moje meni:</h3>
+<ul>
+<li><a href="identyfikatorosoby.html">Identyfikator osoby</a></li>
+<li><a href="znakliczby.html">Znak liczby</a></li>
+<li><a href="zakresliczb.html">Zakres liczb</a></li>
+</ul>
+</div>
+
+<div id="tresc">
+<h2>Znak liczby wprowadzonej</h2>
+<!-- -----wprowadzenie danych czyli liczby ---- -->
+<script type="text/javascript">
+var x=prompt("Podaj dowolną liczbę","");
+if (x<0) {
+	document.write("Jest to liczba ujemna");
+	}
+	else if (x>0) {document.write("Jest to liczba dodatnia ");
+		}
+		else {document.write("Jest to liczba równa zero ");
+			}
+</script>
+
+</div>
+</div>
+
+<div id="foot"> CRISTOPOLOS</div>
+
+</body>

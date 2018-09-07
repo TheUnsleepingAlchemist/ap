@@ -1,0 +1,48 @@
+.menu
+{
+	float: left;
+	background-color: #39B46B;
+	color: white;
+	text-align: center;
+	font-size: 150%;
+	width: 20%;
+	height: 20%;
+}
+
+#glowny
+
+{
+	height: 70%;
+	float: left;
+	
+}
+
+#stopka
+{
+	background-color: #39B46B;
+	color: white;
+	text-align: center;
+	font-size: 150%;
+	width: 100%;
+	float: left;
+	height: 10%;
+}
+
+a
+{
+	color: white;
+}
+
+h1
+{
+	color: #1BA352;
+}
+
+#przycisk
+{
+	background-color: green;
+	border: 1px solid green;
+	color: white;
+	font-weight: bold;
+	padding: 15px;
+}

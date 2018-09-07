@@ -1,0 +1,63 @@
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>SKLEP  ROWEROWY</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" href="style/style.css"  type="text/css" />
+</head>
+
+<body background="grafika\tlo.jpg">
+	<div id="container">
+	
+		<div id="logo">
+		<center><h1>SKLEP ROWEROWY<h1></center>
+		</div>
+	
+		<div id="nav">
+		
+			<li><a target="content" href="firma.html">O firmie</a><br /></li>
+			<li><a target="content" href="rowermapa.html">Opis Roweru</a><br /></li>
+			<li><a target="content" href="cennik.html">Cennik</li> 
+		</div>
+		
+		<div id="content">
+			<h2></h2>
+			
+		
+			<iframe name="content" width="99%" height="77%" src="new1.html" frameborder="0"></iframe>
+			
+		</div>
+		
+		<div id="footer">
+		<center><div id="fCzas"></div>
+		<div id="fData"></div></center>
+			Wszelkie prawa zastrzeżone &copy;
+		</div>
+		
+<center><div id="fCzas"></div>
+<div id="fData"></div></center>
+ 
+<script type="text/javascript">
+function zeroWiodace(i) {
+    return (i < 10)? '0'+i : i;
+}
+ 
+function pokaz_czas() {
+    var czas = new Date();
+    var dni = new Array("Niedziela", "Poniedziałek", "Wtorek", "¦roda", "Czwartek", "Piątek", "Sobota");
+    var data = zeroWiodace(czas.getDate()) + "." + zeroWiodace((czas.getMonth()+1)) + "." + czas.getFullYear() + " - " + dni[czas.getDay()];
+    var czas_na_zegarku = zeroWiodace(czas.getHours()) + ":" + zeroWiodace(czas.getMinutes()) + ":" + zeroWiodace(czas.getSeconds());
+     
+    document.getElementById('fCzas').innerHTML = czas_na_zegarku
+    document.getElementById('fData').innerHTML = data;
+     
+    setTimeout("pokaz_czas()",1000)
+}
+ 
+pokaz_czas();
+</script>
+	
+	</div>
+
+</body>
+</html>

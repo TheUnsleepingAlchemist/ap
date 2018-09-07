@@ -1,0 +1,47 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styl.css">
+<script>
+
+function myMove() {
+    var elem = document.getElementById("anim");
+    var pos = 0;
+    var id = setInterval(frame, 5);
+
+    function frame() {
+        if (pos == 350) {
+			clearInterval(id);
+
+        } else {
+            pos++;
+            elem.style.width = pos + 'px';
+			proc=Math.round((pos/350) *100) ;
+			document.getElementById('anim').innerHTML=proc + "%";
+        }
+	}
+}
+</script>
+</head>
+<body>
+<button oncliCk="myMove()">Laduj</button>
+<div id="anim"></div>
+
+
+
+
+
+<script>
+var then,now=new Date();
+
+function stopclk(){
+then=new Date();
+alert('Strona ladowala sie '+((then-now)/1000)+' sekund');
+}
+
+window.onload=function(){
+stopclk();
+}
+</script>
+
+</body>
+</html>

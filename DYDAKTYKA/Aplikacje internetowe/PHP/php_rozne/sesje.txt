@@ -1,0 +1,34 @@
+Sesje
+Mechanizm sesji by³ najwa¿niejsz¹ ze zmian oczekiwanych w PHP 4. Umo¿liwia on przekazywanie parametrów miêdzy stronami w ³atwy sposób. Zmienne s¹ przechowywane po stronie serwera a u klienta trzymane jest tylko ID sesji. Te ID jest zapisane w cookie lub przekazywane przez URL. PHP jest w stanie sam rozpoznaæ czy na komputerze klienta w³¹czony jest mechanizm cookies i w razie potrzeby dodaæ identyfikator sesji do ka¿dego URLu i formularza. Wymaga to jednak posiadania PHP skompilowanego z opcj¹ --enable-trans-sid.
+
+Jako ¿e sesje mog¹ bazowaæ na ciasteczkach, tak¿e i w tym przypadku przed rozpoczêciem sesji do przegl¹darki nie mog¹ byæ wys³ane ¿adne inne dane.
+
+Po otrzymaniu ¿¹dania klienta PHP automatycznie (jeœli w konfiguracji PHP w³¹czona zosta³a opcja auto_start) lub „rêcznie” przez programistê (za pomoc¹ funkcji session_start()) sprawdza, czy przypisano ju¿ ID sesji. Jeœli tak, to PHP odczytuje zmienne zarejestrowane w tej sesji. Jeœli nie, generowany jest nowy, unikalny identyfikator sesji.
+
+Aby PHP zaczê³o œledziæ wartoœæ zmiennej, najpierw trzeba j¹ zarejestrowaæ za pomoc¹ funkcji session_register( nazwa_zmiennej). Istnieje te¿ odwrotna wersja tej funkcji – funkcja session_unregister( nazwa_zmiennej ) powoduje, ¿e PHP „zapomni” o tej zmiennej.
+
+W PHP 4.1.0 wprowadzone zosta³y opisane wczeœniej zmienne superglobalne. Jedna z tych zmiennych, $_SESSION, przechowuje zmienne zarejestrowane w sesji. Kluczem tej tablicy jest oczywiœcie nazwa zarejestrowanej zmiennej.
+
+Tablica ta ma jednak pewn¹ ró¿nicê w stosunku do innych tablic superglobalnych. Mianowicie mo¿na jej u¿yæ do rejestrowania zmiennych sesyjnych. Wystarczy przypisaæ wartoœæ odpowiedniemu kluczowi tej tablicy aby zmienna zosta³a zarejestrowana.
+
+Przyk³ad 8.1. Zliczanie ile dana osoba odczyta³a dan¹ stronê z czasie jednej sesji.
+
+
+<?php
+
+session_start(); // mo¿na pomin¹æ jeœli jest siê pewnym ¿e w³¹czona jest opcja auto_start
+
+if (!isset($_SESSION['count'])) { // jeœli zmienna nie jest zarejestrowana
+    $_SESSION['count'] = 0;       // przypisz jej pocz¹tkow¹ wartoœæ
+} else {                          // jeœli jest zarejestrowana
+    $_SESSION['count']++;         // zwiêksz jej wartoœæ
+}
+
+echo 'Strona odczytana '.$_SESSION['count'].' razy w ci¹gu tej sesji';
+
+?>
+
+         
+Skrypt z tego przyk³adu bêdzie pamiêta³ iloœæ odwiedzin przez ca³y czas dzia³ania przegl¹darki, jeœli w przegl¹darce w³¹czony jest mechanizm cookies, lub dopóki strona odœwie¿ana jest z takim samym numerem sesji przekazanym przez URL.
+
+U¿ycie sesji rodzi pewne w¹tpliwoœci: co jeœli ktoœ ‚ukradnie’ numer sesji? W ten sposób uzyska dostêp do danych zapisanych w tej sesji. Mimo ¿e istnieje taka teoretyczna mo¿liwoœæ, to iloœæ dostêpnych identyfikatorów sesji jest tak du¿a, ¿e taka ‚kradzie¿’ by³aby ca³kiem przypadkowa.

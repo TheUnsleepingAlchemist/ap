@@ -1,0 +1,10 @@
+﻿rozwiąż równanie liniowe y=0x+5
+ax+b=0
+ax=-b
+x=-b/a
+
+1. rów. ma roz. a!=0 
+    x=-b/a
+2. rów. sprzeczne a=0 
+3. row. ma nieskoncz. wiele roz. 
+    a=0 b=0 

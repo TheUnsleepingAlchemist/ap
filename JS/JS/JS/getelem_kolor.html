@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Przykład getElementById</title>
+<script type="text/javascript">
+function changeColor(newColor)
+{
+document.getElementById("para1").style.color = newColor;
+/*document.getElementById("para1").style.color = newColor;*/
+}
+</script>
+</head>
+<body>
+<p id="para1">Jakiś tekst</p>
+<button onclick="changeColor('#aabb44');">niebieski</button>
+<button onclick="changeColor('red');">czerwony</button>
+</body>
+</html>

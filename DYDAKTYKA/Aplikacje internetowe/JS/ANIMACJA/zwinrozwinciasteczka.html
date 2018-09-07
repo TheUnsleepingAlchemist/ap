@@ -1,0 +1,56 @@
+<style type="text/css">
+#setup {
+color:#000;
+}
+#info {
+}
+#info p {
+margin:0;
+text-align:justify;
+}
+.hide {
+display:none;
+}
+.show {
+display:block;
+}
+</style>
+
+//java scripty
+<script type="text/javascript">
+<!--
+var state;
+window.onload=function() {
+obj=document.getElementById('info');
+state=(state==null)?'show':state;
+obj.className=state;
+
+document.getElementById('setup').onclick=function() {
+obj.className=(obj.className=='show')?'hide':'show';
+state=obj.className;
+setCookie();
+return false;
+}
+}
+
+function setCookie() {
+exp=new Date();
+plusMonth=exp.getTime()+(31*24*60*60*1000);
+exp.setTime(plusMonth);
+document.cookie='State='+state+';expires='+exp.toGMTString();
+}
+
+function readCookie() {
+if(document.cookie) {
+state=document.cookie.split('State=')[1];
+}
+}
+readCookie();
+//-->
+</script>
+
+<!-- html -->
+
+<a id="setup" style="text-decoration: none; cursor: hand;">[+] ukryj/pokaż</a></span>
+
+<div id="info">treść którą można ukryć</div> 

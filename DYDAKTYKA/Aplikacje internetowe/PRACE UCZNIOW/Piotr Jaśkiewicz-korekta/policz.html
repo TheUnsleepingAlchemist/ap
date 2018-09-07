@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="remont.css" />
+    </script>
+    <title>Remonty mieszkań</title>
+    <script type="text/javascript">
+      function ca()
+      {
+        if (document.form.plytki[0].checked)
+        x=form.pole1.value*80;
+        if (document.form.plytki[1].checked)
+        x=form.pole1.value*50;
+      document.getElementById("war").innerHTML="Koszt kafelkowania: "+x+"zł";
+      }
+    </script>
+  </head>
+  <body>
+<div id="contener">
+<div id="linki">
+  <center>
+  <table>
+    <tr>
+      <td><img src="logo.png" alt="obrazek"></td><td><a href="index.html">O FIRMIE</a></td><td><a href="adres.html">ADRES</a></td><td><a href="policz.html">POLICZ</a></td><td><a target="a" href="http://jakremontowac.pl">LINKI</a></td>
+    </tr>
+  </table>
+</center>
+</div>
+<div id="tresc">
+  <form name="form">
+    <h1>Kafelkowanie łazienki</h1>
+    powierzchnia: <input type="number" name="pole1" min="0" max="1000"><br>
+    <input type="radio" name="plytki" value="1" id="c1">płytki 20x20 <br>
+    <input type="radio" name="plytki" value="2" id="c2">płytki 15x15 <br>
+    <button type="button" value="policz" onClick="ca()">Oblicz</button>
+    <p id="war"></p>
+  </form>
+</div>
+<div id="autor">
+  Autor strony. 00000000
+</div>
+</div>
+  </body>
+</html>

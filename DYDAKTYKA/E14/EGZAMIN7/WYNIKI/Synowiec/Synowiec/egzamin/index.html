@@ -1,0 +1,75 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div id="strona">
+<div id="baner" target="plan" src="lista.html"> naglowek </div>
+<div id="menu" target="plan" src="lista.html">
+<a target="tresc" href="firma.html">Rower</a></a></br>
+<a target="tresc" href="opis roweru.html">opis roweru</a></a></br>
+<a href="">wracamy</a><br>
+</div>
+
+<div id="zawartosc">
+<iframe name="tresc"src="strona.html"width="996" height="600"></iframe>
+</div>
+
+<div id="stopka">Kamil Synowiec
+<script>	var nazwy_mies = [ 'Styczen', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 
+    'Czerwiec', 'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 
+    'Listopad', 'Grudzień' ];
+ 
+// Odczytanie bieżącej daty i czasu, i rozbicie ich na składowe
+var data = new Date();
+var rok = data.getFullYear();
+var mies = data.getMonth();
+var dzien = data.getDate();
+var godz = data.getHours();
+var min = data.getMinutes();
+var sec = data.getSeconds();
+ 
+// Dodanie zera na początku minut i sekund jeżeli trzeba
+if (min < 10)
+    min = '0' + min;
+if (sec < 10)
+    sec = '0' + sec;
+ 
+// Utworzenie odpowiednio sformatowanej daty i czasu
+var data_i_czas = dzien + ' ' + nazwy_mies[mies] + ' ' + rok 
+    + ', ' + godz + ':' + min + ':' + sec;
+ 
+document.write(data_i_czas);</script>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

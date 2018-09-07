@@ -1,0 +1,59 @@
+﻿<html>
+<head>
+<link rel="stylesheet" href="Style/styl.css" type="text/css" /> 
+</head>
+<body>
+
+<div id="kontener">
+
+<div id="nag">
+<h1>Nagłówek</h1>
+</div>
+
+<div id="men">
+<h1>Menu</h1>
+<a target="tresc" href="firma.html"><li>O Firmie</li></a>
+<br>
+<a target="tresc" href="opis_roweru.html"><li>Opis Roweru</li></a>
+</br>
+<a target="tresc" href="galeria.html"><li>Cennik</li></a>
+</br>
+</div>
+
+<div id="tresc">
+<iframe name="tresc" width="690" height="493" src="powitanie.html"></iframe>
+</div>
+
+<div id="stop">
+<center>	Sklep rowerowy. Strona w sieci od 2016r. &copy; Wszelkie prawa zastrzeżone. Autor Krystian Beben 
+	</br>
+	
+<script>	var nazwy_mies = [ 'Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 
+    'Czerwiec', 'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 
+    'Listopada', 'Grudzień' ];
+ 
+
+var data = new Date();
+var rok = data.getFullYear();
+var mies = data.getMonth();
+var dzien = data.getDate();
+var godz = data.getHours();
+var min = data.getMinutes();
+var sec = data.getSeconds();
+ 
+
+if (min < 10)
+    min = '0' + min;
+if (sec < 10)
+    sec = '0' + sec;
+ 
+
+var data_i_czas = dzien + ' ' + nazwy_mies[mies] + ' ' + rok 
+    + ', ' + godz + ':' + min + ':' + sec;
+ 
+document.write(data_i_czas);</script></center>
+</div>
+
+</div>
+</body>
+</html>

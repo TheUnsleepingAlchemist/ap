@@ -1,0 +1,67 @@
+<html>
+<head>
+<link rel="stylesheet" href="style/styl.css" type="text/css">
+<div class="naglowek">
+</div>
+</head>
+<body>
+<body background="grafika/tlo.jpg" width="300" height="200">
+
+
+<div class="menu">
+
+</div>
+
+
+
+</div>
+<div class="menu"> <a>MENU:</a><br>
+
+	<li><a target="tresc" href="firma.html">O firmie</a></li>
+    <li><a target="tresc" href="opisroweru.html">Opis roweru</a></li>
+		<li><a target="tresc" href="cennik.html">Cennik</a></li>
+
+		
+		
+		
+		
+
+	</br>
+</div>
+<div class="strona">
+<iframe src="powitanie.html" name="tresc" width="1090" height="695"></iframe>
+
+</div>
+
+</div>
+<div class="stopka">
+<center>	Sklep rowerowy by Mariusz Wyjasnil
+	</br>
+	
+<script>	var nazwy_mies = [ 'Styczeñ', 'Luty', 'Marzec', 'Kwiecieñ', 'Maj', 
+    'Czerwiec', 'Lipiec', 'Sierpieñ', 'Wrzesieñ', 'PaŸdziernik', 
+    'Listopada', 'Grudzieñ' ];
+ 
+// Odczytanie bie¿¹cej daty i czasu, i rozbicie ich na sk³adowe
+var data = new Date();
+var rok = data.getFullYear();
+var mies = data.getMonth();
+var dzien = data.getDate();
+var godz = data.getHours();
+var min = data.getMinutes();
+var sec = data.getSeconds();
+ 
+// Dodanie zera na pocz¹tku minut i sekund je¿eli trzeba
+if (min < 10)
+    min = '0' + min;
+if (sec < 10)
+    sec = '0' + sec;
+ 
+// Utworzenie odpowiednio sformatowanej daty i czasu
+var data_i_czas = dzien + ' ' + nazwy_mies[mies] + ' ' + rok 
+    + ', ' + godz + ':' + min + ':' + sec;
+ 
+document.write(data_i_czas);</script></center>
+</div>
+</body>
+</html>

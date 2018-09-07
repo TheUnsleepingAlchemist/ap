@@ -1,0 +1,49 @@
+
+<html>
+<head>
+<script>
+	function plus()
+	{
+		a1=arg1.value
+		a2=-arg2.value
+		wynik.value=a1-a2
+	}
+	function minus()
+	{ wynik.value=arg1.value-arg2.value	}
+	function razy()
+	{ wynik.value=arg1.value*arg2.value	}
+	function przez()
+	{ wynik.value=arg1.value/arg2.value	}
+</script>
+</head>
+
+<body>
+	<table bgcolor="red">
+		<tr>
+		<td></td>
+		<td> 	<input type="text"name="arg1"> </td>
+		</tr>
+		<tr>
+		<td></td>
+		<td> 	<input type="text"name="arg2"> </td>
+		</tr>
+		<tr>
+		<td>
+			<input type="button" name="dodaj" value="+" onclick="plus()">
+			<input type="button" name="odejmij" value="-" onclick="minus()">
+			<input type="button" name="mnoz" value="*" onclick="razy()">
+			<input type="button" name="dziel" value="/" onclick="przez()">
+		</td>
+		<td>	<input type="text" name="wynik"> </td>	
+		</tr>
+	</table>
+
+<script>
+
+</script>
+</body>
+
+</html>
+	<!--  gdy by³ + to skleja³o jak ³añcuchy tekstu
+				a mo¿na te¿ by³o tak wynik.value=arg1.value-(-arg2.value) 
+	-->

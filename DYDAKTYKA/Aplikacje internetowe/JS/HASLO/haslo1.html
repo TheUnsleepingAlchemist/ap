@@ -1,0 +1,46 @@
+<html>
+<head>
+<script type="text/javascript">
+var myVar = setInterval(function (){ has() }, 1000);
+function has()
+{
+var f = document.getElementById('pole').value;
+var hasNumber = /\d/;
+//hasNumber.test("ABC");
+	
+   // sprawdz czy string jest pusty
+    if (f.length >= 8 && hasNumber.test(f)==true)
+	{
+	document.getElementById('css').textContent="Silne";
+   	document.getElementById('css').style.color = 'green';
+	//return 0;
+	}
+	else if(f.length >= 8)
+	{
+	document.getElementById('css').textContent = "Slabe";
+	document.getElementById('css').style.color = 'orange';	
+	//return 0;
+	}
+	else
+	{
+	document.getElementById('css').style.color = 'red';
+	document.getElementById('css').textContent="za krotkie haslo";
+	return 0;
+	}
+	}
+
+</script>
+
+
+<style type="text/css">
+/* <![CDATA[ */
+#css { font-weight:bold;}
+#pole {text-align:center;}
+/* ]]> */
+</style>
+</head>
+<body>
+<input type="text" name="has" value="testowanko" id="pole">     
+<a id="css">wynik</a>
+</body>
+</html>

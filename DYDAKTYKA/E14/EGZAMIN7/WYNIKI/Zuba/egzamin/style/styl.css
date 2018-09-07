@@ -1,0 +1,51 @@
+body{
+	background-image: url("../grafika/tlo.jpg");
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#naglowek{
+	
+	position: absolute;
+	height: 10%;
+	width: 80%;
+	border: 1px solid black;
+}
+
+#menu{
+	position: absolute;
+	height: 74%;
+	width: 20%;
+	top: 11%;
+	border: 1px solid black;
+	border-right: none;
+}
+
+#stopka{
+
+	position: absolute;
+	height: 10%;
+	width: 80%;
+	top: 85%;
+	border: 1px solid black;
+	left: 10%;
+	
+}
+
+#tresc{
+
+	position: absolute;
+	height: 74%;
+	width: 60%;
+	top: 11%;
+	left: 30%;
+	border-left: none;
+	border: 1px solid black;
+	
+}
+
+#rowermapa{
+	text-align: center;
+	width: 200;
+	height: 120;
+}

@@ -1,0 +1,22 @@
+<html>
+<script>
+function los()
+{
+var liczba2 = Math.random();
+liczba2=Math.round(liczba2*10);
+liczba1=parseInt(form.liczba1.value);
+
+if (liczba1==liczba2)
+  alert ("WYGRALES!!! 100 ZŁ");
+else
+  alert ("SORRY, WINNY JESTES MI 100");
+}
+</script>
+
+<form name="form">
+<input name="liczba1" type="text" value="">
+<input name="przycisk" type="button" value="Losuj" onClick="los()">
+</form>
+
+
+</html>

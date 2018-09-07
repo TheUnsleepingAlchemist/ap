@@ -1,0 +1,63 @@
+#glowny
+	{
+		
+		height: 300px;
+	}
+	
+	#stopka
+	{
+		clear: both;
+		background-color: #39B46B;
+		color: white;
+		text-align: center;	
+	}	
+	
+#menu
+	{
+		height:220px;
+		width: 100%;
+		background-color: #39B46B;
+		color: white;
+		text-align: center;
+		font-size: 150%;
+		
+	}
+	
+	
+	h1
+	{
+		color: #1BA352;
+	}
+	
+	a:link 
+	{ 
+	color: white;
+	}
+	a:visited
+	{ 
+	color: white;
+	}
+
+	
+	
+	
+	
+	button 
+	{
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+	padding: 17px ;
+	font-weight: bold;
+    }
+	
+	
+	
+		submit
+	{
+		background-color: green;
+		border: 1px solid green;
+		color: white;
+		padding: 15px ;
+		font-weight: bold;	
+	}

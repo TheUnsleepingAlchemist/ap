@@ -1,0 +1,21 @@
+﻿<script>
+function szukaj()
+{ 
+a=document.getElementById("elem1").value;
+d=a.length; 
+licznik=0;
+for (i=0;i<d;i++)
+{
+	if ('a'==a.charAt(i))
+		licznik++;
+}
+alert ("literka a wystepuje w ciagu razy ="+licznik);
+}
+</script>
+<form name="form">
+<b>Wprowadz ciag znakow</b><br />
+<input id="elem1" name="pole1" type="text" value=""><br />
+<input value="OK"  type="button" onClick="szukaj()" />
+</form>
+
+

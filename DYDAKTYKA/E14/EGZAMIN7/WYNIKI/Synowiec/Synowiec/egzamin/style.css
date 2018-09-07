@@ -1,0 +1,45 @@
+
+body
+{
+margin:0;
+padding:0;
+text-align:center;
+}
+#strona {
+    margin:auto;
+    width:1200px;
+
+}
+
+#menu {
+    width:196px;
+    height:600px;
+    float:left;
+    background-color:blue;
+border:2px solid red;
+}
+
+#baner {
+   
+    height: 94px;
+    backgroud-color:blue;
+border:2px solid red;
+}   
+
+#stopka {
+    background-color:blue;
+    clear:both;
+border:2px solid red;
+}  
+
+
+#zawartosc
+{
+width:996px;
+height:600px;
+float:left;
+background-color:blue;
+border:2px solid red;
+}
+
+

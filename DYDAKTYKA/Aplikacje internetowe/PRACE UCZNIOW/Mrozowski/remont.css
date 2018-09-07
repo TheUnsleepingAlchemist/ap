@@ -1,0 +1,79 @@
+#stopka{
+background:#39B46B;
+text-align:center;
+float:left;
+clear:both;
+width:100%;
+height:5%;
+}
+#glowny{
+
+text-align:left;
+float:left;
+clear:both;
+width:100%;
+height:300px;
+}
+h1{
+	color:#1BA352;
+	text-align:center;
+	font-size:30px;
+}
+h2{
+	font-size:15px;
+}
+h3{
+	font-size:30px;
+}
+p{
+	font-size:20px;
+}
+#menu>ol>li>a{
+	color:white;
+}
+#menu>ol>li {
+	width:150px;
+	color:white;
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	display:inline-block;
+	text-decoration:none;
+}
+ul>li {
+	width:150px;
+	color:black;
+	padding:0;
+	margin:0;
+	font-size:20px;
+	text-align:center;
+	
+}
+
+button>a{
+	color:white;
+	text-decoration:none;
+}
+
+button{
+	color:green;
+background:green;
+border-bottom:1px;
+border-bottom-color:green;
+}
+#licze{
+		color:white;
+background:green;
+border-bottom:1px;
+border-bottom-color:green;
+}
+#menu {
+background:#39B46B;
+text-align:center;
+float:left;
+clear:both;
+width:100%;
+height:220px;
+
+}
+

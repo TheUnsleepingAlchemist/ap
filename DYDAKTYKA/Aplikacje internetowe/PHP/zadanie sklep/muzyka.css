@@ -1,0 +1,31 @@
+body,html{
+height: 100%;}
+.baner{
+background-color: #812F8D;
+color: #FFFFFF;
+font-size: 200%;
+text-align: center;
+padding: 10px;
+}
+.panelLewy{
+background-color: #BB74C4;
+color: #FFFFFF;
+width: 25%;
+height: 100%;
+position: relative;
+overflow:hidden;
+float:left;
+}
+.panelPrawy{
+width:75%;
+position: relative;
+float:left;
+
+}
+h2{
+text-align: center;
+}
+form{
+margin: 20px; 
+
+}

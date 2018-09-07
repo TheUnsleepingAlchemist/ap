@@ -1,0 +1,21 @@
+﻿<html>
+<head>
+<script>
+function oblicz()
+{ 
+var nr = new Date();
+a=nr.getYear()+1900;
+rok=parseInt(document.form.pole1.value);
+lata=a-rok;
+document.write("Masz "+lata+" lat");
+ }
+</script>
+</head>
+
+<body>
+<form name="form">
+<input type="text" name="pole1" value="">
+<input type="button" name="wykonaj" value="oblicz" onMouseOver="oblicz()" />
+</body>
+
+</html>

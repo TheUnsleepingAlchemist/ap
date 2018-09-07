@@ -1,0 +1,61 @@
+<html>
+<head>
+<link rel="Stylesheet" href="style/styl.css" type="text/css">
+
+</head>
+
+<body background="grafika/tlo.jpeg" />
+
+<div id="naglowek">
+<center>Naglowek</center>
+</div>
+
+<div id="menu">
+Menu:
+<br>
+<a target="tresc" href="firma.html">O firmie</a>
+<br>
+<a target="tresc" href="opis.html">Opis roweru</a>
+<br>
+<a target="tresc" href="cennik.html">Cennik</a>
+</div>
+
+<div id="tresc">
+<iframe src="rower.html" name="tresc" width="1062" height="560"></iframe>
+
+</div>
+
+<div id="stopka">
+<font size="5">
+<strong>
+<script>	var nazwy_mies = [ 'Styczen', 'Luty', 'Marzec', 'Kwiecien', 'Maj', 
+    'Czerwiec', 'Lipiec', 'Sierpien', 'Wrzesien', 'Październik', 
+    'Listopad', 'Grudzien' ];
+ 
+
+var data = new Date();
+var rok = data.getFullYear();
+var mies = data.getMonth();
+var dzien = data.getDate();
+var godz = data.getHours();
+var min = data.getMinutes();
+var sec = data.getSeconds();
+ 
+
+if (min < 10)
+    min = '0' + min;
+if (sec < 10)
+    sec = '0' + sec;
+ 
+var data_i_czas = dzien + ' ' + nazwy_mies[mies] + ' ' + rok 
+    + ', ' + godz + ':' + min + ':' + sec;
+ 
+document.write(data_i_czas);</script>
+</strong>
+</font>
+<br>
+Bartek Bogucki
+</div>
+</body>
+
+</html>

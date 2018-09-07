@@ -1,0 +1,32 @@
+<html>
+
+<head>
+<script>
+	napis="Ala ma kota"
+	function Animacja()
+	{
+	dlugosc=napis.length
+	pierwszy=napis.substring(0,1)
+	reszta=napis.substring(1,dlugosc)
+	napis=reszta+pierwszy
+	PoleTekstowe.value=napis
+	}
+</script>
+</head>
+
+<body>
+	<input type="text" name="PoleTekstowe" >
+	<input type="button" name="Przycisk" value="Start" onclick=Animacja()>
+</body>
+
+</html>
+
+<!--
+	funkcja Animacja
+	dzielimy ³añcuch tekstowy na dwie czêœci
+	pierwszy znak i reszta
+	pierwszy znak doklejamy nakoniec reszty i wyœwietlamy
+	wstawiamy napis do pola tekstowego
+
+	funkcjê Animacja przypisujemy do przycisku
+-->

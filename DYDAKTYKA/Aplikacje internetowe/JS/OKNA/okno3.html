@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+function okno(url) {
+    var noweOkienko = window.open(url, 'Google', 'toolbar=0,menubar=0,scrollbars=0,resizable=0,status=0,location=0,directories=0,top=20,left=20,height=500,width=700');
+//dokument w oknie przegl¹darki
+window.document 
+noweOkienko.document //dokument w nowym oknie
+noweOkienko.document.getElementsByTagName('body')[0] //pobieramy sekcjê body w nowym okienku
+noweOkienko.document.getElementsByTagName('p').style.fontSize = '20px' //ustawiam wielkoœæ czcionki dla wszystkich akapitów w nowym oknie
+noweOkienko.width = '400'; //ustawiam szerokoœæ okienka na 400px
+noweOkienko.moveTo(100,100); //przesuwam okienko do pozycji 100x100
+noweOkienko.close() //zamyka okienko
+	
+	}
+
+</script>
+</head>
+<body>
+
+<p id='p'>Jakis text</p>
+<input type="button" value="Pokaz Okno" id="guzikOkna" />
+<script>
+
+document.getElementById('guzikOkna').addEventListener('click', function() {
+    okno('http://google.pl')	
+});
+
+</script>
+
+</body>
+</html>

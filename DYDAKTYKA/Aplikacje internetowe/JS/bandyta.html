@@ -1,0 +1,31 @@
+<html>
+<head>
+<script>
+function los()
+{
+liczba1=Math.random()*10;
+liczba1=Math.round(liczba1);
+liczba2=Math.random()*10;
+liczba2=Math.round(liczba2);
+liczba3=Math.random()*10;
+liczba3=Math.round(liczba3);
+
+document.sumowanie.pole1.value=liczba1;
+document.sumowanie.pole2.value=liczba2;
+document.sumowanie.pole3.value=liczba3;
+
+if (liczba1==liczba2 && liczba2==liczba3)
+  alert ("Gratulacje-rozbi³eœ bank!");
+else
+  alert ("Graj dalej"); 
+ }
+</script>
+</head>
+<body>
+<form name="sumowanie">
+<input type="text" name="pole1" value="">
+<input type="text" name="pole2" value="">
+<input type="text" name="pole3" value="">
+<input type="button" name="wykonaj" value="ZAKREC" onclick="los()" />
+</body>
+</html>

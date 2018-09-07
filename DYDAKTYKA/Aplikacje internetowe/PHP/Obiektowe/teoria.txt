@@ -1,0 +1,33 @@
+﻿class osoba //C++
+{private:
+          int x,y;
+ protected:
+	
+ public: int metoda(){tresc}
+   osoba(); //konstruktor
+   ~osoba() //destruktor;
+ 
+};
+class osoba //PHP
+{private
+		$x, $y;
+ protected
+ 
+ public
+		function metoda (){ $this->y=20}
+
+function _construct()
+ {tresc konstruktroa w PHP}
+function _destruct()
+ {tresc destruktora w PHP}		
+}
+
+
+osoba obiekt; //C++
+obiekt.metoda();
+obiekt.x=20; //tylko gdy x jest publiczne
+
+obiekt = new osoba; //PHP
+obiekt -> $x = "Jan";
+
+

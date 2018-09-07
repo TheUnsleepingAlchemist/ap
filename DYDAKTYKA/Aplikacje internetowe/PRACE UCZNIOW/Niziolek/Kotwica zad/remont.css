@@ -1,0 +1,48 @@
+
+#menu
+{
+	float: left;
+	width: 20%;
+	height: 220px;
+	background-color: #39B46B;
+	text-align: center;
+	color: white;
+	font-size: 150%;
+}
+
+#glowny
+
+{
+	height: 300px;
+	width: 100%;
+}
+
+#stopka
+{
+	background-color: #39B46B;
+	color: white;
+	text-align: center;
+	font-size: 150%;
+	
+}
+
+a
+{
+	color: black;
+	
+}
+
+button
+{
+	background-color: green;
+	border: 1px solid green;
+	color: white;
+	font-weight: bold;
+	padding: 15px;
+}
+
+h1
+{
+	color: #1BA352;
+	
+}

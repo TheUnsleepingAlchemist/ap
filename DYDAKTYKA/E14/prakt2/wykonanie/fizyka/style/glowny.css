@@ -1,0 +1,70 @@
+body 
+{
+	margin:0;
+	padding:0;
+	font-family:Arial,sans-serif;
+	font-size:18px;
+	color:red;
+}
+
+a 
+{
+	color:red;
+}
+
+li
+{
+	padding-top:40px;
+}
+
+.pojemnik
+{
+	width:900px;
+	height:auto;
+	margin:0 auto;
+	background-color:#454545;
+}
+
+	.pojemnik  header
+	{
+		width:inherit;
+		height:170px;
+		background-color:black;
+		background-image:url(../grafiki/baner.jpg);
+		background-repeat:no-repeat;
+		background-position:20px 20px;		
+	}
+
+	.pojemnik  .pasek_info, .pojemnik  footer
+	{
+		width:inherit;
+		height:40px;
+		line-height:40px;
+		font-style:italic;
+	}
+	
+	.pojemnik  footer
+	{
+		text-align:right;
+		clear:both;
+		width:880px;
+		padding-right:20px;
+	}
+
+	.pojemnik  nav
+	{
+		width:20%;
+		height:auto;
+		float:left;
+		font-size:20px;
+	}
+
+	.pojemnik  article
+	{
+		width:76%;
+		padding:2%;
+		height:auto;
+		float:left;
+		background:linear-gradient(to right, black, black, gray, silver, gray, black, black);
+	}
+	

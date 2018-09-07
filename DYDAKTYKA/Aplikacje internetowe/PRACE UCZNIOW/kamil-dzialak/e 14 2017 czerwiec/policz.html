@@ -1,0 +1,59 @@
+<HTML>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>Remont mieszkań</title>
+<link rel="stylesheet" type="text/css" href="remont.css" />
+<script>
+function licz(){
+var a = document.getElementById('ile').value;
+var b =0;
+  
+   len = document.form.plytki.length;
+  for (i = 0; i < len; i++) {
+  if (document.form.plytki[i].checked) {
+  b = document.form.plytki[i].value;
+        }
+  }
+    
+
+var s =a*b
+if (b==0)
+	document.getElementById('cena').textContent="Wybierz rozmiar płytek";
+	else
+	document.getElementById('cena').textContent="Koszt kafelkowania "+s+" zł";
+}
+
+</script>
+</head>
+<BODY>
+<div id="menu">
+<ol>
+<li><a href="index.html">O FIRMIE</a>
+<li><a href="adres.html">ADRES</a>
+<li><a href="policz.html">POLICZ</a>
+<li><a target="_blank" href="http://www.jakremontowac.pl/">LINKI</a>
+</ol>
+<div>
+<br>
+<h3>REMONT MIESZKAŃ</h3>
+</div>
+</div>
+<div id="glowny">
+
+<h1>Kafelkowanie Łazienki</h1>
+<form id="form" name="form" method="POST">
+<p>powierzchnia w m<sup>2</sup> <input id="ile" type="number" min="1" value="1"><br>
+<input type="radio" name="plytki" value="70">Płytki 20x20cm<br>
+<input type="radio" name="plytki" value="80">Płytki 25x15cm<br>
+<input id="licz1" name="przycisk" type="button" value="PRZELICZ" onClick="licz()">
+
+<p id="cena"><p>
+
+
+</div>
+<div id="stopka">
+<h2>Autor strony: Kamil Działak</h2>
+</div>
+
+</BODY>
+</HTML>

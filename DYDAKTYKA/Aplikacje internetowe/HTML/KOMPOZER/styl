@@ -1,0 +1,7 @@
+body {
+  height: 100%;
+  background-color: #3333ff;
+  display: block;
+  float: none;
+  width: 100%;
+}

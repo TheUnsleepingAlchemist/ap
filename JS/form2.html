@@ -1,0 +1,29 @@
+<html>
+<head>
+<script language="JavaScript">
+<!-- Hide
+function test1(form) 
+{
+ if (form.text1.value == ""||form.text2.value == "")
+    alert("wprowadz wartosc")
+  else { 
+	    a=parseInt(form.text1.value);
+	    b=parseInt(form.text2.value);
+	    suma=a+b;
+       alert("suma =" +suma);
+      }
+}
+// -->
+</script>
+</head>
+<body>
+<form name="first">
+Podaj wartosc 1:<br>
+<input type="text" name="text1">
+<br>
+Podaj wartosc 2:<br>
+<input type="text" name="text2">
+<input type="button" name="button1" value="Oblicz sumê" onClick="test1(form)">
+</form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head>
+
+</head>
+<body>
+
+<p>Jakis text</p>
+<input type="button" value="Pokaz Okno" id="guzikOkna" />
+<script>
+function okno(url) {
+    var noweOkienko = window.open(url, 'tytul-okna', 'toolbar=0,menubar=0,scrollbars=0,resizable=0,status=0,location=0,directories=0,top=20,left=20,height=500,width=700');
+
+//dokument w oknie przegl¹darki
+window.document; 
+//dokument w nowym oknie
+noweOkienko.document ;
+//pobieramy sekcjê body w nowym okienku
+noweOkienko.document.getElementsByTagName('body')[0] ;
+//ustawiam wielkoœæ czcionki dla wszystkich akapitów w nowym oknie
+noweOkienko.document.getElementsByTagName('p').style.fontSize = '20px' ;
+//ustawiam szerokoœæ okienka na 400px
+noweOkienko.width = '100'; 
+//przesuwam okienko do pozycji 200x200
+noweOkienko.moveTo(200,200); 
+//zamyka okienko
+noweOkienko.close() ;	
+}
+
+document.getElementById('guzikOkna').addEventListener('click', function() {
+    okno('http://google.pl')
+});
+</script>
+
+</body>
+</html>

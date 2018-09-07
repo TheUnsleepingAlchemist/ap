@@ -1,0 +1,75 @@
+﻿<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style/styl.css" />
+<script>
+function Glowna() {
+	document.getElementById('trescstrony').innerHTML = "<h2><center>Witaj na stronie naszej apteki! Zapraszamy!</center></h2>";
+}
+function Opinie() {
+	document.getElementById('trescstrony').innerHTML = "<center>Wpisz swoją opinię o naszej aptece:<br /><form name='opiniaklienta' method='post' action='mailto:aa@wp.pl'><textarea rows='5' cols='35'></textarea><br /><input type='submit' value='Wyślij!' />	</form></center>";
+}
+function Kontakt() {
+	document.getElementById('trescstrony').innerHTML = "<center>&nbsp;<h2><b>Kontakt do naszej firmy: </b></h2><br /></center><ul><li>Telefon: (+48) 782 882 009</li><li>E-mail: aa@wp.pl</li><li>Adres: ul. Zielna 29/13, 00-209 Warszawa</li></ul>";
+}
+
+var niebieski = "blue";
+var czerwony = "red";
+var bialy = "white";
+
+function Kolory() {
+	document.getElementById('trescstrony').innerHTML = "<h2><center><button onClick='document.bgColor=niebieski;'>Niebieski</button><button onClick='document.bgColor=czerwony;'>Czerwony</button><button onClick='document.bgColor=bialy;'>Biały</button></center></h2>";
+}
+
+function Data() {
+	var dzien = (new Date).getDate();
+	var miesiac = (new Date).getMonth();
+	var miesiacc;
+	switch (miesiac) {
+		case 0: miesiacc = "Styczeń"; break;
+		case 1: miesiacc = "Luty"; break;
+		case 2: miesiacc = "Marzec"; break;
+		case 3: miesiacc = "Kwiecień"; break;
+		case 4: miesiacc = "Maj"; break;
+		case 5: miesiacc = "Czerwiec"; break;
+		case 6: miesiacc = "Lipiec"; break;
+		case 7: miesiacc = "Sierpień"; break;
+		case 8: miesiacc = "Wrzesień"; break;
+		case 9: miesiacc = "Październik"; break;
+		case 10: miesiacc = "Listopad"; break;
+		case 11: miesiacc = "Grudzień"; break;
+	}
+	var rok = (new Date).getFullYear();
+	document.getElementById('stopka').innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dzisiejsza data: " + dzien+" "+miesiacc+" "+rok;
+}
+</script>
+</head>
+<body onLoad="Data()">
+<div id="str">
+<table id="main">
+<tr><td colspan="3" id="logo"><img src="logo.jpg" /></td></tr>
+<tr>
+<td id="menu">
+<ul>
+<li><button onclick="Glowna()">Strona Główna</button></li>
+<li><button onclick="Kolory()">Kolory</button></li>
+<li><button onclick="Opinie()">Opinie klientów</button></li>
+<li><button onclick="Kontakt()">Kontakt</button></li>
+</ul>
+</td>
+<td id="tresc"><div id="trescstrony"><h2><center>Witaj na stronie naszej apteki! Zapraszamy!</center></h2></div></td>
+<td id="galeria"><br />
+<table id="galer">
+<tr><td><h3 id="gal">Galeria:</h3></td></tr>
+<tr><td><a href="1.jpg" target="_blank"><img class="galeria" src="1.jpg" /></a></td></tr>
+<tr><td><a href="2.jpg" target="_blank"><img class="galeria" src="2.jpg" /></a></td></tr>
+<tr><td><a href="3.jpg" target="_blank"><img class="galeria" src="3.jpg" /></a></td></tr>
+<tr><td><a href="4.jpg" target="_blank"><img class="galeria" src="4.jpg" /></a></td></tr>
+<tr><td><a href="5.jpg" target="_blank"><img class="galeria" src="5.jpg" /></a></td></tr>
+</table>
+</td>
+</tr>
+<tr><td colspan="3" id="stopka">&nbsp;Copyright ® Grzesiu Hawliczek 2015</td></tr>
+</table>
+</div>
+</body>
+</html>
