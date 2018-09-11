@@ -1,55 +1,13 @@
-html, body
-{background-color: #dadada;
-color: #000000;
-margin-top: 10px;
-font-family: 'Trebuchet MS', Arial, sans-serif;
-}
-div#strona
-{width: 800px;
-margin: 0 auto;
-padding: 10px;
-background-color: #ffd2af;
-}
-div#naglowek
+#glowny{}
+#pierwszy
 {height: 100px;
-padding: 10px;
-background-color: #7b327b;
-color: #ffffff;
-}
-div#menu
-{width: 150px;
-height: 300px;
+width: 100%;
+background-color: #000;
+color: #fff;
 float: left;
-overflow: hidden;
-padding: 10px;
-background-color: #cb78cb;
 }
-div#menu ul
-{list-style-type: none;
-}
-div#zawartosc
-{overflow: hidden;
-padding: 20px;
-background-color: #ffbeff;
-}
-div#stopka
-{clear: both;
-padding: 10px;
-background-color: #8f468f;
-color: #ffffff;
-}
-
-ul
-{list-style: none;
-margin: 5px;
-padding: 0px;
-}
-ul a:link, ul a:visited
-{display: block;
-color: #005500;
-text-decoration: none;
-}
-ul a:hover
-{color: #ff00ff;
-text-decoration: underline;
-}
+#drugi
+{height: 200px;
+width: 50%;
+background-color: #55af22;
+float: left;}
