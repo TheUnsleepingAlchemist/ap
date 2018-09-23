@@ -1,19 +1,19 @@
 <html>
 <head>
+	<meta charset="utf-8">
 <script>
 function calc()
 {
 kilo=parseInt(document.getElementById("k").value);
-kilo2=document.getElementById("k").value;
 
-	 switch (document.form.odpowiedz.value)
+	 switch (document.getElementById("wybor").value)
 {
 case "a": wynik=0.48*kilo;break;
 case "b": wynik=0.78*kilo; break;
 case "c": wynik=0.21*kilo; break;
 default : document.write("Wybierz opcje");
 }
-document.form.output.value=wynik;
+document.getElementById("output").value=wynik;
 }
 </script>
 </head>
@@ -21,7 +21,7 @@ document.form.output.value=wynik;
 <form name="form">
 <H4> Podaj ilosc kilometrów </H4><br />
 <input type="text" name="km" id="k"> <br />
-<H4> Wybierz �rodek transportu </H4>
+<H4> Wybierz środek transportu </H4>
    <SELECT NAME="odpowiedz" id="wybor" SIZE=1 onChange="calc()">
       <OPTION VALUE=none>Wybierz
       <OPTION VALUE="a"> Samochod osobwy

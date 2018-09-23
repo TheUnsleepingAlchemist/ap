@@ -1,0 +1,11 @@
+<head>
+	(...)
+<style type="text/css">
+/* <![CDATA[ */
+selektor { cecha: wartoœæ; cecha2: wartoœæ2... }
+selektor2 { cecha: wartoœæ; cecha2: wartoœæ2... }
+(...)
+/* ]]> */
+</style>
+	(...)
+</head>

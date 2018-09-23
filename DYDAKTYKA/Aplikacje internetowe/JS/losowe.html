@@ -4,7 +4,10 @@
 function los()
 { //liczba=2;
 liczba=Math.random()*10;
+if (liczba>=5 && liczba<=9)
 liczba=Math.round(liczba);
+else
+exit;
 //alert("losowa liczba"+liczba);
 document.sumowanie.pole1.value=liczba;
  }

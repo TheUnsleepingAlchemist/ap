@@ -1,0 +1,206 @@
+C:\wamp\bin\mysql\mysql5.6.17\bin\mysql -u root -p
+
+show databases; - pokazuje bazy
+
+use test;
+
+show tables; - pokazuje tabele
+
+create database; - tworzy baze
+
+select * from uczen; - pokazuje zawartoœæ tabeli
+
+create table klienci (id_k VARCHAR(3) NOT NULL PRIMARY KEY,
+imie VARCHAR(20) NOT NULL,
+nazwisko VARCHAR(20) NOT NULL,
+adres VARCHAR(100) NOT NULL,
+telefon VARCHAR(10));
+
+INSERT INTO klienci VALUE ('1','Piotr','Niewiadomski','Skarzysko','1234567');
+
+describe klienci
+
+create table zwierze (id_z VARCHAR(3) NOT NULL PRIMARY KEY,
+rasa VARCHAR(20) NOT NULL,
+imie VARCHAR(20) NOT NULL,
+wiek TINYINT NOT NULL,
+id_o VARCHAR(3) NOT NULL);
+
+create table opiekun (id_o VARCHAR(3) NOT NULL PRIMARY KEY,
+imie VARCHAR(20) NOT NULL,
+nazwisko VARCHAR(100) NOT NULL,
+staz TINYINT NOT NULL,
+tel VARCHAR(10));
+
+
+INSERT INTO zwierze VALUE ('1','huskie','Rex','1','1');
+INSERT INTO zwierze VALUE  ('2','jamnik','Long','3','2');
+INSERT INTO zwierze VALUE  ('3','pekinczyk','Dogy','1','3');
+INSERT INTO zwierze VALUE  ('4','jamnik','Reg','5','4');
+
+INSERT INTO opiekun VALUE  ('1','Piotr','Kowalski','2','12333');
+INSERT INTO opiekun VALUE  ('2','Marek','Kowalski','4','12333');
+INSERT INTO opiekun VALUE  ('3','Grzegorz','Kowalski','1','12333');
+INSERT INTO opiekun VALUE  ('4','Dorota','Kowalska','5','123123');
+
+create table uczen (id_u VARCHAR(2), imie VARCHAR(15));
+
+
+
+drop table nazwa;
+drop database nazwa;
+
+rename table nazwa to nazwa2
+
+update nazwatabeli
+SET column1=value, column2=value2
+WHERE some_column=somevalue';
+
+INSERT INTO uczen VALUE ('1','JAN');
+INSERT INTO uczen VALUE ('2','ADAM');
+INSERT INTO uczen VALUE ('3','ANNA');
+
+UPDATE uczen SET IMIE='Piotr' WHERE ID_u='2';
+
+ALTER TABLE uczen ADD (nazwisko varchar (3));
+alter table uczen modify column nazwisko varchar (30);
+ALTER TABLE uczen ADD PRIMARY KEY (id_u);
+ALTER TABLE uczen CHANGE imie imie_u varchar(20);
+
+create table samochod (rej VARCHAR (10) PRIMARY KEY, marka VARCHAR (20), rok_prod SMALLINT);
+
+
+
+create table samochod (rej, marka, rok_prod);
+
+
+ALTER TABLE czesci ADD (id_czesci varchar (5) PRIMARY KEY);
+ALTER TABLE paragon ADD (cena DOUBLE);
+ALTER TABLE paragon DROP zapas;
+alter table paragon modify column id_czesci varchar (5);
+ALTER TABLE czesci change opis_czesci opis FLOAT;
+alter table czesci modify column opis varchar (100);
+INSERT INTO paragon VALUE  ('1','1234');
+INSERT INTO paragon VALUE  ('2','52');
+INSERT INTO paragon VALUE  ('3','13,1');
+
+update paragon set where id_czesci=1 cena=22;
+
+INSERT INTO czesci VALUE  ('opona','opis1','1');
+INSERT INTO czesci VALUE  ('maska','opis2','2');
+INSERT INTO czesci VALUE  ('rura_wydechowa','opis3','3');
+
+
+GRANT przywilej  [(lista_kolumn)] [,przywilej [(lista_kolumn)]] ... ON {tabela | * | *.* | baza.* } TO  u¿ytkownik [IDENTIFIED BY [PASSWORD] 'has³o']
+[,u¿ytkownik [IDENTIFIED BY [PASSWORD] 'has³o']] ...
+[WITH opcja [opcja] ... ]
+
+REVOKE przywilej  [(lista_kolumn)] [,przywilej [(lista_kolumn)]] ... ON {tabela | * | *.* | baza.* }
+
+*.* do wszystkich baz/u¿ytkowników
+baza.*
+GRANT UPDATE (zarobki) ON Uni.Pracownik to P£ace;
+GRANT aLL ON *.* TO Administrator;
+
+DROP USER nazwa;
+
+GRANT SELECT, DELETE ON cwiczenie.* TO student@localhost IDENTIFIED BY 'student';
+
+SHOW GRANTS FOR nazwa;
+
+SET lc_messages = 'en_US';
+
+SELECT id_u, nazwa, stan from ulice;
+SELECT ulice.id_u, ulice.nazwa, ulice.stan from ulice;
+SELECT ulice.nazwa "nazwa ulicy" from ulice;
+SELECT * from ulice, instytucje where ulice.id_u=instytucje.id_u;
+
+
+mysql -u root -p < test.sql
+
+path C:\wamp\bin\mysql\mysql5.6.17\bin
+
+select * from nazwatabeli order by nazwakolumny asc               rosn¹co
+select * from nazwatabeli order by nazwakolumny desc              malej¹co
+
+select last_name, salary from test where salary > 1500 od
+
+create database hurtownia;
+use hurtownia;
+create table produkt (id_p int(3) PRIMARY KEY, nazwa VARCHAR(15) NOT NULL, opis VARCHAR(50) NOT NULL);
+create table cena (id_p int(3) PRIMARY KEY, wartosc varchar(15) NOT NULL, ilosc int(4) NOT NULL);
+
+INSERT INTO produkt VALUE  ('1','cukier','trzcinowy');
+INSERT INTO produkt VALUE  ('2','cukier','bialy');
+INSERT INTO produkt VALUE  ('3','cukier','puder');
+INSERT INTO produkt VALUE  ('4','cukier','brazowy');
+INSERT INTO produkt VALUE  ('5','mleko','koneckie');
+INSERT INTO produkt VALUE  ('6','majonez','kielecki');
+INSERT INTO produkt VALUE  ('7','musztarda','saperska');
+INSERT INTO produkt VALUE  ('8','musztarda','chrzanowa');
+INSERT INTO produkt VALUE  ('9','mleko','odtluszczone');
+INSERT INTO produkt VALUE  ('10','maslo','ostroleckie');
+
+INSERT INTO cena VALUE  ('1','3','2');
+INSERT INTO cena VALUE  ('2','2','3');
+INSERT INTO cena VALUE  ('3','3','1');
+INSERT INTO cena VALUE  ('4','4','2');
+INSERT INTO cena VALUE  ('5','2','2');
+INSERT INTO cena VALUE  ('6','4','8');
+INSERT INTO cena VALUE  ('7','3','5');
+INSERT INTO cena VALUE  ('8','4','2');
+INSERT INTO cena VALUE  ('9','3','6');
+INSERT INTO cena VALUE  ('10','4','1');
+
+SELECT * FROM produkt, cena WHERE produkt.id_p=cena.id_p;
+
+SELECT nazwa, opis, wartosc, ilosc FROM produkt, cena WHERE wartosc<3 and produkt.id_p=cena.id_p; z dwóch tabel
+SELECT SUM(wartosc) * COUNT(ilosc) FROM cena;
+SELECT SUM(wartosc) FROM cena;
+SELECT MAX(wartosc) FROM cena;
+SELECT MIN(wartosc) FROM cena;
+SELECT AVG(wartosc) FROM cena;
+SELECT COUNT(wartosc) FROM cena;
+SELECT SUM(wartosc) "suma wartosci" FROM cena;
+
+
+select nazwa, wartosc * ilosc FROM cena, produkt WHERE opis="bialy" and produkt.id_p=cena.id_p;
+
+policz ile w bazie jest produktow o nazwie cukier
+SELECT nazwa, count(nazwa) FROM produkt where nazwa="cukier";
+
+
+iloczyn kartezianski porownanie dwoch kluczy glownych: and produkt.id_p=cena.id_p
+
+select wartosc from cena where wartosc between 2 and 3;
+
+
+
+
+select nazwa, wartosc from cena, produkt where wartosc between 2 and 3 and produkt.id_p=cena.id_p;
+SELECT * FROM produkt WHERE nazwa LIKE "c_____";
+
+SELECT INFULL(wartosc, 2) FROM cena
+SELECT nazwa "nazwa produktu" FROM produkt WHERE nazwa LIKE "c_____";
+
+SELECT DISTINCT nazwa FROM PRODUKT;
+SELECT nazwa, sum(id_P) from PRODUKT GROUP BY nazwa;
+
+
+
+select nazwa, count(*) FROM produkt GROUP BY nazwa;
+select nazwa, SUM(wartosc) from produkt, cena where produkt.id_p=cena.id_p group by nazwa;
+
+
+select nazwa, count(*) FROM produkt GROUP BY nazwa having count(*)>1;
+create view v1 as select * from cena
+create view v2 as select ilosc as ilosc from v1 where ilosc > 3
+select nazwa, ilosc from widok where ilosc >=5
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+<html>
+<head>
+  <meta charset="utf-8">
+<script language="JavaScript">
+function test()
+{
+	    karo=document.getElementById("karo").value;
+	    norm=document.getElementById("norm").value;
+      pow=document.getElementById("pow").value;
+if (document.getElementById("karo").checked)
+        wartosc=karo*pow;
+if (document.getElementById("norm").checked)
+        wartosc=norm*pow;
+      document.getElementById("wynik").innerHTML=wartosc;
+}
+</script>
+</head>
+<body>
+<form name="first">
+Płytki w karo<input type="radio" name="r1" id="karo" value="50">
+Płytki normalnie<input type="radio" name="r1" id="norm" value="20">
+<br>
+Podaj powierzchnie: :<br>
+<input type="text" name="powierzchnia" id="pow">
+<input type="button" name="button1" value="Oblicz" onClick="test()">
+</form>
+<p id="wynik"></p>
+</body>
+</html>
