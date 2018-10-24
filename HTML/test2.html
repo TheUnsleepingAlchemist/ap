@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+<script type="text/javascript">
+  function SprawdzenieHasla()
+  {
+    var haslo=document.getElementById('haslo').value;
+    var spr_haslo=document.getElementById('spr_haslo').value;
+    cyfra=/[0-9]/g;
+    znak=/[a-zA-Z]/g;
+      if (haslo.length>=5)
+          {if (cyfra.test(haslo))
+             if (haslo==spr_haslo)
+                document.getElementById('wynik').innerHTML="Hasło poprawne";
+             else
+                alert ("Hasła są różne");
+            else
+            alert ("Hasło nie ma cyfry");
+          }
+      else
+          alert ("Hasło nie spełnia wymagań");
+  }
+
+
+wyraz=/^...a /;
+
+</script>
+
+
+
+
+
+</head>
+<body>
+
+<form action="">
+<input type="text" name="haslo" id="haslo">
+<input type="text" name="spr_haslo" id="spr_haslo">
+<input type="button" name="Sprawdź" id="" value="Sprawdź"
+onclick="SprawdzenieHasla()">
+</form>
+
+<p id="wynik">      </p>
+
+</body>
+</html>

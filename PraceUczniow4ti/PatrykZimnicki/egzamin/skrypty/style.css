@@ -1,0 +1,85 @@
+body
+{
+margin:0 auto
+!important;
+font-size:150%;
+width: 60%;
+ 
+}
+ 
+#calosc
+{
+width:62%;
+height:552px;
+border:1px solid black;
+background-color: #FFF;
+}
+ 
+ 
+ 
+ #gora
+{
+font-size: 30px;
+background-color:lightblue;
+border: 1px solid black;
+}
+ 
+.logo
+{
+width:80px;
+height: 80px;
+}
+ .kolor
+{
+text-decoration: none;
+color:#000;
+}
+ 
+#strona
+{
+padding: 1%;
+width:60%;
+float: left;
+background-color:ffff;
+color:blu;
+ 
+}
+ 
+  #prawa
+{
+width:38%;
+float:left;
+}
+ 
+ #dane
+{
+border-left: 1px solid black;
+border-right: 1px solid black;
+border-bottom: 1px solid black;
+height:200px;
+background-color:#888;
+clear: both;
+ 
+}
+#link
+{
+height:200px;
+border-left: 1px solid black;
+border-right: 1px solid black;
+background-color: lightgray;
+border-bottom: 1px solid black;
+}
+ #motto
+{
+height:150px;
+background-color:white;
+color:red;
+border-left: 1px solid black;
+border-right: 1px solid black;
+border-bottom: 1px solid black;
+}
+ 
+   ul>li
+{
+list-style-type: none;
+}

@@ -1,0 +1,11 @@
+Zadanie HTML
+Wykonaj stronę internetową dla szkoły podstawowej.
+Konstrukcja strony:
+1. U góry strony umieść logo szkoły dostarczone do zadania.
+2. Pod logiem umieść poziomo linki do strony głównej (Home), galerii (Galeria), Kontakt do autora (Kontakt), Ciekawe linki (Linki) odzielone znakiem ||. Każdy z linków otwiera się w tej samej karcie co strona główna. Każda podstrona posiada Logo i to samo menu. Kolor tła stron niebieski, kolor czcionki menu biały.
+3. Zawartość stron:
+	- Home - tekst powitania w kolorze czarnym, jako nagłówek 3
+	- Galeria - kolor tekstu biały, wstaw tabele 2x2 i umieść w niej dowolne obrazy o rozmiarach 50x50. Na każdym obrazie wykonaj link do obrazu w rzeczywistych wymiarach, wyświetlaj w osobnej karcie. 
+	- Kontakt -tekst czarny, zawiera pełną informację umieszczoną w tabeli o dowolnej konfiguracji. Poniżej umieść mapę (pobrany obraz mapy polski z internetu) w ramce pływającej o rozmiarach 100x100. 
+	- Linki - umieść w tabeli 1 kolumnowej adresy do dowolnych stron www otwieranych w osobnej karcie. 
+

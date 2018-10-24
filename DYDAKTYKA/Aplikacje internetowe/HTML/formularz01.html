@@ -1,0 +1,39 @@
+<html>
+<head>
+
+<style>
+  input {background : red;}
+</style>
+
+
+<script type="text/javascript">
+  function suma()
+      {text=document.getElementById("pole2").value;
+       document.write("Pobrana wartosc z pola2 -> " + text);
+      }
+</script>
+</head>
+<form action="" method="">
+<input type="text" name="pole1" value="Ankieta" disabled><br>
+<input style="background : yellow" type="text" name="pole2" id="pole2" value="" size="50" maxlength="10"><br>
+<input type="password" name="pole2" value=""><br>
+<fieldset >
+  <legend align="rodzaj">Pola formularza</legend>
+praca:<input type="checkbox" name="" value=""><br>
+moc:<input type="checkbox" name="" value=""><br>
+Kobieta:<input type="radio" name="R1" value="" checked=><br>
+Mezczyzna:<input type="radio" name="R1" value=""><br>
+</fieldset>
+Skad dowiedziales sie o promocji w Lidu <br>
+<select name="" id="">
+  <option>Strona internetowa</option>
+  <option>Od somsiada</option>
+  <option>zaslyszalem w MKS</option>
+  <option>inne</option>
+</select>
+<br>
+<textarea name="name" rows="8" cols="50"></textarea>
+<input type="file" name="nazwa" /><br>
+<input type="reset" value="RESET" /><br>
+<input type="button" name="" value="przycisk" onclick="suma()">
+</form>
