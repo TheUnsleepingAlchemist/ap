@@ -1,5 +1,8 @@
 <?
 $tablica = file('przyslowia.txt.txt');
-$tekst = array_rand($tablica, 1);
-echo $tablica[$tekst];
+$index = array_rand($tablica, 1);
+echo $tablica[$index];
 ?>
+
+$linia=fgets($plik);
+   list($login,$haslo)=explode(":", $linia);

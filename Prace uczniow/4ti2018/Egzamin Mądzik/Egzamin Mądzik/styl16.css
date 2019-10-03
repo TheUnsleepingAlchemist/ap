@@ -1,0 +1,92 @@
+#baner
+  {
+  text-align:center;
+  background-color:#993333;
+  color:white;
+  height:80px;
+    }
+    #panel
+    {
+  font-family:Tahoma;
+  background-color:#CC6666;
+  color:white;
+  text-align: center;
+  width:25%;
+  height:150px;
+  float:left;
+
+    }
+    #panel2
+      {
+        font-family:Tahoma;
+        background-color:#CC6666;
+        color:white;
+        text-align: center;
+        width:25%;
+        height:150px;
+        float:left;
+      }
+      #panel3
+        {
+          font-family:Tahoma;
+          background-color:#CC6666;
+          color:white;
+          text-align: center;
+          width:25%;
+          height:150px;
+          float:left;
+        }
+        #panel4
+          {
+            font-family:Tahoma;
+            background-color:#CC6666;
+            color:white;
+            text-align: center;
+            width:25%;
+            height:150px;
+            float:left;
+          }
+          #lewy
+            {
+             background-color:#CC9999;
+             width:40%;
+             height:550px;
+             text-align: center;
+             float:left;
+            }
+            #tabela
+            {
+              border:1px;
+              border-style: dotted;
+              border-color: red;
+              width: 100%;
+              text-align: center;
+            }
+            #srodkowy
+              {
+                background-color:#FFCCCC;
+                width:20%;
+                height:550px;
+                float:left;
+              }
+              #prawy
+                {
+                  background-color:#CC9999;
+                  width:40%;
+                  height:550px;
+                  text-align: center;
+                  float:left;
+                }
+                #stopka
+                  {
+                    background-color:#993333;
+                    color:white;
+                    text-align: right;
+                    float: none;
+                  }
+                  #przycisk
+                  {
+                    border: none;
+                    background-color: red;
+                    margin: 20px;
+                  }

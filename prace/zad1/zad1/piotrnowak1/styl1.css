@@ -1,0 +1,51 @@
+body 
+{
+  background-color: #F6E5DC;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+#banner {
+	  height:60px;
+	width:100%;
+	text-align:center;
+	background-color: #2F180C;
+	color: white;
+	font-size: 120%;
+
+}
+#lewy {  
+height: 500px;
+  background-color: #F6E5DC;
+  float:left;
+  width: 60%;
+
+
+}
+#prawy {
+	  height: 500px;
+	background-color: #F6E5DC;
+  float:right;
+	width: 40%;
+  font-size: 200%;
+
+  
+}
+#dolny {
+  padding:30px;
+  background-color: #D0B6A8;
+  text-align:center;
+
+}
+#stopka {
+	  color: white;
+  height:60px;
+  text-align:center;
+  background-color: #2F180C;
+
+  
+}
+.obrazek { 
+height: 400px;
+background: url("menu.jpg") no-repeat;
+}

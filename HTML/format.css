@@ -1,0 +1,47 @@
+#context
+{background-color: grey;
+width: 100%;
+height: 100%;
+}
+#baner
+{
+  background-color: purple;
+  color: red;
+  height: 100px;
+}
+#klasy
+{background-color: blue;
+width: 50%;
+height: 400px;
+float: left;
+}
+
+#identyfikatory
+{background-color: green;
+width: 50%;
+height: 400px;
+float: left;
+}
+
+
+span {font-weight: bold;
+      color: blue}
+.akapit1
+  {color: red;
+   text-decoration: underline;
+  }
+.akapit2
+  {color: yellow;
+   font-weight: bold;
+  }
+.akapit3
+  {color: green;
+   background-color: pink;
+  }
+#a1
+{letter-spacing: 2px}
+
+#a2
+{
+  font-size: 150%;
+}

@@ -1,0 +1,30 @@
+body
+{
+  background-color: #000111;
+text-align: center;
+  color:yellow;
+
+}
+#banner
+{
+  background-color: black;
+color: yellow;
+font-style: oblique;
+font-size: 20px;
+text-align: left;
+}
+
+#score
+{
+  font-size: 120px;
+  color: yellow;
+  text-align: center;
+}
+#banner2
+{
+  background-color: black;
+color: yellow;
+font-style: oblique;
+font-size: 25px;
+text-align: center;
+}

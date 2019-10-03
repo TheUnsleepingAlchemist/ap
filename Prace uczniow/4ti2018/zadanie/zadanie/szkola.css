@@ -1,0 +1,44 @@
+#naglowek {
+  width: 100%;
+  height:20%;
+  text-align: left;
+  background-color: #33CCFF;
+}
+
+#menu {
+  background-color: #888;
+}
+
+#lewo {
+  width: 60%;
+  height:80%;
+  float: left;
+  overflow: hidden;
+  background-color: #ccc;
+}
+
+#INFORMACJE {
+  width: 40%;
+  height:20%;
+  float: right;
+  overflow: hidden;
+  background-color: #ccc;
+}
+
+#TRESC {
+  width: 40%;
+  height:20%;
+  float: right;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#STOPKA {
+  width: 40%;
+  float:right;
+  height:20%;
+  background-color: #888;
+  color: red;
+}  
+b.hover
+font-style:italic;

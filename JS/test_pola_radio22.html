@@ -4,8 +4,9 @@
 function calc()
 {
 wynik=0;
-  if (document.form.odp[0].checked)
+  if (document.getElementById('css1').checked)
     wynik++;
+//document.getElementById('wynik').innerHTML=wynik;
 
  if (document.form.odp1[1].checked)
     wynik++;
@@ -15,7 +16,7 @@ wynik=0;
 if (document.form.odp2[1].checked)
     wynik=wynik-2;
 
- if (document.form.odpowiedz.value=="a")
+ if (document.getElementById('lista1').value=="a")
     wynik++;
 
 if (document.getElementById('p1').checked)
@@ -30,9 +31,9 @@ document.form.output.value=wynik;
 
 <form name="form">
 1) Czy CSS to?<BR>
-  <INPUT TYPE="radio" NAME="odp" VALUE="a" /> Style kaskadowe<BR>
-  <INPUT TYPE="radio" NAME="odp" VALUE="b" /> Style publiczne nieagregujace<BR>
-  <INPUT TYPE="radio" NAME="odp" VALUE="c" /> Jezyk skryptowy<BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE="a" id="css1" /> Style kaskadowe<BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE="b" id="css2" /> Style publiczne nieagregujace<BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE="c" id="css3" /> Jezyk skryptowy<BR>
 <br>
 
 
@@ -46,14 +47,14 @@ document.form.output.value=wynik;
 <br>
 
 3) Która kombinacja klawiszy to WYTNIJ?<br>
-	<INPUT TYPE="checkbox" NAME="odp2" VALUE="a">CTRL-C<br>
-	<INPUT TYPE="checkbox" NAME="odp2" VALUE="b">CTRL-V<br>
-	<INPUT TYPE="checkbox" NAME="odp2" VALUE="c">CTRL-X<br>
-	<INPUT TYPE="checkbox" NAME="odp2" VALUE="d">CTRL-K<br>
+	<INPUT TYPE="checkbox" NAME="odp2" VALUE="a" id="odp2">CTRL-C<br>
+	<INPUT TYPE="checkbox" NAME="odp3" VALUE="b" id="odp3">CTRL-V<br>
+	<INPUT TYPE="checkbox" NAME="odp4" VALUE="c" id="odp4">CTRL-X<br>
+	<INPUT TYPE="checkbox" NAME="odp5" VALUE="d" id="odp5">CTRL-K<br>
 <br>
 
-	 <H4> W celu wykonania polecenia "KOPIUJ" przyciskamy na klawiaturze:   </H4>
-   <SELECT NAME="odpowiedz" SIZE=1>
+	 <H4> W celu wykonania polecenia "KOPIUJ" przyciskamy na klawiaturid="odp2"ze:   </H4>
+   <SELECT NAME="odpowiedz" SIZE=1 id="lista1">
       <OPTION VALUE=none>Wybierz
       <OPTION VALUE="a"> CTRL + C
       <OPTION VALUE="b"> SHIFT + C
@@ -74,6 +75,6 @@ document.form.output.value=wynik;
 <input value="wynik testu" name="output" type="text">
 <input value="oblicz" name="calculate" type="button"
 value="calculate" onclick="calc()" />
-   </form>
+</form>
 
 </body></html>

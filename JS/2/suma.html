@@ -1,0 +1,17 @@
+﻿<script language="JavaScript">
+function checkElement()
+{
+a=parseInt(document.getElementById("Elem1").value);
+b=parseInt(document.getElementById("Elem2").value);
+suma=a+b;
+//alert (suma);
+document.getElementById("suma").innerHTML=suma;
+document.getElementById("demo").innerHTML="<img src='obraz.jpg'><br> <p><b>Mercedes C</b></p>";
+}
+</script>
+
+<input id="Elem1" value="20">
+<input id="Elem2" value="10">
+<input onClick="checkElement()" type="button" value="zobacz">
+<p id="suma">    </p>
+<p id="demo">    </p>

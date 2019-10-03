@@ -1,0 +1,85 @@
+mysql -u root -p
+show databases;
+create database mks;
+use mks;   //otwarcie bazy danych
+show tables;    wyświetlenie tabel w bazie
+
+4 tabele w bazie MKS
+kierowcy  (id_k int(3) not null)
+          (imie varchar(15) not null)
+          (nazwisko varchar(25) not null)
+          (wiek int(2))
+samochody (rej varchar(8) not null)
+          (marka varchar(15) not null)
+          (model varchar (15))
+          (licznik int(6))
+klient    (id_kilient varchar(5) not null)
+          (imie varchar (15) not null)
+          (nazwisko varchar (25) not null)
+          (telefon int (12))
+          (adres varchar (50) not null)
+usluga    (nr_faktury varchar(20) not null)
+          (nazwa_uslugi varchar(50) not null)
+          (id_k  --klucz obcy)
+          (id_klient --klucz obcy)
+          (rej --klucz obcy)
+          (cena float  not null)
+
+
+create database przykladowa;
+drop database przykladowa;
+
+create table kierowcy
+(id_k int(3) not null,
+imie varchar(15) not null,
+nazwisko varchar(25) not null,
+wiek int(2) );
+
+describe kierowcy;
+
+create table klient
+(id_klient varchar(5) not null,
+imie varchar(15) not null,
+nazwisko varchar(25) not null,
+telefon int(12),
+adres varchar(50) not null
+);
+
+create table samochody
+(rej varchar(8) not null,
+marka varchar(15) not null,
+model varchar(15),
+licznik int(6)
+);
+
+create table usluga
+(nr_faktury varchar(20) not null,
+nazwa_uslugi varchar(50) not null,
+id_k int(3) not null,
+id_klient varchar(5) not null,
+rej varchar(8) not null,
+cena float  not null
+);
+
+
+insert into kierowcy values(1,"Jann", "Koza", 29);
+insert into kierowcy values(2,"Zofia", "Kasza", 35);
+
+insert into klient values("11sko","Katarzyna", "Kapusta", 4545444, "Majków 22");
+insert into klient values("12sko","Barbara", "Kmicic", 5657675, "Płaczków 56");
+
+insert into samochody values("TSK12345","Opel", "Vectra C", 123000);
+
+insert into usluga values("FAK123456","Przewoz osob", 1 , "11sko", "TSK12345", 500);
+
+select * from kierowcy;
+
+mysqldump -u root -p mks > mks.sql  -> export bazy danych mks
+
+
+select * from kierowcy where wiek<30;
+select imie, nazwisko from kierowcy;
+select * from kierowcy where nazwisko like "K%";
+
+select * from kierowcy order by imie asc;
+select * from kierowcy order by imie desc;

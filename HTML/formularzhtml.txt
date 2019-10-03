@@ -1,0 +1,14 @@
+Wykonaj poniĹźszy formularz zgodnie z wytycznymi:
+
+1. Wstaw nieaktywne pole tekstowe oraz pole textowe w którym jest zapisana infoamacja co należy wpisać w to pole, która sama znika w momencie pisania w polu
+2. Załącz plik do formularza
+3. Wstaw obszar textowy o rozmiarach 10 wierszy i 20 kolumn
+4. Wstaw pole numeryczne
+5. Wstaw pole daty
+6. Zgrupuj elementy tak jak w przykładzie
+7. Wstaw dwa pola checkbox
+8. Wstaw dwa pola radio tak aby można było wybrać tylko jedną opcję
+9. Wstaw listę wyboru z 4 elementami
+10.Wstaw pole hasĹa
+11.Wstaw dwa przyciski leżące obok siebie: przycisk wysyłania formularza oraz przycisk czyszczenia formularza
+12 Wysyłaj formularz na maila test@wp.pl

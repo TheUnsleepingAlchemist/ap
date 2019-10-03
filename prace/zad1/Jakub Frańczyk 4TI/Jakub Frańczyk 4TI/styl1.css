@@ -1,0 +1,51 @@
+body { background-color: #F6E5DC; }
+
+	* {padding: 0;
+		margin:0 ;}
+#baner
+{
+	background-color: #2F180C;
+	text-align: center;
+	height: 60px;
+	color: white;
+	width: 100%;
+	float: left;
+}
+
+#lewy{
+	width: 50%;
+	float: left;
+}
+#prawy{
+	font-size: 200%;
+	text-align: center;
+	width: 40%;
+	padding:40px;
+	float: left;
+	
+	
+}
+
+#dolny{
+	background-color: #D0B6A8;
+	text-align: center;
+    padding:30px;
+	width: 100%;
+	float: left;
+
+}
+#stopka{
+	width: 100%;
+	background-color: #2F180C;
+    color: white;
+	height: 60px;
+	float: left;
+			
+			
+}
+	
+	
+	
+img{
+	height: 400px;
+}

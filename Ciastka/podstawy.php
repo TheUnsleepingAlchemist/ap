@@ -4,7 +4,7 @@ setcookie("user", "Marian", time()+3600);
 setcookie("haslo", "jegoHaslo ", time()+3600);
 
 //Wyświetlamy zawartość naszych ciasteczek
-echo $_COOKIE['user'];
+echo $_COOKIE['user']."<br>";
 echo $_COOKIE['haslo'];
 
 //A w taki sposób usuwamy ciasteczka z komputera użytkownika

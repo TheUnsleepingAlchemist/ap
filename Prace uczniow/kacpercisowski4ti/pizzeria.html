@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Pizza Margherita</title>
+    <link href="styl6.css" rel="stylesheet" type="text/css">
+    <script>
+        function liczenie() {
+        if(document.getElementById("zielonagora").checked == true) {
+            document.getElementById("wynik").innerHTML = "Dowieziemy twoja pizze za darmo";
+        } else { 
+            var obliczanko = document.getElementById("kilometry").value * 2;
+            document.getElementById("wynik").innerHTML = "Dowoz bedzie cie kosztowal " + obliczanko + " zlotych.";
+        }
+        }
+    </script>
+</head>
+<body>
+    <header>
+    <h2>Najlepsza pizza w miescie <img src="logo.png" height="100px"></h2>
+    </header>
+    <main>
+    <div id="lewy">
+    <p>U nas zamowisz pizze z dowozem</p>
+    <a href="logo.png">Nasze logo</a>
+    </div>
+    <div id="srodek">
+    <h3>Pizza Margherita</h3>
+    <p>ul. Botaniczna 4, Zielona Gora</p>
+    </div>
+    <div id="prawy">
+    <h3>Oferta</h3>
+    <ol>
+        <li>Pizza</li>
+        <li>Lasagne</li>
+        <li>Salatki</li>
+    </ol>
+    <a href="oferta.txt" id="odsylacz">Pobierz pelna oferte</a>
+    </div>
+    <div id="dolny">
+    <h3>Oblicz koszt dostawy</h3>
+    <input type="checkbox" id="zielonagora">Jestem z Zielonej Gory
+    <p>albo</p>
+    <p>Podaj liczbe kilometrow od Zielonej Gory<input type="number" id="kilometry"></p>
+    <button onclick="liczenie()">Oblicz</button>
+    <p id="wynik"></p>
+    </div>
+    </main>
+    <footer>
+    <p>Strone internetowa opracowal: <span id="name">Kacper Cisowski</span></p>
+    </footer>
+</body>
+</html>

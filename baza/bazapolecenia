@@ -1,0 +1,198 @@
+
+
+mysql -u root -p
+
+
+
+ftp://192.168.2.49
+
+
+show databases;
+
+
+use mks;
+
+
+
+show tables;
+select * from kierowcy;
+
+
+
+
+create database zst;
+
+
+
+
+
+
+create table uczen
+(
+id_u varchar(5) not null primary key,
+imie varchar(15) not null,
+nazwisko varchar(25) not null,
+adres varchar(50) not null,
+telefon int(9),
+email varchar(30)
+);
+
+INSERT INTO uczen VALUES("002", "Anna", "Paczka", "Malinowa 223 Skarzysko", 7898777, "ann@wp.pl");
+
+
+create table nauczyciel
+(
+id_n int(4) not null primary key auto_increment,
+imie varchar(15) not null,
+nazwisko varchar(25) not null,
+adres varchar(50) not null default 'Skarzysko-Kam.',
+telefon int(9),
+email varchar(30)
+);
+
+insert into nauczyciel values (NULL, , "Balcerzak", "Bokserska 45 Skarzysko-Kam.", 9898233, "weweek@wp.pl");
+
+describe uczen;
+
+select * from uczen;
+
+
+
+
+create table oceny
+(
+ocena int(1) not null,
+id_u varchar(5) not null,
+id_n int(4) not null,
+id_p varchar(10) not null
+);
+
+insert into oceny values(5, "001", 1, "mat" );
+
+select uczen.id_u, uczen.imie, uczen.nazwisko, oceny.ocena, nauczyciel.imie, nauczyciel.nazwisko from uczen, oceny, nauczyciel where oceny.id_u=uczen.id_u and nauczyciel.id_n=oceny.id_n;
+
+
+
+create table przedmioty
+(id_p varchar(10) not null primary key,
+nazwa varchar(50) not null,
+poziom varchar(1)
+);
+
+insert into przedmioty values("mat","matematyka","p" );
+
+DROP TABLE oceny;
+
+SELECT * FROM nauczyciel;
+
+
+update uczen
+set imie="Aganieszka", nazwisko="Konkola"
+where id_u="001" or id_u="002";
+
+
+
+
+alter table przedmioty
+add ilosc_godzin int(3);
+
+alter table uczen
+drop column email;
+
+
+alter table kierowcy
+add pensja float default 2500;
+
+
+alter table usluga
+add rabat int(3) deafault 10;
+
+
+ALTER TABLE oceny
+CHANGE wartosc  ocena int(1);
+
+ALTER TABLE oceny
+MODIFY ocena varchar(1);
+
+ALTER TABLE mark
+rename oceny;
+
+
+
+
+alter table usluga
+drop rabat ;
+
+
+update samochody
+set historia="Uszkodzony silnik"
+where rej="TSK12345";
+
+update samochody
+set historia="brak uszkodzen";
+
+update samochody
+set historia="nowy"
+where marka="BMW";
+
+update kierowcy
+set funkcja="kierownik"
+where id_k=1;
+
+select funkcja, sum(pensja) from kierowcy group by funkcja;
+
+SELECT usluga.id_k, imie, nazwisko, sum(cena) from usluga, kierowcy
+where usluga.id_k=kierowcy.id_k
+group by usluga.id_k
+order by imie asc;
+
+
+SELECT imie, nazwisko,funkcja, pensja
+FROM kierowcy
+WHERE pensja > 3000 AND funkcja="pracownik" ;
+
+
+SELECT usluga.id_klient, imie, nazwisko, sum(cena) from usluga, klient
+where usluga.id_klient=klient.id_klient
+group by usluga.id_klient;
+
+
+CREATE USER adam@localhost
+IDENTIFIED BY '1234';
+
+grant select
+on mks.*
+to adam identified by '1234';
+
+
+revoke select
+on mks.*
+from adam;
+
+show grants for adam@localhost;
+
+
+Grant select, delete, insert
+ON mks.*
+TO janek IDENTIFIED BY 'janek'
+WITH GRANT OPTION
+
+
+Zadanie
+*Stwórz bazę danych o nazwie "czytelnia"
+*W bazie utwórz tabele
+ (przypisz własciwe typy, klucze główne,
+ czy pola mogą być puste
+ oraz automatyczną numerację):
+  1. ksiazka (id_k, tytul, cena, id_a, id_w)
+  2. autor (id_a, imie, nazwisko, mail, telefon)
+  3. wydawnictwo (id_w, nazwa, adres)
+*Wprowadz do tabel przykładowe dane (2 rekordy).
+*Zmień dane autora o id_a=1 imię i nazwisko na
+Zenon Zykubek
+
+
+Utwórz bazę czytelnia
+tabele:
+-czasopismo (id_c (varchar(1)), nazwa varchar(1))
+-klient (id_k(varchar(1)), nazwisko, imie, paczka)

@@ -1,29 +1,49 @@
 <?php
 $z=10;
-$tab[0]=50;
-$tab[1]=150;
 
-for ($j=0; $j<2; $j++)
-{ echo $tab[$j];
-echo "<br>";}
+$tab=[23,57,-4,19,-20];
 
+$min=$tab[0];
+for ($j=1; $j<5; $j++)
+{ if ($min>$tab[j])
+    $min=$tab[j];
+}
+  echo "min=".$min."<br>";
+
+  $minimum=min($tab);
+echo $zmienna;
 
 
 $A["imie"]="Adam";  //tablica asocjacyjna
 $A["nazwisko"]="Koc";
 $A["wiek"]=50;
 
-foreach ($A as $klucz => $wartosc) {
-echo "$klucz : $wartosc <br />";
-} 
+foreach ($A as $klucz => $wartosc)
+{
+  if ($A["imie"]=="Adam")
+    echo "$klucz : $wartosc <br />";
+
+}
 
 
 
-//dla asocjacyjnej te¿ dzia³a
+//dla asocjacyjnej tez dziala
 $tab[]=200;
 $tab[]=300;
 while( list($klucz, $wartosc) = each($tab) )
 echo "$klucz : $wartosc<br />";
+
+
+
+
+
+
+
+
+
+
+
+
 
 echo "+++___________________________________________ <br>";
 
@@ -31,18 +51,18 @@ while( list($klucz, $wartosc) = each($A) )
 echo "$klucz : $wartosc<br />";
 echo "___________________________________________ <br>";
 
-// ustalamy sami nazwy indeksów
-$aTab = array('imie' => 'Jan', 'nazwisko' => 'Kowalski', 'ulica' => 'D³uga 5a');
-// automatyczne indeksy zaczynaj¹ce siê od 0
-$aTab2 = array('Jan', 'Kowalski', 'D³uga 5a');
+// ustalamy sami nazwy indeksï¿½w
+$aTab = array('imie' => 'Jan', 'nazwisko' => 'Kowalski', 'ulica' => 'Dï¿½uga 5a');
+// automatyczne indeksy zaczynajï¿½ce siï¿½ od 0
+$aTab2 = array('Jan', 'Kowalski', 'Dï¿½uga 5a');
 asort ($aTab);
 foreach ($aTab as $klucz => $wartosc) {
 echo "$klucz : $wartosc <br />";
-} 
+}
 
 foreach ($aTab2 as $klucz => $wartosc) {
 echo "$klucz : $wartosc <br />";
-} 
+}
 
 echo '*********************************************** <br>';
 

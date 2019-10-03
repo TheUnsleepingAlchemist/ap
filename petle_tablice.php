@@ -1,9 +1,10 @@
 <?php
-$T=[2,3,4,2];
+$T=[2,3,"Ala",2];
 for ($k=0; $k<count($T); $k++) //count zwraca długość tablicy
 {echo $T[$k];
 echo "<br>";}
-
+print_r($T); echo "<br>";
+echo "----------------------------------"."<br>";
 $z=10;
 $tab[0]=50;
 $tab[1]=150;
@@ -11,17 +12,21 @@ $tab[1]=150;
 for ($j=0; $j<2; $j++)
 { echo $tab[$j];
 echo "<br>";}
+print_r($tab); echo "<br>";
+echo "----------------------------------"."<br>";
 
 $A["imie"]="Adam";  //tablica asocjacyjna
 $A["nazwisko"]="Koc";
+print_r($A); echo "<br>";
 
-foreach ($A as $klucz => $wartosc) {
-echo "$klucz : $wartosc <br />";
+foreach ($A as $index => $wartosc) {
+echo "$index : $wartosc <br />";
 }
 
 //dla asocjacyjnej nie dzia�a
 $tab[]=200;
 $tab[]=300;
+
 while( list($klucz, $wartosc) = each($tab) )
 echo "$klucz : $wartosc<br />";
 
@@ -31,7 +36,7 @@ echo "___________________________________________ <br>";
 // ustalamy sami nazwy indeks�w
 $aTab = array('imie' => 'Jan', 'nazwisko' => 'Kowalski', 'ulica' => 'D�uga 5a');
 // automatyczne indeksy zaczynaj�ce si� od 0
-$aTab2 = array('Jan', 'Kowalski', 'D�uga 5a');
+$aTab2 = array('Jan', 'Kowalski', 'Dluga 5a');
 
 foreach ($aTab as $klucz => $wartosc) {
 echo "$klucz : $wartosc <br />";

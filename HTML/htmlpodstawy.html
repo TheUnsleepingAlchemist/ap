@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Strona próbna na zajęciach 3tia">
+  <meta name="keywords" content="3tia,technikum, informatyk">
+  <meta name="author" content="Andrzej Kotwica">
+  <meta http-equiv="last-modified" content=", 05 Sep 2019 14:25:27 GMT">
+
+  <title>3tia</title>
+</head>
+<body bgcolor="#C0C0C0">
+
+
+
+
+
+<form action="muza.html" method="POST">
+
+    <input type="text" name="" value="opcja"><br>
+    <p>Zaznacz opcję</p><input type="checkbox" name="" value=""><br>
+    <input type="submit" name="" value="Wyślij" >
+
+</form>
+
+
+
+
+
+<a id="up"></a>
+
+<p>Dzięki <em>umieszczaniu</em> w kolejnych  <br>
+   akapitach treści nieco różniącej się tematycznie, strona stanie się bardziej estetyczna oraz czytelniejsza.
+  <small>Jeżeli przed </small> <b> akapitem</b> lub serią
+  akapitów postawimy znak paragrafu
+</p>
+<p>tekst próbny</p>
+<h1>nagłówek 1</h1>
+<h2>nagłówek 2</h2>
+<h6>nagłówek 6</h6>
+<div>Blok, który stosujemy do konstrukcji strony</div>
+a<sup>2</sup>
+<fieldset>
+<pre>Kod c++
+        #include &lt iostream.h &gt
+          var int a=0;
+          for (i=0;i &lt 0;i++)
+            {cout<<"jakis text";
+              if (a==4) break;
+          }
+</pre>
+</fieldset>
+
+<samp>To jest przykład użycia
+  znacznika "samp"</samp>
+  <br><var>zmienna</var>
+  <blockquote>Wprowadza blok cytowany, którego możemy użyć np. gdy powołujemy się na jakieś źródła. Każdy wiersz w bloku cytowanym rozpoczyna się zwykle </blockquote>
+  <ins>dodano zmian znacznikiem "ins"</ins>
+  <del>usunieto zmiany znacznikiem "del"</del>
+<hr>
+  <dl>
+  <dt>Pierwszy termin</dt><dd>Definicja pierwszego terminu</dd>
+  <dt>Drugi termin</dt><dd>Definicja drugiego terminu</dd>
+  <dt>Trzeci termin</dt><dd>Definicja trzeciego terminu</dd>
+  </dl>
+
+<ul type="disc">
+  <li>punkt 1</li>
+  <li>punkt 2</li>
+</ul>
+
+<ol type="I">
+  <li>punkt 1
+    <ol type="a">
+      <li>podpunkt a</li>
+      <li>podpunkt b</li>
+    </ol>
+  </li>
+  <li>punkt 2</li>
+</ol>
+
+<a href="testy.html">Tu kliknij</a><br>
+<a href="http://zst-skarzysko.pl" target="blanc">Strona szkoły</a><br>
+<a href="mailto:staszek@wp.pl">Wyślij wiadomość</a><br>
+
+<a href="#up">Skocz na górę strony</a>
+
+<table border="1">
+  <tr>
+    <td colspan="2">komórka 1 + komorka 2</td>
+    <td>komórka 3</td>
+  </tr>
+  <tr>
+    <td bgcolor="red">komórka 1</td>
+    <td>komórka 2</td>
+    <td rowspan="2">komórka 3</td>
+  </tr>
+  <tr>
+    <td>komórka 1</td>
+    <td>komórka 2</td>
+  </tr>
+</table>
+
+
+<ol>
+  <li>punkt1
+    <ol>
+      <li>podpunkt</li>
+      <li>podpunkt</li>
+    </ol>
+  </li>
+  <li>punkt2</li>
+</ol>
+<table>
+  <tr>
+  <td> <a href="images/obrazek.jpg"><img src="images/obrazek.jpg" alt="tu miał być obrazek"
+       width="100" height="100"></a>
+  </td>
+  <td> <img src="images/obrazek.jpg" alt="tu miał być obrazek"
+       width="100" height="100">
+  </td>
+</tr>
+<tr>
+<td> <img src="images/obrazek.jpg" alt="tu miał być obrazek"
+     width="100" height="100">
+</td>
+<td> <img src="images/obrazek.jpg" alt="tu miał być obrazek"
+     width="100" height="100">
+</td>
+</tr>
+</table>
+
+<br><br>
+
+<embed src="muzyka.mp3">
+
+<a href="audio.pdf">Audio PDF</a>
+
+<a href="muzyka.mp3">Muzyka</a>
+
+<a href="rock.mp3">ROCK</a>
+
+<form action="test2.html" method="POST">
+  <input type="text" name="" value="Pole zablokowane" disabled="disabled">
+  <p>Podaj imię:</p>     <input type="text" name="imie" maxlength="5" placeholder="podaj imię"> >
+  <p>Podaj nazwisko:</p> <input type="text" name="nazwisko" value="">
+  <p>Podaj wiek:</p><input type="number" name="wiek" value=""><br>
+  <p>Podaj hasło:</p><input type="password" name="haslo" value=""><br>
+  <p>Lubię muzykę:</p><input type="checkbox" name="pole1" value="">
+  <p>Lubię szkołę:</p><input type="checkbox" name="pole1" value="" checked="checked"><br>
+  <p>K:</p><input type="radio" name="radio1" value="">
+  <p>M:</p><input type="radio" name="radio1" value=""><br>
+
+	<select name="nazwa" >
+		<option>Corsa</option>
+		<option>Opel</option>
+    <option>BMW</option>
+	</select>
+  <br>
+  <textarea name="nazwa" cols="20" rows="10">Tu wpisz tekst który pojawi się domyślnie</textarea>
+<input type="submit" name="" value="Wyślij">
+</form>
+
+
+</body>
+</html>
+
+<!--
+1. Punkt 1
+  * podpunkt wypunktowany 1
+  * podpunkt wypunktowany 2
+2. Punkt 2
+  a. podpunkt1
+  b. podpunkt2
+    I.   podpunkt1 lista rzymska
+    II.  podpunkt1 lista rzymska
+        * podpunkt1
+        * podpunkt2
+    III. podpunkt1 lista rzymska
+-->

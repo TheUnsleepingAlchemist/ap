@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<link rel="stylesheet" href="cyk.css">
+</head>
+<body>
+<script >
+function test()
+{
+wynik=0;
+if(document.getElementById('css1').checked)
+wynik++;
+if (document.getElementById('css2').checked)
+wynik--;
+if(document.getElementById('css3').checked)
+wynik++;
+if (document.getElementById('css5').checked)
+wynik--;
+if (document.getElementById('css6').checked)
+wynik--;
+if(document.getElementById('css4').checked)
+wynik++;
+if(document.getElementById('lista1').value=='a')
+wynik++;
+if (document.getElementById('lista1').value=="d")
+wynik--;
+if (document.getElementById('lista1').value=="c")
+wynik--;
+if (document.getElementById('lista1').value=="b")
+wynik--;
+if(document.getElementById('css0').checked)
+wynik++;
+if (document.getElementById('css9').checked)
+wynik--;
+if(document.getElementById('g1').checked)
+wynik++;
+if (document.getElementById('g2').checked)
+wynik--;
+if(document.getElementById('g3').checked)
+wynik++;
+if (document.getElementById('g4').checked)
+wynik--;
+if(document.getElementById('g5').checked)
+wynik++;
+if (document.getElementById('g6').checked)
+wynik--;
+if(document.getElementById('g7').checked)
+wynik++;
+if (document.getElementById('g8').checked)
+wynik--;
+if(document.getElementById('g9').checked)
+wynik++;
+if (document.getElementById('g0').checked)
+wynik--;
+
+
+document.getElementById('wynik').innerHTML=wynik;
+
+
+
+}
+
+</script>
+<div id="banner2" >
+Test informatyczny
+</div>
+<br>
+<br>
+<form action="">
+1) Czy CSS to?<br>
+<input type="radio" name="odp" value="a" id="css2"/>Style publiczne <br>
+<input type="radio" name="odp" value="b" id="css2"/>Style lokalne<br>
+<input type="radio" name="odp" value="c" id="css1"/>Style kaskadowe <br>
+<br>
+</form>
+
+<form action="">
+  2) binarne 11 to? <BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE"a" id="css5" /> 11<BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE"b" id="css3" /> 3<BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE"c" id="css5" /> 8<BR>
+    <br>
+</form>
+
+<form action="">
+  <img src="hdd.jpg">
+  <br>
+  3) HDD to? <BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE"a" id="css4"  /> dysk twardy <BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE"b" id="css6" /> procesor <BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE"c" id="css6" /> karta graficzna <BR>
+    <br>
+</form>
+<form action="">
+  <h4>4)w celu zamkniecia programu stosujemy?
+  <select name="odpowiedz" size=1 id="lista1">
+  <option value="none">Wybierz
+  <option value="a">alt+f4
+  <option value="b">CTRL+C
+  <option value="c">spacja+enter
+  <option value="d">CTRL+X
+  </select> </h4>
+  <br>
+</form>
+<form action="">
+  5)  Która z wymienionych pamięci jest pamięcią wewnętrzna komputera? <BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE"a" id="css9"  /> CD-ROM <BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE"b" id="css9" /> Pendrive <BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE"c" id="css0" /> Dysk Twardy <BR>
+    <br>
+</form>
+<form action="">
+  6) Jakim systemem posługuje się komputer? <BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE"a" id="g1"  /> systemem dwójkowym <BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE"b" id="g2" /> systemem dziesiętnym <BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE"c" id="g2" /> systemem trójkowym <BR>
+    <br>
+</form>
+<form action="">
+  7) Przycisku "Reset" - używamy wtedy, gdy chcemy? <BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE"a" id="g4"  /> wyłączyć komputer <BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE"b" id="g3" /> ponownie uruchomić komputer <BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE"c" id="g4" /> wyczyścić pamięć podręczną komputera<BR>
+    <br>
+</form>
+<form action="">
+  8)  Jakiego znaku nie może zawierać nazwa folderu? <BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE"a" id="g6"  /> ! <BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE"b" id="g5" /> ? <BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE"c" id="g6" /> $ <BR>
+    <br>
+</form>
+<form action="">
+  9)  Do tworzenia baz danych używamy? <BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE"a" id="g8"  /> word <BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE"b" id="g8" /> excel <BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE"c" id="g7" /> acces <BR>
+    <br>
+</form>
+<form action="">
+  10)  Do ochrony komputera przed wirusami urzywamy? <BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE"a" id="g9"  /> antywirusa <BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE"b" id="g0" /> firewala <BR>
+  <INPUT TYPE="radio" NAME="odp" VALUE"c" id="g0" /> skanera <BR>
+    <br>
+</form>
+
+
+
+
+
+
+
+<div id="score" >
+  <input type="button" value="Oblicz" onclick="test()">
+        <p id="wynik"></p>
+
+</div>
+      <div id="banner" >
+   Wykonał Grzegorz Miernik <img src="banan.gif">
+</div>
+
+  </body>
+  </html>

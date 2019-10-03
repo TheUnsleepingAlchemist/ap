@@ -1,29 +1,33 @@
 <html>
-<title>miesi¹c</title>
-<script>
-miesiac = new Array(12)
-miesiac[0] = "styczeñ "
-miesiac[1] = "luty "
-miesiac[2] = "marzec "
-miesiac[3] = "kwiecieñ "
-miesiac[4] = "maj "
-miesiac[5] = "czerwiec "
-miesiac[6] = "lipiec "
-miesiac[7] = "sierpieñ "
-miesiac[8] = "wrzeœnia "
-miesiac[9] = "paŸdziernika "
-miesiac[10] = "listopad "
-miesiac[11] = "grudzien "
+<title>miesiÄ…c</title>
+<head>
+  <meta charset="utf-8">
+  <script>
+  miesiac = new Array(12)
+  miesiac[0] = "stycznia ";
+  miesiac[1] = "lutyego ";
+  miesiac[2] = "marca ";
+  miesiac[3] = "kwietnia ";
+  miesiac[4] = "maja ";
+  miesiac[5] = "czerwca ";
+  miesiac[6] = "lipiec ";
+  miesiac[7] = "sierpnia ";
+  miesiac[8] = "wrzeÅ›nia ";
+  miesiac[9] = "pazdÅºiernika ";
+  miesiac[10] = "listopada";
+  miesiac[11] = "grudnia ";
 
-function data(){
+  function data(){
     var Today = new Date();
     var Month = Today.getMonth();
 	var dzien = Today.getDate();
-	var rok = Today.getYear();
-	rok=rok+1900;
-    return  dzien +"-"+ miesiac[Month] + "-"+rok;
-}
-</script>
+	var rok = Today.getFullYear();
 
-<script>document.write("Dzisiaj jest: " + data())</script>
+    return  dzien +"-"+ miesiac[Month] + "-"+rok;
+  }
+  </script>
+</head>
+<body>
+  <script>document.write("Dzisiaj jest: " + data())</script>
+</body>
 </html>

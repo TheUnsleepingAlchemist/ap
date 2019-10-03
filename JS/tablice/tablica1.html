@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+  <p id="wynik"></p>
+  <p id="wynik2"></p>
+  <p id="wynik3"></p>
+  <script>
+  suma=0; var tab=[];
+    for (i=0; i<10; i++)
+    {
+      tab[i]=Math.round(Math.random() *10);
+    }
+
+    for (i=0; i<tab.length-1; i++)
+    suma+=tab[i];
+    n=0;
+    if (tab.indexOf(3) !== -1)
+    n++;
+
+    document.getElementById('wynik3').innerHTML='liczba 5 występuje w tablicy= '+n+' razy';
+    document.getElementById('wynik').innerHTML='suma tablicy='+suma;
+    document.getElementById('wynik2').innerHTML='tablica '+tab.join(", ");
+  </script>
+
+</body>
+</html>

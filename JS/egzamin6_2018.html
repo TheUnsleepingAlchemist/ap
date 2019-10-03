@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+<script>
+function kalkulacja()
+{var koszt=0;
+liczba=document.getElementById("ilosc").value;
+staly=document.getElementById('upust').value;
+if(liczba>=1 && liczba<=40)
+  if (staly==10)
+    koszt=liczba*3*0.90;
+  else
+     koszt=liczba*3;
+
+if (liczba>40)
+  if (staly==20)
+      koszt=liczba*2*0.80;
+  else
+     koszt=liczba*2;
+
+document.getElementById('wynik').innerHTML="Twoje ogłoszenia bedą kosztować <i>"+koszt+"</i> PLN";
+}
+</script>
+</head>
+<body>
+  <form action="">
+    Liczba ogłoszeń<br><input type="number" id="ilosc">
+
+<select name="" id="upust">
+  <option value="10">Upust 10%</option>
+  <option value="20">Upust 20%</option>
+  <option value="30">Upust 30%</option>
+</select>
+
+<br><input type="button" name="" value="Kalkulacja" onclick="kalkulacja()" >
+
+  </form>
+<p id="wynik"></p>
+</body>
+</html>

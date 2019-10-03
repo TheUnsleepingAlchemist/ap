@@ -16,6 +16,6 @@ if (isset($_COOKIE['login']))
                 Hasło <input type="password"><br />
                 <input type="submit" value="Zaloguj"><br />
               </form>';
-        setcookie('login', $_POST['login'], time()+30);
+        setcookie('login', $_POST['login'], time()+60);
        }
 ?>

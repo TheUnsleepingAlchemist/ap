@@ -4,6 +4,8 @@ if (!$plik)
 print "blad otwarcia pliku";
 else
 print "plik zostal utworzony";
+
+
 for($i=1;$i<=5;$i++)
 {
 $los=rand(10,20);

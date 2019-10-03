@@ -10,6 +10,7 @@ if (isset($_POST['log_form'],$_POST['has_form']))
 {
 $log_form=$_POST['log_form'];
 $has_form=$_POST['has_form'];
+
 $tab=file("baza.txt", FILE_IGNORE_NEW_LINES);
 
 foreach ($tab as $line)

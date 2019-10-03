@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<script>
+  function kalkulacja()
+    { var koszt=0;
+      ilosc=document.getElementById("liczba").value;
+      upust=document.getElementById("upust").checked;
+      if (ilosc >= 1 && ilosc<=40)
+        koszt = ilosc*3;
+      if (ilosc > 40)
+        koszt = ilosc*2;
+      if (upust == 1)
+        koszt = koszt- 0.30;
+
+      document.getElementById("wynik").innerHTML=koszt;
+    }
+</script>
+
+</head>
+<body>
+<form name="form" action="">
+  <input type="number" id="liczba">
+  <input type="checkbox" id="upust" value="1">
+  <input type="button" value="Kalkulacja" onClick="kalkulacja()">
+</form>
+
+<p id="wynik"></p>
+
+</body>
+</html>

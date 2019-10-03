@@ -1,0 +1,104 @@
+body
+{
+  color: white;
+  margin: 0;
+  padding: 0;
+  background-color: #9370DB;
+
+}
+#całe_zadanie
+{
+  font-size: 24px;
+  height: auto;
+  width: auto;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 100px;
+}
+#pytanie
+{
+  background-color: #15171DAA;
+  color: orange;
+  height: auto;
+  width: auto;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+#odpowiedzi
+{
+  text-align: left;
+  font-weight: normal;
+  font-size: 20px;
+  height: 30px;
+  background-color: #26282E;
+  width: auto;
+  margin-top: 5px;
+  padding: 7px;
+}
+select
+{
+  width: 100%;
+  height: 30px;
+  background-color: #000000;
+  color: orange;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  outline: none;
+}
+select:hover
+{
+  cursor: pointer;
+}
+#wynik
+{
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+}
+.wynik
+{
+  border:solid 5px;
+  border-radius: 50px;
+  background-color: #00000066;
+  width: 100%;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#wynik2
+{
+  height: auto;
+  width: auto;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 13px;
+}
+input[type=button]
+{
+  margin-top: 13px;
+  height: 40px;
+  width: 120px;
+  background-color: #777777;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+}
+input[type=button]:hover
+{
+  cursor: pointer;
+  background-color: #666666;
+  transform: scale(110%);
+}
+#okno_wyniku
+{
+  margin-left: auto;
+  margin-right: auto;
+}

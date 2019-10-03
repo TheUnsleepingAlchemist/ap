@@ -1,0 +1,45 @@
+<!doctype HTML>
+<html lang="pl-PL">
+    <head>
+        <meta charset="utf-8" />
+        <title>Waluty</title>
+        <meta name="description" content="Przeliczanie walut" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <script src="waluty.js"></script>
+    </head>
+    <body>
+        <div>Wybierz walute:</div>
+        <div>
+            <label><input type="radio" name="waluta" value="Euro" id="euro" checked>Euro (4,30zl)</label>
+            <label><input type="radio" name="waluta" value="Dolary" id="dolary">Dolary (3,80zl)</label>
+            <label><input type="radio" name="waluta" value="Funty" id="funty">Funty (5,01zl)</label>
+        </div>
+        <div>
+            Ilosc zlot?wek: <input type="number" id="ile" value="10">
+        </div>
+        <div>
+            Tyle dostaniesz: <input type="text" id="wynik" value="" disabled>
+        </div>
+        <div><input type="button" value="Przelicz" onclick="przelicz()"></div>
+                <script>
+                        function przelicz()
+                        {
+                                var mnoznik;
+                                var wynik;
+                                var euro=document.getElementById("euro").checked;
+                                var dolary=document.getElementById("dolary").checked;
+                                var funty=document.getElementById("funty").checked;
+                                var ile=document.getElementById("ile").value;
+    
+                                if(euro==true) mnoznik=4.30;
+                                else if(dolary==true) mnoznik=3.80;
+                                else mnoznik=5.01;
+    
+                                wynik=Math.round(ile*1 * mnoznik*100)/100;
+    
+    
+                                document.getElementById("wynik").value=wynik;
+                        }
+                </script>
+    </body>
+</html>

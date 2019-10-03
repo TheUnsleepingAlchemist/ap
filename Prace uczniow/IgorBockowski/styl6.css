@@ -1,0 +1,50 @@
+#baner {
+	background-color: #4E885C;
+	color: orange;
+	text-align: center;
+	height: 110px;
+}
+
+#lewy {
+	background-color: #72A37D;
+	height: 300px;
+	float: left;
+	width: 30%;
+}
+
+#srodek {
+	background-color: #A2C3A9;
+	background-image: url("pizza.png");
+	height: 300px;
+	float: left;
+	width: 40%;
+}
+
+#prawy {
+	background-color: #72A37D;
+	text-align: center;
+	height: 300px;
+	float: left;
+	width: 30%;
+}
+
+#clear {
+	clear: both;
+}
+
+#dolny {
+	background-color: #A2C3A9;
+	text-align: center;
+	height: 250px;
+}
+
+#odsylacz {
+	background-color: orange;
+	padding: 15px;
+	color: green;
+}
+
+footer {
+	background-color: #4E885C;
+	color: orange;
+}

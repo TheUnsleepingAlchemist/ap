@@ -14,6 +14,8 @@
 <?php
   @$towar=$_POST['towar'];
   @$ilosc=$_POST['tona'];
+
+
   $plik=fopen("zamowienia.txt","a");
   $zamowienie=$towar.":".$ilosc.":"."tona/y ". date("H.i d-m-Y")."\n";
   fputs($plik, $zamowienie);

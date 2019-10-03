@@ -1,0 +1,4 @@
+1.Insert into rezerwacje Values(1, 1, "2017-07-04", "4", "111222333")
+2.SELECT cena,nazwa from `dania` where typ="2" 
+3.SELECT nazwa FROM `dania` WHERE cena<15 
+4.Update `pracownicy` set stanowisko="4" where stanowisko="3" 

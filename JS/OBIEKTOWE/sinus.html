@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Sinus</title>
+<script>
+  function gra()
+    {  p1=document.getElementById("p1").value;
+       p2=document.getElementById("p2").value;
+      los1=Math.random()*10;
+      los1=Math.round(los1);
+      los2=Math.random()*10;
+      los2=Math.round(los2);
+        if (p1==los1 || p1==los2 || p2==los1 || p2==los2)
+          {alert ("WYGRAŁEŚ!!!!!!!");}
+        else
+          {alert("GRAJ DALEJ");}
+
+   }
+</script>
+</head>
+<body>
+  <form name="sinus">
+    <input type="text"  id="p1">
+    <input type="text"  id="p2">
+    <input type="button"  value="Graj" onclick="gra()" />
+  </form>
+  <p id="wynik"></p>
+</body>
+</html>

@@ -1,22 +1,18 @@
 <?php
-if (isset($_COOKIE['login']))
+if (isset($_COOKIE['status']))
   {
-    echo '<form action="" method="POST">
-            Logowanie<br />
-            Login <input type="text" value="'.$_COOKIE['login'].'"><br />
-            Hasło <input type="password"><br />
-            <input type="submit" value="Zaloguj"><br />
-          </form>';
+    echo "Juz glosowales! Nie możesz ponownie głosować";
+    $glosy=$_COOKIE['glos'];
+    echo "<br>Wynik głosowania -> $glosy";
   }
    else
-       {
+       {setcookie('status',1 , time()+15);
         echo '<form action="" method="POST">
-                Logowanie<br />
-                Login <input type="text" name="login"><br />
-                Hasło <input type="password"><br />
-                <input type="submit" value="Zaloguj"><br />
+                Zaznacz jeżli popierasz kandydata<input type="radio" name="tak" value="1">
+                <input type="submit" value="Zaglosuj"><br />
               </form>';
-        setcookie('login', $_POST['login'], time()+30);
+              $glosy=$_COOKIE['glos'] + 1;
        }
+setcookie('glos',$glosy, time()+120);
   //koniec
 ?>

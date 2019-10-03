@@ -1,0 +1,51 @@
+body
+{
+	background-color: #F6E5DC;
+	font-family: Tahoma;
+}
+
+#baner
+{
+	background-color: #2F180C;
+	text-align: center;
+	color: white;
+	height: 60px;
+}
+
+#panel_lewy
+{
+	width: 60%;
+	float: left;
+}
+
+#panel_prawy
+{
+	font-size: 200%;
+	padding: 50px;
+}
+
+#dolny
+{
+	background-color: #D0B6A8;
+	text-align: center;
+	padding: 30px;
+	clear: both;
+
+}
+
+#stopka
+{
+	background-color: #2F180C;
+	height: 60px;
+	color: white;
+}
+
+img
+{
+	height: 400px;
+}
+
+ul 
+{
+	list-style-type: circle;
+}
