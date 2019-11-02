@@ -80,7 +80,7 @@ poziom varchar(1)
 );
 
 insert into przedmioty values("mat","matematyka","p" );
-
+insert into uczen values ("003", "Adam", "Kania", "Lesna 22", 65765765);
 DROP TABLE oceny;
 
 SELECT * FROM nauczyciel;
@@ -107,6 +107,9 @@ add pensja float default 2500;
 alter table usluga
 add rabat int(3) deafault 10;
 
+alter table samochody
+add primary key (rej);
+
 
 ALTER TABLE oceny
 CHANGE wartosc  ocena int(1);
@@ -118,10 +121,16 @@ ALTER TABLE mark
 rename oceny;
 
 
-
-
 alter table usluga
 drop rabat ;
+
+ALTER TABLE usluga
+ADD CONSTRAINT Klucz PRIMARY KEY(ID);
+
+ALTER TABLE Orders
+ADD FOREIGN KEY (PersonID) REFERENCES Persons(PersonID)
+
+ALTER TABLE 'dane_osobowe_klient' ADD CONSTRAINT 'key' FOREIGN KEY ( 'id_klient' ) REFERENCES 'klient'( 'id_klient' ) ON DELETE CASCADE ON UPDATE CASCADE ;
 
 
 update samochody
@@ -135,9 +144,30 @@ update samochody
 set historia="nowy"
 where marka="BMW";
 
+
+Usuwanie rekodru z tabeli
+DELETE FROM tabela WHERE warunek
+
+delete from samochody where rej="TSK8782";
+
+
 update kierowcy
 set funkcja="kierownik"
 where id_k=1;
+
+
+
+SELECT uczen.imie, uczen.nazwisko
+FROM uczen
+WHERE imie="Adam";
+
+
+SELECT uczen.imie,   uczen.nazwisko,   oceny.ocena
+FROM uczen, oceny
+WHERE   oceny.id_u="001"   and   oceny.id_u=uczen.id_u;
+
+
+
 
 select funkcja, sum(pensja) from kierowcy group by funkcja;
 
@@ -146,10 +176,41 @@ where usluga.id_k=kierowcy.id_k
 group by usluga.id_k
 order by imie asc;
 
+SELECT rej, marka, model, licznik
+FROM samochody WHERE marka = 'bmw' ;
 
-SELECT imie, nazwisko,funkcja, pensja
-FROM kierowcy
-WHERE pensja > 3000 AND funkcja="pracownik" ;
+
+SELECT nr_faktury "faktura", nazwa_uslugi, cena "cena uslugi"
+FROM usluga
+WHERE cena > 300;
+
+SELECT kierowcy.imie "imie kierowcy", kierowcy.nazwisko "nazwisko kierowcy", klient.imie "imie klienta", klient.nazwisko "nazwisko klienta"
+FROM kierowcy, klient, usluga
+WHERE kierowcy.id_k=usluga.id_k and klient.id_klient=usluga.id_klient;
+
+
+SELECT imie, nazwisko, nr_faktury, nazwa_uslugi
+FROM usluga, kierowcy
+WHERE usluga.id_k=kierowcy.id_k and nr_faktury="FAK123456";
+
+SELECT imie "imie klienta", nazwisko "nazwisko klienta", usluga.rej "rejestracja", marka "marka samochodu"
+FROM klient, usluga, samochody
+WHERE usluga.id_klient=klient.id_klient and samochody.rej=usluga.rej and usluga.rej="TSK12345";
+
+imię i nazwisko klienta
+nazwę usługi
+cenę
+cena powyżej 300 zł
+
+
+SELECT usluga.nr_faktury, usluga.nazwa_uslugi, kierowcy.imie 'imie kierowcy', kierowcy.nazwisko 'nazwisko kierowcy'
+FROM usluga, kierowcy
+WHERE usluga.id_k=kierowcy.id_k and usluga.id_k=1;
+
+wyswietl z bazy mks uslugi które wykonane były na BMW:
+1. numer nr_faktury,
+2. rejestracje oraz marke
+
 
 
 SELECT usluga.id_klient, imie, nazwisko, sum(cena) from usluga, klient
@@ -177,6 +238,12 @@ ON mks.*
 TO janek IDENTIFIED BY 'janek'
 WITH GRANT OPTION
 
+kopia bazy (export)
+mysqldump -u nazwa_użytkownika -p nazwa_bazy > backup.sql
+mysqldump -u nazwa_użytkownika -p --all-databases > backup.sql
+
+import bazy
+mysql -u nazwa_użytkownika -p nazwa_bazy < backup.sql
 
 Zadanie
 *Stwórz bazę danych o nazwie "czytelnia"
@@ -192,7 +259,7 @@ Zadanie
 Zenon Zykubek
 
 
-Utwórz bazę czytelnia
+Utwórz bazę "czytelnia"
 tabele:
 -czasopismo (id_c (varchar(1)), nazwa varchar(1))
 -klient (id_k(varchar(1)), nazwisko, imie, paczka)

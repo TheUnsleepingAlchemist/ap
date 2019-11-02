@@ -1,0 +1,31 @@
+Utwórz bazę danych: "ZALICZENIE"
+W bazie stwórz dwie tabele:
+ 1. "PRACOWNIK"
+	-id_p (typ całkowity, nie pusty,
+	       klucz główny, autonumerowanie)
+	-nazwisko (typ tekstowy, nie pusty)
+	-imie (typ tekstowy, nie pusty)
+	-data_ur (typ daty)
+	-uwagi (typ textowy)
+
+
+ 2. "AUTO"
+	-rej (typ tekstowy, nie pusty)
+	-marka(typ tekstowy, domyślny="MAN")
+	-licznik (typ tekstowy)
+
+3. Wprowadz dane (po 3 rekordy)
+
+Zadania.
+1. Zmień nazwę kolumny UWAGI w tabeli PRACOWNIK na ADRES
+  (typ textowy, nie pusty)
+2. Nadaj kolumnie rej w tabeli auto właściwość klucza głównego
+3. Zmień typ kolumny licznik w tabeli auto na całkowity
+4. Zmień imię pracownika o identyfikatorze 1 na Janusz
+5. Wyświetl nazwiska, imiona i datę urodzenia pracowników.
+6. Dodaj klucz obcy rej (klucz z tabeli auto) w tabeli pracownik i wprowadz dane w tej kolumnie.
+7. Wyświetl wszystkich kierowców (imię i nazwisko) oraz model auta przypisanego do kierowcy.
+
+SELECT imie, nazwisko marka
+FROM pracownik, auto
+WHERE pracownik.rej=auto.rej;

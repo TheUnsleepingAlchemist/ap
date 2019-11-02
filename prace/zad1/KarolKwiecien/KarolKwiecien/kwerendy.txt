@@ -1,5 +1,0 @@
-1.INSERT INTO rezerwacje (numer_stolika, data, liczba_osob, numer_telefonu) VALUES (1, '2017-07-04', '111222333');
-2.SELECT nazwa, cena FROM dania WHERE rodzaj_dania = miesne;
-3.SELECT nazwa FROM dania WHERE cena < 15;
-4.UPDATE pracownicy SET praca='barman' WHERE praca = 'kelner';  
- 

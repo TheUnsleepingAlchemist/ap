@@ -1,0 +1,21 @@
+.zielony {color: green;}
+.czerwony{color: red;
+          text-decoration: underline;}
+#pole1 {background-color: #78a12b;}
+#box0 {background-color: #0000FF;
+        color: #FFF;
+        font-size: 150%;}
+
+#boxlewy {background-color: #C0C0C0;
+       width: 50%;
+       height: 300px;
+       float: left;}
+
+#boxprawy {background-color: #CC9999;
+            width: 50%;
+            height: 300px;
+          float:left;}
+
+#stopka {clear:both;
+          background-color: #99CC99;
+        text-align: right;}

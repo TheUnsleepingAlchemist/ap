@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript</title>
+  <script>
+  function fun()
+  {
+    a=parseInt(document.getElementById('p1').value);
+    b=parseInt(document.getElementById('p2').value);
+    suma=a+b;
+    document.getElementById('out').innerHTML="Suma="+suma;
+   }
+  </script>
+
+</head>
+<body>
+  <form action="">
+    A=<input type="number" name="" id="p1"><br>
+    B=<input type="number" name="" id="p2"><br>
+    <input type="button" name="" value="Oblicz" onclick="fun()"><br>
+  </form>
+<p id="out"></p>
+
+</body>
+</html>

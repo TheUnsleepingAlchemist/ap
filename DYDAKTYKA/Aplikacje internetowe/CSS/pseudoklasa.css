@@ -1,0 +1,53 @@
+body {background-color: blue;}
+a:link
+      {
+        color : black;
+        text-decoration: none;
+      }
+
+a:hover
+      {
+        font-style: italic;
+
+      }
+
+.akapit1
+          {
+            color: #FFF;
+            font-size: 120%;
+          }
+
+.naglowek1
+          {
+            color: red;
+          }
+
+#pole1
+        {
+          text-align: center;
+          color : yellow;
+        }
+
+#menu
+    {
+      background-color: #FFF;
+    }
+
+#context
+    {
+      background-color: #008080;
+      width: 50%;
+      height: 400px;
+      float: left;
+    }
+#prawy
+    {
+      background-color: #FF00FF;
+      width: 50%;
+      height: 400px;
+      float: left;
+    }
+#stopka
+    { clear: both;
+      background-color: #00FF00;
+    }

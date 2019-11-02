@@ -1,5 +1,0 @@
-BMW | E46 | 2003 | 32000 | zl
-Ferrari | 920 | 2000 | 5000 | zl
-Opel | Astra | 2000 | 5000 | zl
-Ford | Escort | 2000 | 2500 | zl
-FSO | Polonez | 1990 | 1250 | zl
