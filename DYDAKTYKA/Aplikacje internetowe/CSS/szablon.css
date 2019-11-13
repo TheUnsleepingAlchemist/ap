@@ -1,0 +1,45 @@
+* {margin:0; padding:0;}
+#baner
+{
+  background-color: #3f3f49;
+  color: : #FFF;
+  height: 100px;
+}
+#menu
+{
+  background-color: #7a878b;
+  color: : #FFF;
+  height: 50px;
+}
+#context
+{
+  background-color: #cbd1d2;
+  color: : #000;
+  height: 550px;
+}
+#stopka
+{
+  background-color: #7a878b;
+  color: : #FFF;
+  height: 50px;
+  text-align: right;
+  padding: 20px;
+}
+#text_stopka
+{font-style: italic;}
+.pozycja>a
+{
+  background-color: #7a878b;
+  color: : #000;
+  height: 40px;
+  width: 20%;
+  padding-top: 15px;
+  float: left;
+}
+.pozycja:hover>a
+{background-color: #cddce0;
+color: : #000;
+}
+a {text-align: center;
+text-decoration: none;
+color: #000;}
