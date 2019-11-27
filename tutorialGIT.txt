@@ -1,0 +1,6 @@
+wejdz do katalogu repozytorium
+sudo git add * // dodaje wszystkie pliki z katalogu roboczego do index
+sudo git config --global user.email "andrzej.kotwica@gmail.com" //dodaje do ustawień globalnych jako użytkownika Codelgniter
+sudo git commit -m "nazwa uaktualnienia albo zmian"   // kommitujesz... czyli przesyłasz zmiany do HEAD (poczekalnia do wysłania)
+sudo git push origin master //wypychasz na serwer GITa. master to główna gałąź twojego repozytorium
+git remote add origin <server> //Jeśli nie sklonowałeś istniejącego repozytorium i chcesz połączyć je ze zdalnym serwerem, musisz go dodać poprzez
