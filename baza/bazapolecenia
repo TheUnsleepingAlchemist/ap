@@ -217,6 +217,24 @@ SELECT usluga.id_klient, imie, nazwisko, sum(cena) from usluga, klient
 where usluga.id_klient=klient.id_klient
 group by usluga.id_klient;
 
+SELECT stanowisko, avg(wiek)
+FROM kierowcy
+GROUP BY stanowisko;
+
+
+
+select nazwisko from klient where nazwisko is null;
+
+select nazwisko from klient where nazwisko like 'K%';
+
+select nazwisko from klient
+where nazwisko not in ("Masa", "Miska");
+
+select nazwisko from klient
+where nazwisko in ("Masa", "Miska","Kasa");
+
+select * from usluga
+where cena between 300 and 500;
 
 CREATE USER adam@localhost
 IDENTIFIED BY '1234';

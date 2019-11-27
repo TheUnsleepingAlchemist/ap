@@ -13,7 +13,7 @@
 }
 #context
 {
-  background-color: #cbd1d2;
+  background-color: #EEEEEE;
   color: : #000;
   height: 550px;
 }
@@ -43,3 +43,29 @@ color: : #000;
 a {text-align: center;
 text-decoration: none;
 color: #000;}
+
+ul{padding: 30px;
+  font-family: sans-serif;
+  font-variant: small-caps;
+  font-size: 110%;
+}
+
+#framework {position: absolute;
+    top: 250px;
+    left: 350px;
+  }
+#phpjpg
+{margin-left: 100px;
+  width: 130px;
+  height: 90px;
+  float: left;
+}
+#napis_baner
+{
+  padding:20px;
+  margin-left: 100px;
+  color: #fff;
+  font-size: 180%;
+  font-weight: 900;
+  float: left;
+}

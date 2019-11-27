@@ -1,0 +1,32 @@
+* {margin: 0; padding:0; }
+#blok1
+  {
+    width: 30%;
+    height: 150px;
+    border: 1px dashed red;
+    background-color: #ccccff;
+    margin: 10px 10px 8px 10px;
+    float: left;
+
+  }
+#blok2
+  {
+    width: 40%;
+    border: 1px double red;
+    background-color: #ccccff;
+    margin: 3px 10px 3px 10px;
+    padding-left: 10px;
+    float: left;
+
+  }
+#stopka
+{clear: both;}
+
+img {
+  position: relative;
+  top: 50px;
+  left: 200px;
+
+  width: 150px;
+  height: 200px;
+}

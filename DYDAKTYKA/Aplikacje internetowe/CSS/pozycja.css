@@ -2,21 +2,17 @@
 position:absolute;
 left: 50px;
 top: 50px;
-z-index: 3;
+z-index: 1;
 }
 #dog2 {
 position:absolute;
 left: 100px;
 top: 100px;
-z-index: 1;
+z-index: 3;
 }
 #dog3 {
 position:absolute;
 left: 150px;
 top: 150px;
 z-index: 2;
-}
-img {
-  width: 200px;
-  height: 250px;
 }

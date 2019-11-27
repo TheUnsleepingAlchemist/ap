@@ -1,0 +1,41 @@
+* {margin: 0; padding: 0;}
+@media (min-width: 1100px)
+{
+  #blok1{
+  background-color: #ccccff;
+  border: 1px solid red;
+  margin: 1px;
+  width: 40%;
+  height: 100px;
+  float: left;
+}
+#blok2{
+  background-color: #9999cc;
+  border: 3px outset blue;
+  margin: 1px;
+  padding-left: 70px;
+  width: 40%;
+  height: 200px;
+  float: left;
+}
+#stopka
+{clear: both;
+border: 1px solid red;}
+}
+@media (min-width: 500px)
+{
+  #blok1{
+  background-color: #ccccff;
+  border: 1px solid red;
+  width: 40%;
+  }
+  #blok2{
+  background-color: #9999cc;
+  border: 3px outset blue;
+  width: 40%;
+  }
+  #stopka
+  {
+  border: 1px solid red;}
+  }
+}
