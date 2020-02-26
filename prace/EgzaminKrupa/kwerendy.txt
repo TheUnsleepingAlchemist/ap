@@ -1,0 +1,3 @@
+SELECT nazwa, cena FROM towary LIMIT 4
+SELECT cena FROM towary WHERE nazwa='cyrkiel'
+SELECT nazwa FROM towary

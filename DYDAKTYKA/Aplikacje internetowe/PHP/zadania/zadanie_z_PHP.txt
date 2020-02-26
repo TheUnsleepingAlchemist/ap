@@ -1,0 +1,6 @@
+Napisz skrypt w PHP, który dodaje nowego użytkownika
+oraz daje możliwość zmiany jego uprawnień.
+Uprawnienia są zapisane w tabeli "users" w bazie "kalendarz".
+Tabela users: login, haslo, imie, nazwisko, owner, group, other.
+Prawa dla właściwości owner, group i other przyjmują wartości 1 lub 0.
+Prawa należy dodawać poprzez zaznaczenie pola check. 

@@ -1,0 +1,38 @@
+* {margin:0; padding:0;}
+#baner
+{
+height: 260px;
+width: 100%;
+background-color: #9966cc;
+}
+#context
+{
+  height: 400px;
+  width: 60%;
+  background-color: #996612;
+  float: left;
+}
+#dokument
+{
+  height: 250px;
+  width: 40%;
+  background-color: #aaccff;
+  float: left;
+}
+#linki
+{
+  height: 150px;
+  width: 40%;
+  background-color: #fff;
+  float: left;
+}
+#stopka
+{ clear: both;
+  height: 50px;
+  width: 100%;
+  background-color: #9966cc;
+}
+img
+{
+  margin: 10px;
+}

@@ -1,0 +1,4 @@
+1.SELECT nazwa,cena FROM towary WHERE id<=4;
+2.SELECT cena FROM towary WHERE id=3;
+3.SELECT nazwa FROM towary;
+4.SELECT promocja

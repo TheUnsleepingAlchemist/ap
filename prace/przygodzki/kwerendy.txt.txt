@@ -1,0 +1,3 @@
+1.Kwerenda: SELECT nazwa, cena FROM towary WHERE id<5
+2.Kwerenda: SELECT cena FROM towary WHERE nazwa="cyrkiel"
+3.Kwerenda: SELECT nazwa FROM towary

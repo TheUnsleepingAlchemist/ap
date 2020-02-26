@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Ćwiczenia z JS</h1>
+    <script type="text/javascript">
+        var a=2;
+        text="Ala ma kota";
+        zmienna=120.5;
+        z2=35e-5;
+        document.write("Pokaż zmienne: " + "a=" + a + "<br>");
+        document.write("Pokaż zmienne: " + "text=" + text + "<br>");
+        document.write("Pokaż zmienne: " + "zmienna=" + zmienna+"<br>");
+        document.write("z2="+z2+"<br>");
+        suma=a+z2;
+        document.write("suma="+suma);
+        document.write("<br>instrukcje do nauki:<br>- if , for, while, do-while, switch, break, continue");
+        if (a>18)
+          document.write("<br>Ala MOŻE mieć kota");
+        else
+          document.write("<br>Ala NIE może miec kota");
+
+        while (a<10)
+          {document.write("<br>Lubię placki");
+            a++;
+          }
+
+        for (i=0; i<10 ; i++)
+          {document.write("<br> ...Lubie bigos");
+          }
+wybor=1;
+        switch (wybor)
+        {
+          case 1 : document.write("<br>Opcja1");break;
+          case 2 : document.write("<br>Opcja2");break;
+          default: document.write("<br>Wybierz opcję");
+        }
+x=2;
+if (x>5)
+  {document.write("<br>x > 5");
+    elseif (x<3)
+      document.write("<br>x < 5");
+  }
+else
+  document.write("<br>a jest inne");
+
+
+    </script>
+
+
+
+  </body>
+</html>

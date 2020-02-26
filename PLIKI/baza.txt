@@ -7,3 +7,4 @@ kasia:lord
 jango:fet
 kwark:mazda
 22:22
+Nowy:nowosc

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+<script type="text/javascript">
+  function pierwiastek()
+    {
+      liczba=document.getElementById('liczba').value;
+      potega=document.getElementById('potega').value;
+      wynik=Math.pow(liczba,potega);
+      wynik=Math.floor(wynik);
+      document.getElementById('out').innerHTML="liczba do potegi="+wynik;
+    }
+</script>
+
+  </head>
+  <body>
+<form>
+  <p>Podaj liczbę</p><input type="text" id="liczba" value="">
+  <p>Podaj potege</p><input type="text" id="potega" value="">
+  <input type="button" name="" value="Oblicz pierwiastek" onclick="pierwiastek()">
+</form>
+<p id="out"></p>
+
+  </body>
+</html>

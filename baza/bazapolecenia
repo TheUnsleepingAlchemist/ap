@@ -217,6 +217,11 @@ SELECT usluga.id_klient, imie, nazwisko, sum(cena) from usluga, klient
 where usluga.id_klient=klient.id_klient
 group by usluga.id_klient;
 
+SELECT stanowisko, sum(cena) from usluga, kierowcy
+where usluga.id_k=kierowcy.id_k
+group by kierowcy.stanowisko;
+
+
 SELECT stanowisko, avg(wiek)
 FROM kierowcy
 GROUP BY stanowisko;
@@ -239,7 +244,10 @@ where cena between 300 and 500;
 CREATE USER adam@localhost
 IDENTIFIED BY '1234';
 
-grant select
+
+DROP USER adam@localhost;
+
+grant all
 on mks.*
 to adam identified by '1234';
 
@@ -247,6 +255,12 @@ to adam identified by '1234';
 revoke select
 on mks.*
 from adam;
+
+revoke all
+on mks.*
+from adam;
+
+
 
 show grants for adam@localhost;
 
@@ -281,3 +295,9 @@ Utwórz bazę "czytelnia"
 tabele:
 -czasopismo (id_c (varchar(1)), nazwa varchar(1))
 -klient (id_k(varchar(1)), nazwisko, imie, paczka)
+
+do egzaminu 2 sesja czerwiec 2019
+kwerenda 4
+SELECT promocja, count(promocja)'ilosc'
+FROM towary
+GROUP BY promocja;

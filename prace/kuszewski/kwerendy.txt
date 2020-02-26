@@ -1,0 +1,4 @@
+1.SELECT * FROM `towary`
+2.SELECT cena FROM `towary` WHERE nazwa = 'cyrkiel'
+3.SELECT nazwa FROM `towary`
+4.

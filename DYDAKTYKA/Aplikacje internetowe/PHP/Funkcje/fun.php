@@ -5,8 +5,9 @@ function oblicz()
  $c=200;
  $a=$b+$c;
  echo "zienna a=$a <br>";
- return  $a; 
+ return  $a;
  }
-oblicz(); 
- 
+
+$wynik=oblicz();
+echo $wynik; 
 ?>

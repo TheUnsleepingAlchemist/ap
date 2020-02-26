@@ -1,0 +1,3 @@
+kwerenda 1-SELECT * FROM `towary` WHERE id < 5
+kwerenda 2-SELECT nazwa,cena FROM `towary` WHERE nazwa='cyrkiel'
+kwerenda 3-SELECT nazwa FROM towary

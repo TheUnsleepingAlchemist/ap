@@ -2,16 +2,16 @@
 <head>
 <title>Przykład getElementById</title>
 <script type="text/javascript">
-function changeColor(newColor)
+function changeColor(kolor_font, kolor_tla)
 {
-document.getElementById("para1").style.color = newColor;
-/*document.getElementById("para1").style.color = newColor;*/
+  document.getElementById("para1").style.color = kolor_font;
+  document.getElementById("body").style.background = kolor_tla;
 }
 </script>
 </head>
-<body>
-<p id="para1">Jakiś tekst</p>
-<button onclick="changeColor('#aabb44');">niebieski</button>
-<button onclick="changeColor('red');">czerwony</button>
+<body id='body'>
+<p id="para1">Jakis tekst</p>
+<button onclick="changeColor('#aabb44', '#5612aa');">niebieski</button>
+<button onclick="changeColor('red', 'blue');">czerwony</button>
 </body>
 </html>

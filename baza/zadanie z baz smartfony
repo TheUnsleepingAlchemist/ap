@@ -1,0 +1,12 @@
+Zadanie
+Stwórz bazę danych "komorki", która posiada dwie tabele:
+- smartfon (id_a, model, cena, ilosc, id_p)
+- producent (id_p, nazwa)
+Wprowadź przykładowe dane (5 rekordów).
+zapytania:
+  1. Sprawdź czy występuje w bazie producent "Samsung"
+  2. Wyświetl wszystkie modele firmy "Samsung"
+  3. Oblicz sumę cen smartfonów
+  4. Oblicz ile smartfonów jest dostępne w bazie.
+  5. Sprawdz czy istnieje w bazie model S10 firmy Samsung.
+      wyświetl nazwę modelu, producenta i ilość w bazie.

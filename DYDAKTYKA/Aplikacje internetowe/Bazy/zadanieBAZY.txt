@@ -1,0 +1,29 @@
+nazwa pliku na FTP: zadanieBAZY.txt
+Zadanie z baz danych.
+Utwórz nową bazę danych "kiosk" a w niej tabele:
+1. towar
+    -id_t (typ całkowity, nie pusty, klucz główny, autonumeracja)
+    -nazwa (typ tekstowy, nie pusty)
+    -rodzaj (tekstowy, nie pusty)
+    -stan (całkowity, nie pusty, domyślnie=0)
+    -cena (rzeczywisty,nie pusty)
+2. sprzedawca
+    -id_s(całkowity, nie pusty, klucz główny)
+    -imie()
+    -nazwisko()
+    -data_ur()
+3. paragon
+    -nr_paragonu(całkowity, nie pusty, autonumerowanie)
+    -id_t(klucz obcy z tabeli towar)
+    -id_s(klucz obcy z tabeli sprzedawca)
+    -ilosc(całkowity, nie pusty)
+Zadania:
+1. Stwórz bazę i tabele zgodnie ze strukturą podaną wyżej.
+2. Wprowadz dane do tabel: sprzedawca i towar po 5 a paragon 10
+3. Dodaj do tabeli towar kolumnę "opis" typ tekstowy i uzupełnij danymi
+4. Wyświetl nazwę towaru, rodzaj i stan.
+5. Oblicz na jaką kwotę został sprzedany towar
+6. Sprawdź ilu jest sprzedawców poniżej 30 roku życia
+7. Sprawdz, który sprzedawca sprzedał najwięcej towaru
+8. Sprawdz ile jest wszystkich paragonów.
+9. Stwórz nowego użytkownika Basia i nadaj mu uprawnienia select i update.

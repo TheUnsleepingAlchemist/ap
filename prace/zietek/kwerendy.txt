@@ -1,0 +1,4 @@
+Kwerenda1: SELECT nazwa,cena FROM towary WHERE id<5;
+Kwerenda2: SELECT cena FROM towary WHERE nazwa="cyrkiel";
+Kwerenda3: SELECT nazwa FROM towary;
+Kwerenda4: 
